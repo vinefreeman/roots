@@ -2,17 +2,34 @@
    Base
    ========================================================================== */
 
-body { }
-
+body { background-color: #003a63}
 
 
 /* =============================================================================
    Header
    ========================================================================== */
 
-.banner { }
-
-
+.banner { background-color: #002f50 }
+.navbar { margin-bottom: 0 }
+.topBanner { background-color: #fff200; height: 40px; }
+a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px; z-index: 99; top: -40px; background: transparent url("../img/cis-logo.png") no-repeat; text-indent: -9999px}
+.navbar-nav { float: right; }
+.navbar-toggle {
+    background-color: transparent;
+    border: 1px solid #bbb92f;
+    border:none;
+    border-radius: 4px 4px 4px 4px;
+    height: 32px;
+    padding: 8px 12px;
+    
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 48px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #bbb92f;}
+.navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 }
 
 /* ==========================================================================
    Content
@@ -20,6 +37,17 @@ body { }
 
 .content { }
 
+
+
+/* ==========================================================================
+   Carousel
+   ========================================================================== */
+
+
+.carousel-inner { text-align:center; width: 100%;}
+.carousel-inner .item{ height: 100% }
+#myCarousel {  }
+.carouselcon { background-color: #002f50}
 
 
 /* ==========================================================================
@@ -57,7 +85,7 @@ body { }
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {background-color: #002f50 }
 
 
 
@@ -78,5 +106,34 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ========================================================================== */
 
 @media (max-width: 767px) {
+   .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; }
+   .navbar-nav { float: none; }
+  a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
+   .topBanner { display: none; }
+   .banner{background-color: #fff200;}
+   .mobhead{ border-bottom: 2px dotted #5289af; background-color: #002f50; padding: 0px 5px 0px 5px; }
+   .mob-contact { padding-top: 16px; text-transform: uppercase; color: #b5ae2a; } 
+      .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    background-color: #e7dc00;
+    color: #555555;
+   }
+   .mob-social{padding-top: 20px; }
+   ul.social-icons {padding-left: 20px;}
+   ul.social-icons li { list-style: none; float: left; margin-right: 4px; }
+   ul.social-icons li a { width:26px; height:26px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;
+   -moz-transition: all ease 0.2s;
+   -o-transition: all ease 0.2s;
+   -ms-transition: all ease 0.2s;
+   transition: all ease 0.2s;}
+   ul.social-icons li.fb a { background: transparent url("../img/icons-social.png") no-repeat -35px 0px } 
+   ul.social-icons li.in a{ background: transparent url("../img/icons-social.png") no-repeat 0px 0px  } 
+   ul.social-icons li.tweet a{ background: transparent url("../img/icons-social.png") no-repeat -69px 0px  }
+   ul.social-icons li.mail a{ background: transparent url("../img/icons-social.png") no-repeat -103px 0px  }
+   ul.social-icons li.rss a{ background: transparent url("../img/icons-social.png") no-repeat -137px 0px  }
+     ul.social-icons li.fb a:hover { background: transparent url("../img/icons-social.png") no-repeat -35px -26px } 
+   ul.social-icons li.in a:hover{ background: transparent url("../img/icons-social.png") no-repeat 0px -26px  } 
+   ul.social-icons li.tweet a:hover{ background: transparent url("../img/icons-social.png") no-repeat -69px -26px  }
+   ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
+   ul.social-icons li.rss a:hover{ background: transparent url("../img/icons-social.png") no-repeat -137px -26px  }
 
 }
