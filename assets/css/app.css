@@ -27,8 +27,7 @@ a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px;
     top: 9px;
     width: 48px;
 }
-.navbar-toggle .icon-bar {
-    background-color: #bbb92f;}
+.navbar-toggle .icon-bar { background-color: #bbb92f;}
 .navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 ;}
 
 /* ==========================================================================
