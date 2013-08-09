@@ -29,7 +29,7 @@ a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px;
 }
 .navbar-toggle .icon-bar {
     background-color: #bbb92f;}
-.navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 }
+.navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 ;}
 
 /* ==========================================================================
    Content
