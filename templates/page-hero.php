@@ -21,7 +21,7 @@
             <div class="carousel-caption"><h2>Hello There!</h2><p>Popples is back...</p></div>
          </div>
       </div>
-        <!-- Carousel nav -->
+        <!-- Carousel nav needs styling -->
         <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
       </div>
