@@ -1,11 +1,19 @@
  <div class="topBanner">
       <div class="container">
           <div class="content row">
-              <div class="col-lg-3 col-offset-1">
-                <a href="">Home</a>
+              <div class="col-lg-6">
+                <?php
+                  wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
+                ?>
               </div>
-              <div class="col-lg-3 col-offset-2">
-               
+              <div class="col-lg-4 top10">
+                <?php 
+                  get_template_part('templates/searchform'); 
+                ?>
+              </div>
+              <div class="col-lg-2 top10">
+                <p>Social</p>
+
               </div>
           </div>
       </div>    
@@ -21,6 +29,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
+     <img class="hidden-sm pull-right strap img-responsive" src="<?php bloginfo('stylesheet_directory');?>/assets/img/strapline.gif" width="" height="" />
     <nav class="nav-main nav-collapse collapse" role="navigation">
       <?php
         if (has_nav_menu('primary_navigation')) :
@@ -31,6 +40,7 @@
   </div>
   </header>
   <div class="container mobhead">
+
             <a class="navbar-brand visible-sm" href="<?php echo home_url(); ?>/">
             <?php bloginfo('description'); ?>
            </a>
