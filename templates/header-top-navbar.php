@@ -6,7 +6,7 @@
                   wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
                 ?>
               </div>
-              <div class="col-lg-4 top10">
+              <div class="col-lg-3 top10 col-offset-1">
                 <?php 
                   get_template_part('templates/searchform'); 
                 ?>
