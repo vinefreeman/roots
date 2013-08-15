@@ -9,11 +9,11 @@ body { background-color: #003a63}
    Header
    ========================================================================== */
 
-.banner { background-color: #002f50 }
+.banner { background-color: #002f50; padding: 20px 0;}
 .navbar { margin-bottom: 0 }
 .topBanner { background-color: #fff200; height: 40px; }
 a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px; z-index: 99; top: -40px; background: transparent url("../img/cis-logo.png") no-repeat; text-indent: -9999px}
-.navbar-nav { float: right; }
+.navbar-nav { padding-left: 96px; }
 .navbar-toggle {
     background-color: transparent;
     border: 1px solid #bbb92f;
@@ -29,7 +29,17 @@ a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px;
 }
 .navbar-toggle .icon-bar { background-color: #bbb92f;}
 .navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 ;}
-
+.navbar-nav li.active.menu-home a, .navbar-nav li.menu-home a { background: transparent url("../img/home.png") no-repeat center 46%; text-indent: -9999px }
+.navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus {
+    background: transparent url("../img/home-over.png") no-repeat center 42%; -webkit-transition: all ease 0.2s;
+   -moz-transition: all ease 0.2s;
+   -o-transition: all ease 0.2s;
+   -ms-transition: all ease 0.2s;
+   transition: all ease 0.2s;
+}
+.navbar-nav li { margin-right: 4px; }
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:#003a63 ; color: #ffffff;}
+.navbar-nav > li > a, .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus   { color: #ffffff; font-size: 1.2em;}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -106,18 +116,27 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (max-width: 767px) {
    .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; }
-   .navbar-nav { float: none; }
-  a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
+    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
    .topBanner { display: none; }
-   .banner{background-color: #fff200;}
+   .banner{background-color: #fff200; padding: 0 0 0 5px;}
    .mobhead{ border-bottom: 2px dotted #5289af; background-color: #002f50; padding: 0px 5px 0px 5px; }
    .mob-contact { padding-top: 16px; text-transform: uppercase; color: #b5ae2a; } 
-      .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    background-color: #e7dc00;
-    color: #555555;
-   }
+   /*================================================
+     Navbar 
+   ==================================================*/
+   .navbar-nav { float: none; padding: 0 }
+   .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus { background-color: #e7dc00; color: #555555;}
+   .navbar-nav > li.menu-home > a, .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover{ text-indent: 0; background-image: none;}
+   .navbar-nav > li > a, .navbar-nav > li.active > a { color: #88821b;}
+   .navbar-nav > li > a.active{font-weight:  bold;}
+   .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} 
+   .navbar-nav > li > a:hover, .navbar-nav > li > a:focus { background-color: #e7dc00; color: #88821b; -webkit-transition: all ease 0.2s;-moz-transition: all ease 0.2s;-o-transition: all ease 0.2s;-ms-transition: all ease 0.2s;transition: all ease 0.2s;} 
+   .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover { background-color: #e7dc00; }
+
+
+
    .mob-social{padding-top: 20px; }
-   ul.social-icons {padding-left: 20px;}
+   ul.social-icons {padding-left: 30px;}
    ul.social-icons li { list-style: none; float: left; margin-right: 4px; }
    ul.social-icons li a { width:26px; height:26px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;
    -moz-transition: all ease 0.2s;

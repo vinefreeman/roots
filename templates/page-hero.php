@@ -2,9 +2,11 @@
       <div class="carouselcon">
       <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">
+          <li><a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a></li>
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li><a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></li>
         </ol>
       <!-- Carousel items -->
       <div class="carousel-inner">

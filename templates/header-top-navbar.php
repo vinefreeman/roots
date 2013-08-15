@@ -31,21 +31,19 @@
   </div>
   </header>
   <div class="container mobhead">
-     
-        
             <a class="navbar-brand visible-sm" href="<?php echo home_url(); ?>/">
             <?php bloginfo('description'); ?>
            </a>
-      
-        
-              <img class="visible-sm mob-social" src="<?php bloginfo('stylesheet_directory');?>/assets/img/mobile-passion.gif" width="" height="" />
-              <ul class="social-icons visible-sm">
-                <li class="in"><a href="#in">Linkedin</a></li>
-                <li class="fb"><a href="#fb">Facebook</a></li>
-                <li class="tweet"><a href="#tw">Twitter</a></li>
-                <li class="mail"><a href="#e">eMail</a></li>
-                <li class="rss"><a href="#rss">Feed</a></li>
-              </ul> 
+            <div class="pull-right"> 
+                <img class="visible-sm mob-social" src="<?php bloginfo('stylesheet_directory');?>/assets/img/mobile-passion.gif" width="" height="" />
+                <ul class="social-icons visible-sm">
+                  <li class="in"><a href="#in">Linkedin</a></li>
+                  <li class="fb"><a href="#fb">Facebook</a></li>
+                  <li class="tweet"><a href="#tw">Twitter</a></li>
+                  <li class="mail"><a href="#e">eMail</a></li>
+                  <li class="rss"><a href="#rss">Feed</a></li>
+                </ul> 
+            </div>
      </div>
   
   <?php if (is_front_page()) : get_template_part('templates/page', 'hero'); endif; //VF hero placement?>
