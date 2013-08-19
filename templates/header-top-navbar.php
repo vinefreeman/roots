@@ -1,17 +1,17 @@
  <div class="topBanner hidden-sm">
       <div class="container">
-          <div class="content row">
-              <div class="col-lg-6">
+          <div class="row">
+              <div class="col-md-3">
                 <?php
                   wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
                 ?>
               </div>
-              <div class="col-lg-3 top10 col-offset-1">
+              <div class="col-md-3 top10">
                 <?php 
                   get_template_part('templates/searchform'); 
                 ?>
               </div>
-              <div class="col-lg-2 top10">
+              <div class="col-md-2 top10">
                 <p>Social</p>
 
               </div>
