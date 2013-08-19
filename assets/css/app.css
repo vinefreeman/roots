@@ -59,9 +59,9 @@ a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px;
 
 .main { }
 
-
 /* Gallery Shortcode */
-.row.gallery-row { padding: 15px 0; }
+.gallery-row { padding: 15px 0; }
+
 
 
 /* ==========================================================================
@@ -108,6 +108,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
+
 @media (max-width: 767px) {
    .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; }
    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
@@ -140,4 +141,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
    ul.social-icons li.rss a:hover{ background: transparent url("../img/icons-social.png") no-repeat -137px -26px  }
 
-}
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }
