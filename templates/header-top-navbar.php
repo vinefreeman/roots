@@ -1,4 +1,4 @@
- <div class="topBanner">
+ <div class="topBanner hidden-sm">
       <div class="container">
           <div class="content row">
               <div class="col-lg-6">

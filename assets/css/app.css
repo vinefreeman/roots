@@ -36,11 +36,11 @@ a.navbar-brand {position: absolute;  display: block; height: 150px; width: 98px;
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;} 
 .topBanner .form-control::-webkit-input-placeholder { color:#7e791d; }
 .topBanner .form-control::-moz-placeholder { color:#7e791d; } /* firefox 19+ */
-.topBanner .form-control:-ms-input-placeholder { color:#7e791d; } /* ie */
-.topBanner .form-control input:-moz-placeholder { color:#7e791d; }
+.topBanner .form-control:-ms-input-placeholder { color:#7e791d; } /* ie 
+.topBanner .form-control input:-moz-placeholder { color:#7e791d; }*/
 .top10 {padding-top: 6px;}
 .topBanner .btn{padding: 4px 6px; background-color: #adab27; border: 1px solid #adab27; font-size: .9em;}
-.topBanner .input-group-btn .btn:hover{background-color: #8e8c1c;
+.topBanner .input-group-btn .btn:hover{background-color: #8e8c1c;}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -117,8 +117,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (max-width: 767px) {
    .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; }
-    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
-   .topBanner { display: none; }
+   a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
    .banner{background-color: #fff200; padding: 0 0 0 5px;}
    .mobhead{ border-bottom: 2px dotted #5289af; background-color: #002f50; padding: 0px 5px 0px 5px; }
    .mob-contact { padding-top: 16px; text-transform: uppercase; color: #b5ae2a; } 
@@ -133,23 +132,19 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} 
    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus { background-color: #e7dc00; color: #88821b; -webkit-transition: all ease 0.2s;-moz-transition: all ease 0.2s;-o-transition: all ease 0.2s;-ms-transition: all ease 0.2s;transition: all ease 0.2s;} 
    .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover { background-color: #e7dc00; }
-
+   
 
 
    .mob-social{padding-top: 20px; }
    ul.social-icons {padding-left: 30px;}
    ul.social-icons li { list-style: none; float: left; margin-right: 4px; }
-   ul.social-icons li a { width:26px; height:26px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;
-   -moz-transition: all ease 0.2s;
-   -o-transition: all ease 0.2s;
-   -ms-transition: all ease 0.2s;
-   transition: all ease 0.2s;}
+   ul.social-icons li a { width:26px; height:26px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;  -moz-transition: all ease 0.2s;   -o-transition: all ease 0.2s;   -ms-transition: all ease 0.2s;   transition: all ease 0.2s;}
    ul.social-icons li.fb a { background: transparent url("../img/icons-social.png") no-repeat -35px 0px } 
    ul.social-icons li.in a{ background: transparent url("../img/icons-social.png") no-repeat 0px 0px  } 
    ul.social-icons li.tweet a{ background: transparent url("../img/icons-social.png") no-repeat -69px 0px  }
    ul.social-icons li.mail a{ background: transparent url("../img/icons-social.png") no-repeat -103px 0px  }
    ul.social-icons li.rss a{ background: transparent url("../img/icons-social.png") no-repeat -137px 0px  }
-     ul.social-icons li.fb a:hover { background: transparent url("../img/icons-social.png") no-repeat -35px -26px } 
+   ul.social-icons li.fb a:hover { background: transparent url("../img/icons-social.png") no-repeat -35px -26px } 
    ul.social-icons li.in a:hover{ background: transparent url("../img/icons-social.png") no-repeat 0px -26px  } 
    ul.social-icons li.tweet a:hover{ background: transparent url("../img/icons-social.png") no-repeat -69px -26px  }
    ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
