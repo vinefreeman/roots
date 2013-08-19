@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body { background-color: #003a63}
-
+body.home .content{ color: #cccccc;}
 
 /* =============================================================================
    Header
@@ -170,4 +170,20 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
    ul.social-icons li.rss a:hover{ background: transparent url("../img/icons-social.png") no-repeat -137px -26px  }
 
+}
+
+@media (min-width: 768px) { 
+
+img.strap {}
+
+}
+
+@media (min-width: 992px) {
+
+   img.strap { }
+}
+
+@media (min-width: 1200px) {
+
+   img.strap { }
 }
