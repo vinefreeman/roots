@@ -1,7 +1,7 @@
 <footer class="content-info foot" role="contentinfo">
 <div class="container footclear">	
 	<div class="row visible-xs" id="sch">
-		<div class="col-xs-12">
+		<div class="col-xs-12 footsearch">
 			<?php get_template_part('templates/searchform'); ?>
 		</div>
 	</div>	
@@ -31,10 +31,11 @@
 	<div class="container clearfix">
 		<div class="row">	
 			<div class="col-lg-12">
+				<p class="pull-left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 				 <?php
                   wp_nav_menu(array('menu' => 'Footer Links', 'menu_class' => 'footlinks'));
                 ?>
-				<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+				
 			</div>
 		</div>
 	</div>

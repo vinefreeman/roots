@@ -34,8 +34,8 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .navbar-nav li.active.menu-home a, .navbar-nav li.menu-home a { background: transparent url("../img/home.png") no-repeat center 46%; text-indent: -9999px }
 .navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus { background: transparent url("../img/home-over.png") no-repeat center 42%; -webkit-transition: all ease 0.2s; -moz-transition: all ease 0.2s; -o-transition: all ease 0.2s; -ms-transition: all ease 0.2s; transition: all ease 0.2s;}
 .navbar-nav li { margin-right: 4px; }
-.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:#003a63 ; color: #ffffff;}
-.navbar-nav > li > a, .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus   { color: #ffffff; font-size: 1.2em;}
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:#003a63 ; color: #fff200;}
+.navbar-nav > li > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus   { color: #ffffff; font-size: 1.2em;}
 .strap{padding-top: 14px; float: right; position: relative;}
 
 /* =========
@@ -101,10 +101,17 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 
 
 .carousel-inner { text-align:center; width: 100%;}
-.carousel-inner .item{ height: 100% }
+.carousel-inner img{ width: 100%; height: 362px;}
+.carousel-inner .item{ /*height: 100%*/ }
 #myCarousel {  }
-.carouselcon {position: relative; background: #002f50 url("../img/carousel-arr.png") no-repeat center 110%; padding-bottom: 10px; margin-bottom: 40px;}
+
+.carouselcon {position: relative; background: #002f50 url("../img/carousel-arr.png") no-repeat center 110%; padding-bottom: 10px; margin-bottom: 50px;}
 .arr { position: absolute; left: 49%; bottom: -10px; }
+.slidenav{ width: 200px; position: absolute; }
+.carousel-caption{background: url("../img/background-trans.png"); background: rgb(0, 47, 80) transparent; /* default fallback */ background: rgba(0, 47, 80, 0.8); /* nice browsers */ padding: 10px; left: 60%; bottom: 10px; text-align: left;}
+.carousel-control img{position: absolute; top: 50%;}
+.carousel-control.left, .carousel-control.right {background: none; -moz-opacity: 0.90; opacity: 0.90; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
+.carousel-caption h2{font-size: 1.4em; color:#fff200; margin-top: 6px;}
 
 /* ==========================================================================
    Primary Content
@@ -143,7 +150,7 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
    ========================================================================== */
 
 .content-info {background-color: #002f50; color: #5089b1; }
-.footclear{ margin-top: 40px;padding: 20px 0; }
+.footclear{ margin-top: 60px;padding: 20px 0; }
 .footcontact { background-color: #012946; padding: 6px 0; text-align: right; }
 .footmenu{background-color: #00233b; padding: 6px 0; text-align: right;}
 .content-info ul.social-icons{float:right;}
@@ -162,13 +169,27 @@ h3.ontwitter{ font-size: 1.1em;  }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{background-color: #4882aa} 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active{background-color: #00233b; color: #f6f6f6;}
 
-ul.foottweet li{color: #5089b1; font-size: .9em; margin-bottom: 8px; list-style:none; background: transparent url("../img/yel-tweet.png") no-repeat 0px 4px; padding-left: 20px;}
+ul.foottweet li{color: #5089b1; font-size: .9em; margin-bottom: 8px; list-style:none; background: transparent url("../img/yel-tweet.png") no-repeat 0px 4px; padding-left: 30px;}
 ul.foottweet li a { color: #fff200; }
 ul.foottweet{padding: 0;margin:0;}
 
-.footlinks{margin-left: 20px;}
-.footlinks li{list-style: none; float: right; margin-right: 8px; font-size: .9em;}
+.footlinks{padding-left: 20px;}
+.footlinks li{list-style: none; float: right; margin-right: 4px; font-size: .9em;background: transparent url("../img/footlink-sep.gif") no-repeat right center; padding-right: 10px;}
+.footlinks li:first-child{background-image: none; margin-right: 0; padding-right: 0;}
 .content-info p{font-size: .9em;}
+
+
+/*search*/
+
+.content-info .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;} 
+.content-info .form-control::-webkit-input-placeholder { color:#7e791d; }
+.content-info .form-control::-moz-placeholder { color:#7e791d; } /* firefox 19+ */
+.content-info .form-control:-ms-input-placeholder { color:#7e791d; } /* ie*/ 
+.content-info .form-control input:-moz-placeholder { color:#7e791d; }
+.footsearch .btn{padding: 4px 6px; background-color: #adab27; border: 1px solid #adab27; font-size: .9em;}
+.footsearch .input-group-btn .btn:hover{background-color: #8e8c1c;}
+.footsearch{padding-bottom:20px;}
+
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -182,12 +203,14 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 /* ==========================================================================
+
    Media Queries
+
    ========================================================================== */
 
 
 @media (max-width: 767px) {
-   .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; }
+   .carousel-caption { display: block; position: relative; padding: 20px 5px; left: 0; right: 0; text-align: center;}
    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
    .banner{background-color: #fff200; padding: 0 0 0 10px; background-image: none}
    .mobhead{ border-bottom: 2px dotted #5289af; background-color: #002f50; padding: 0px 5px 0px 5px; }
