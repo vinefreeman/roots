@@ -7,8 +7,23 @@ Awaiting theme inclusion - custom fields etc.
 <!--=======================================
 Home Template
 ===========================================-->
-<div class="row dark">
-	<div class="col-lg-4 col-md-4 col-sm-4">Box 1</div>
-	<div class="col-lg-4 col-md-4 col-sm-4">Box 2</div>
-	<div class="col-lg-4 col-md-4 col-sm-4">Box 3</div>
+<div class="row dark feature">
+	<div class="col-lg-4 col-md-4 col-sm-4 clearfix">
+		<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/feature-hold-img.jpg" class="img-responsive">
+		<h2>Current ACS Score.</h2>
+		<p>Our score is rising constantly and has been for years, what does this mean for you?</p>
+		<a href="#" class="btn">More</a>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 clearfix">
+		<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/feature-hold-img1.jpg" class="img-responsive">
+		<h2>Current ACS Score.</h2>
+		<p>Our score is rising constantly and has been for years, what does this mean for you?</p>
+		<a href="#" class="btn">More</a>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 clearfix">
+		<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/feature-hold-img2.jpg" class="img-responsive">
+		<h2>Current ACS Score.</h2>
+		<p>Our score is rising constantly and has been for years, what does this mean for you?</p>
+		<a href="#" class="btn">More</a>
+	</div>
 </div>

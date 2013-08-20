@@ -45,7 +45,7 @@
 
     </div>
   </header>
-  <div class="container mobhead">
+  <div class="container mobhead visible-xs">
 
             <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>/"><?php bloginfo('description'); ?></a>
             <div class="pull-right visible-xs"> 

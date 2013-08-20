@@ -27,6 +27,9 @@
         <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
       </div>
+      <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/carousel-arr.png" class="arr" width="26px" height="14px">
+      
       </div>
+
       <!-- /carousel -->
   

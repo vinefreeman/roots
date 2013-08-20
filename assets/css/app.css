@@ -2,8 +2,8 @@
    Base
    ========================================================================== */
 
-body { background-color: #003a63}
-body.home .content{ color: #cccccc;}
+body { background-color: #003a63; font-family: helvetica, arial, sans-serif}
+body.home .content{ color: #f6f6f6;}
 
 /* =============================================================================
    Header
@@ -77,7 +77,7 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
    ========================================================================== */
 
 .content { }
-
+.wrap{  }
 
 
 /* ==========================================================================
@@ -88,13 +88,14 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .carousel-inner { text-align:center; width: 100%;}
 .carousel-inner .item{ height: 100% }
 #myCarousel {  }
-.carouselcon { background-color: #002f50}
-
+.carouselcon {position: relative; background: #002f50 url("../img/carousel-arr.png") no-repeat center 110%; padding-bottom: 10px; margin-bottom: 40px;}
+.arr { position: absolute; left: 49%; bottom: -10px; }
 
 /* ==========================================================================
    Primary Content
    ========================================================================== */
-
+.feature img { float: left; margin: 0 20px 20px 0;}
+.feature H2 {margin-top: 0px; font-size: 1.3em; color: #89a8bd;}
 .main { }
 
 /* Gallery Shortcode */
@@ -126,8 +127,8 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
    Footer
    ========================================================================== */
 
-.content-info {background-color: #002f50 }
-
+.content-info {background-color: #002f50; color: #ccc; }
+.footclear{ margin-top: 40px; }
 
 
 /* ==========================================================================
@@ -185,22 +186,29 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
    ul.social-icons li.rss a:hover{ background: transparent url("../img/icons-social.png") no-repeat -137px -26px  }
 
+.feature img{ width: auto; }
+
 }
 
 @media (min-width: 768px) {
 
    .collapse{ display:block;}
     span.strapline { float: left; margin: 0 0 0 116px; }
+.feature img{ width: 40%; }
+
     }
 
 @media (min-width: 992px) { 
 
    .collapse{ display:block;}
  span.strapline { float: right; margin: 12px 0 0 0;}
+ .feature img{ width: 50%; }
 }
 
 
 @media (min-width: 1200px) { 
  span.strapline { float: right; margin: 12px 0 0 0; }
     .collapse{ display: block;}
+    .feature img{ width: auto; }
+
 }
