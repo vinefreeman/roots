@@ -25,7 +25,8 @@
       
       <a class="mob-contact visible-xs" href="#sch">Search</a>
       <a class="navbar-brand hidden-xs" href="<?php echo home_url(); ?>/"><?php bloginfo('description'); ?></a>
-      <img class="hidden-xs pull-right strap" src="<?php bloginfo('stylesheet_directory');?>/assets/img/strapline.gif" width="" height="" />
+      <span class="strapline hidden-xs">Passion. Determination. Leadership</span>
+      <!--<img class="hidden-xs pull-right strap" src="<?php bloginfo('stylesheet_directory');?>/assets/img/strapline.gif" width="" height="" />-->
       <div class="navbar-header">  
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
