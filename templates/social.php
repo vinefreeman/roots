@@ -3,6 +3,6 @@
     <li class="fb"><a href="#fb">Facebook</a></li>
     <li class="tweet"><a href="#tw">Twitter</a></li>
     <li class="mail"><a href="#e">eMail</a></li>
-    <li class="rss hidden-md"><a href="#rss">Feed</a></li>
+    <li class="rss"><a href="#rss">Feed</a></li>
  </ul> 
 
