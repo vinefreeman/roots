@@ -1,9 +1,16 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-
+/*
+colors
+yel - #fff200
+light blue - #5089b1
+med blue - like main page back - #003a63
+dark back blue - #002f50
+*/
 body { background-color: #003a63; font-family: helvetica, arial, sans-serif}
 body.home .content{ color: #f6f6f6;}
+.content h1{color:#fff200;}
 
 /* =============================================================================
    Header
@@ -93,7 +100,8 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 
 .content { }
 .wrap{  }
-
+.page-header{border:none;}
+.innerspace{background-color: #fff; padding: 40px; background-color: #fff; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 
 /* ==========================================================================
    Carousel
@@ -116,9 +124,10 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 /* ==========================================================================
    Primary Content
    ========================================================================== */
-.feature img { display: block; margin: 0 20px 20px 0; width: 30%;}
+.feature img {margin: 0 20px 20px 0; width: 30%;}
 .feature H2 {margin-top: 0px; font-size: 1.2em; color: #75b2dd; font-weight: normal;}
 .main { }
+.feature a:hover img{-moz-opacity: 0.90; opacity: 0.90; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
@@ -211,6 +220,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 @media (max-width: 767px) {
+   
+   
+   .innerspace{padding: 30px 20px;}
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
    .banner{background-color: #fff200; padding: 0 0 0 10px; background-image: none}
@@ -264,8 +276,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 @media (min-width: 768px) {
-
-   .collapse{ display:block;}
+  .collapse{ display:block;}
    span.strapline { float: left; margin: 0 0 0 116px; }
    .feature img{ width: 40%; float: left;}
    .feature h2, .feature p{ padding-left: 50%;}

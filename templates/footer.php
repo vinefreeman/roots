@@ -33,7 +33,7 @@
 		<div class="container clearfix">
 			<div class="row">	
 				<div class="col-lg-12">
-					<p class="pull-left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+					<p class="pull-left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>&nbsp;|&nbsp;<a href="http://www.redheadmedia.co.uk">Website: Redhead Media</a></p>
 					 <?php
 	                  wp_nav_menu(array('menu' => 'Footer Links', 'menu_class' => 'footlinks'));
 	                ?>
