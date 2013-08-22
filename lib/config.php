@@ -34,7 +34,7 @@ function roots_main_class() {
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'col-sm-3 col-md-3 col-lg-3';
+  return 'col-sm-3 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1';
 }
 
 /**
