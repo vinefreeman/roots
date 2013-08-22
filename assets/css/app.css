@@ -101,7 +101,7 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .content { }
 .wrap{  }
 .page-header{border:none;}
-.innerspace{background-color: #fff; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
 
 /* ==========================================================================
    Carousel
@@ -170,6 +170,7 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .lblue{ color: #5089b1; }
 h3.intouch{ font-size: 1.1em; text-align:right; padding-left: 30px; }
 h3.ontwitter{ font-size: 1.1em;  }
+span.nicetitle{color:#5089b1; font-size: 1.8em; line-height: 1.2em; padding-bottom: 16px; display: block;}
 
 /*Buttons*/
 .btn-dark {background-color: #002f50;border-color: #012a47;color: #66acde; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
@@ -222,7 +223,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (max-width: 767px) {
    
    
-   .innerspace{padding: 30px 20px;}
+   .innerspace{padding: 30px 20px; }
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
    .banner{background-color: #fff200; padding: 0 0 0 10px; background-image: none}
