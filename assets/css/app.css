@@ -4,6 +4,7 @@
 /*
 colors
 yel - #fff200
+dark yel - #e7dc00
 light blue - #5089b1
 med blue - like main page back - #003a63
 dark back blue - #002f50
@@ -52,6 +53,11 @@ span.strapline { float: right; text-indent: -9999px; background-image: url("../i
     margin-right: 0px;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{background-color:#002f50 ; background-image: none;}
+.navbar-nav .open .dropdown-menu > .active > a, .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #e7dc00;
+    color: #555555;
+}
+
 
 a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cislogo.gif") no-repeat left center; text-indent: -9999px}
 a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
@@ -280,7 +286,8 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    .navbar { min-height: 36px; }
    .navbar-nav { float: none; padding: 0 }
    .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus { background-color: #e7dc00; color: #555555;}
-   .navbar-nav > li.menu-home > a, .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover{ text-indent: 0; background-image: none;background-color: #e7dc00;}
+   .navbar-nav > li.menu-home > a, .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover{ text-indent: 0; background-image: none;}
+   .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover, .navbar-nav li.menu-home > a:focus, .navbar-nav li.menu-home > a:hover{background-color:#e7dc00 ;}
    .navbar-nav > li > a, .navbar-nav > li.active > a { color: #88821b;}
    .navbar-nav > li > a.active{font-weight:  bold;}
    .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} 
