@@ -73,5 +73,13 @@ function myplugin_save_postdata( $post_id ) {
 }
 
 
+		/*Google Fonts*/
+		function load_google_fonts() {
+		            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Oxygen');
+		            wp_enqueue_style( 'googleFonts');
+		        }
+		 
+		    add_action('wp_print_styles', 'load_google_fonts');
+
 ?>  
 

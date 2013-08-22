@@ -10,7 +10,7 @@ dark back blue - #002f50
 */
 body { background-color: #003a63; font-family: helvetica, arial, sans-serif}
 body.home .content{ color: #f6f6f6;}
-.content h1{color:#fff200;}
+.content h1{color:#fff200; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 
 /* =============================================================================
    Header
@@ -30,8 +30,31 @@ span.strapline { float: right; text-indent: -9999px; background-image: url("../i
 /* =========
    Nav
    ========== */
+.navbar-nav > .dropdown > a .caret {border-top-color: #fff200; border-bottom-color: #fff200;}
+.navbar-nav > .dropdown > a:hover .caret{border-top-color: #5089b1; border-bottom-color: #5089b1;}
+.navbar-nav > .dropdown > a:hover .caret{border-top-color: #fff200; border-bottom-color: #fff200;}
+.navbar-nav > .open > a .caret, .navbar-nav > .open > a:hover .caret, .navbar-nav > .open > a:focus .caret {border-top-color: #fff200; border-bottom-color: #fff200;}
+.dropdown-menu{background-color: #003A63; border: none;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    outline: 0 none;
+    text-decoration: none;
+}
+.dropdown-menu > li > a {color: #fff;}
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus, .navbar-nav > .active.open > a:focus, .navbar-nav > .active.open > a, .navbar-nav > .active.open > a:hover  {
+    background-color: #5089B1;
+    color: #FFF200;
+}
+.navbar-nav li .dropdown-menu li {
+    margin-right: 0px;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{background-color:#002f50 ; background-image: none;}
 
-a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cislogo.gif") no-repeat left center; text-indent: -9999px}
+a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cislogo.gif") no-repeat left center; text-indent: -9999px}
+a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
 
 .navbar { margin-bottom: 0 }
 .navbar-nav {padding-left: 96px;}
@@ -41,8 +64,8 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .navbar-nav li.active.menu-home a, .navbar-nav li.menu-home a { background: transparent url("../img/home.png") no-repeat center 46%; text-indent: -9999px }
 .navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus { background: transparent url("../img/home-over.png") no-repeat center 42%; -webkit-transition: all ease 0.2s; -moz-transition: all ease 0.2s; -o-transition: all ease 0.2s; -ms-transition: all ease 0.2s; transition: all ease 0.2s;}
 .navbar-nav li { margin-right: 4px; }
-.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:#003a63 ; color: #fff200;}
-.navbar-nav > li > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus   { color: #ffffff; font-size: 1.2em;}
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:transparent ; color: #fff200;}
+.navbar-nav > li > a { color: #ffffff; font-size: 1.2em;}
 .strap{padding-top: 14px; float: right; position: relative;}
 
 /* =========
@@ -138,8 +161,12 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
    Sidebar
    ========================================================================== */
 
-.sidebar { }
-.textwidget img{-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.sidebar { padding-top: 120px;}
+.textwidget img{-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; ;}
+.text-5 img{display:block;}
+.text-5 a{color: #fff200; margin-bottom: 20px; display:block; }
+.text-5{-moz-opacity: 0.80;opacity: 0.80;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out;}
+.text-5:hover{-moz-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=1); }
 
 
 /* ==========================================================================
@@ -170,7 +197,9 @@ a.navbar-brand {position: absolute;  display: block; height: 152px; width: 91px;
 .lblue{ color: #5089b1; }
 h3.intouch{ font-size: 1.1em; text-align:right; padding-left: 30px; }
 h3.ontwitter{ font-size: 1.1em;  }
-span.nicetitle{color:#5089b1; font-size: 1.8em; line-height: 1.2em; padding-bottom: 16px; display: block;}
+span.nicetitle{color:#5089b1; font-size: 1.5em; line-height: 1.4em; padding-bottom: 16px; display: block; font-family: "Oxygen", helvetica, arial, sans-serif}
+span.nicetitle {border-left: 3px solid #CCCCCC; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.5em;  line-height: 1.4em; margin-bottom: 26px; padding: 0 0 0 10px; ;}
+.main blockquote{background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
 
 /*Buttons*/
 .btn-dark {background-color: #002f50;border-color: #012a47;color: #66acde; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
@@ -221,8 +250,8 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 @media (max-width: 767px) {
-   
-   
+   .text-5 a{float: left; margin-right: 20px; }
+   .sidebar { padding-top: 40px;}
    .innerspace{padding: 30px 20px; }
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
    a.navbar-brand {float: left;padding: 0;margin: 0px; position: static; height: 104px; width: 98px; display: inline;background: transparent url("../img/cis-mob-logo.png") no-repeat; text-indent: -9999px}
@@ -251,7 +280,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    .navbar { min-height: 36px; }
    .navbar-nav { float: none; padding: 0 }
    .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus { background-color: #e7dc00; color: #555555;}
-   .navbar-nav > li.menu-home > a, .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover{ text-indent: 0; background-image: none;}
+   .navbar-nav > li.menu-home > a, .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover{ text-indent: 0; background-image: none;background-color: #e7dc00;}
    .navbar-nav > li > a, .navbar-nav > li.active > a { color: #88821b;}
    .navbar-nav > li > a.active{font-weight:  bold;}
    .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} 
