@@ -4,6 +4,8 @@
                      
       <!-- Carousel items -->
       <div class="carousel-inner">
+       
+         
         <div class="active item">
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide1.jpg" class="hero img-responsive">
               <div class="carousel-caption"><h2><span>Leading the Way</span></h2><p>Developing internally, we endeavour to progress and build upon our successes...</p></div>
@@ -30,9 +32,10 @@
             </ol>-->
          
           
-           <a class="carousel-control left hidden-xs" href="#myCarousel" data-slide="prev"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/left-arr.png"></a>
-           <a class="carousel-control right hidden-xs" href="#myCarousel" data-slide="next"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/right-arr.png"></a>
-        
+          <!-- nav controls here -->
+        <a class="carousel-control left hidden-xs" href="#myCarousel" data-slide="prev"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/left-arr.gif"></a>
+           <a class="carousel-control right hidden-xs" href="#myCarousel" data-slide="next"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/right-arr.gif"></a>
+         
      
         <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
