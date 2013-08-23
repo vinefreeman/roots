@@ -11,6 +11,7 @@ dark back blue - #002f50
 */
 body { background-color: #003a63; font-family: helvetica, arial, sans-serif}
 body.home .content{ color: #f6f6f6;}
+a { color: #5089b1;text-decoration: none;}
 .content h1{color:#fff200; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 
 /* =============================================================================
@@ -192,7 +193,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
    ========================================================================== */
 
 .content-info {background-color: #002f50; color: #5089b1; }
-.footclear{ margin-top: 60px;padding: 20px 0; }
+.footclear{ margin-top: 80px;padding: 20px 0; }
 .footcontact { background-color: #012946; padding: 6px 0; text-align: right; }
 .footmenu{background-color: #00233b; padding: 6px 0; text-align: right;}
 .content-info ul.social-icons{float:right;}
@@ -206,6 +207,11 @@ h3.ontwitter{ font-size: 1.1em;  }
 span.nicetitle{color:#5089b1; font-size: 1.5em; line-height: 1.4em; padding-bottom: 16px; display: block; font-family: "Oxygen", helvetica, arial, sans-serif}
 span.nicetitle {border-left: 3px solid #CCCCCC; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.5em;  line-height: 1.4em; margin-bottom: 26px; padding: 0 0 0 10px; ;}
 .main blockquote{background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
+a.mail{text-align:center; display: block; font-size: 1.2em; margin-bottom: 4px;}
+a.phone{text-align:center; display: block; font-size: 1.1em;}
+a span{text-decoration: none;}
+span.sep{display: block; padding: 4px 0; margin: 10px 0; border-bottom: 1px dotted #5089b1;}
+a.btn.phone{padding-left: 0;}
 
 /*Buttons*/
 .btn-dark {background-color: #002f50;border-color: #012a47;color: #66acde; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
@@ -245,6 +251,9 @@ ul.foottweet{padding: 0;margin:0;}
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
+/*MyIcons*/
+span.icon-phone{padding-right: 30px;background-image: url("../img/phone.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
+span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
 
 
 /* ==========================================================================
@@ -335,7 +344,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    .topBanner li.rss{display: inline;}
    span.strapline { float: right; margin: 12px 0 0 0; }
    .collapse{ display: block;}
-   .feature img{ width: auto; float: left;}
+   .feature img{ width: 40%; float: left;}
  .carousel-caption{right: 20%; left: 60%;}
+ .feature h2, .feature p { padding-left: 45%; padding-right: 5%;}
+ .feature a.btn{margin-right: 5%;}
 
 }
