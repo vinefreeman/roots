@@ -15,8 +15,12 @@
 function roots_scripts() {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
+  wp_enqueue_style('roots_ie8', get_template_directory_uri() . '/assets/css/ie8-and-down.css', false, null);
+  global $wp_styles; 
+  $wp_styles->add_data( 'roots_ie8', 'conditional', 'lte IE 9' );
+  
 
-  // jQuery is loaded using the same method from HTML5 Boilerplate:
+    // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
   // It's kept in the header instead of footer to avoid conflicts with plugins.
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
@@ -32,10 +36,12 @@ function roots_scripts() {
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
   wp_register_script('roots_plugins', get_template_directory_uri() . '/assets/js/plugins.js', false, null, true);
   wp_register_script('roots_main', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
+  wp_register_script('respond', get_template_directory_uri() . '/assets/js/vendor/respond.min.js', false, null, false);
   wp_enqueue_script('jquery');
   wp_enqueue_script('modernizr');
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_main');
+  wp_enqueue_script('respond');
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
