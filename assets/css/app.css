@@ -81,7 +81,11 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
    Top Banner
    ========== */
 
-.topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;} 
+.topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px;
+-webkit-border-top-right-radius: 2px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+} 
 .topBanner .form-control::-webkit-input-placeholder { color:#7e791d; }
 .topBanner .form-control::-moz-placeholder { color:#7e791d; } /* firefox 19+ */
 .topBanner .form-control:-ms-input-placeholder { color:#7e791d; } /* ie*/ 
@@ -345,6 +349,8 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    ul.social-icons li.mail a:hover{ background: transparent url("../img/icons-social.png") no-repeat -103px -26px  }
    ul.social-icons li.rss a:hover{ background: transparent url("../img/icons-social.png") no-repeat -137px -26px  }
    .carousel-caption p{padding-left: 0;}
+   .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; }
+   .content-info .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none;-webkit-appearance: none; border-radius: 30px 0 0 30px;} 
   
 }
 
@@ -355,6 +361,8 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .feature img{ width: 40%; float: left;}
    .feature h2, .feature p{ padding-left: 50%;}
 .carousel-caption{right: 20%; left: 20%; bottom: 30px;}
+.topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; }
+   
 
     }
 
@@ -365,6 +373,8 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .feature img{ width: 50%; float: left;}
    .carousel-caption{right: 20%; left: 20%;}
     .carousel-caption h2{font-size: 30px;}
+.topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; border-radius: 30px 0 0 30px;}
+   
 
 }
 
