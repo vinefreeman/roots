@@ -1,0 +1,15 @@
+/* 
+IE 8 and down styling
+*/
+/*to combat retina double size logo*/
+a.navbar-brand {
+    width: 91px;
+    height: 152px;
+    
+    background-repeat: no-repeat;
+    background-size: 91px 152px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-security@2x.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-security@2x.jpg', sizingMethod='scale')";
+    background-image: url('../img/cislogo-b.gif');
+}
+.banner{z-index: 1000;}
