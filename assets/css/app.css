@@ -20,7 +20,7 @@ a:hover, a:focus{color: #afc7d7;}
    Header
    ========================================================================== */
 
-.banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none;}
+.banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none; border-bottom: 1px dotted #1a4565 ;}
 .topBanner { background-color: #f9e526; height: 40px; }
 .topBanner ul.nav-pills li { background: transparent url("../img/bannerlist-sep.jpg") no-repeat center right;margin-right: 2px; padding-right: 4px; }
 .topBanner ul.nav-pills li a { background: none; color: #88821b; font-size: .9em; padding: 10px 4px 10px 0px; }
@@ -74,7 +74,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus { background: transparent url("../img/home-over1.png") no-repeat center 42%; -webkit-transition: all ease 0.2s; -moz-transition: all ease 0.2s; -o-transition: all ease 0.2s; -ms-transition: all ease 0.2s; transition: all ease 0.2s;}
 .navbar-nav li { margin-right: 4px; }
 .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:transparent ; color: #f9e526;}
-.navbar-nav > li > a { color: #ffffff; font-size: 1.2em;}
+.navbar-nav > li > a { color: #ffffff; font-size: 1em;}
 .strap{padding-top: 14px; float: right; position: relative;}
 
 /* =========
@@ -149,7 +149,7 @@ border-radius: 30px;
 .carousel-inner .item{  }
 #myCarousel {  }
 
-.carouselcon {position: relative; background: #00344d url("../img/carousel-arr.png") no-repeat center 110%; padding-bottom: 10px; margin-bottom: 50px;}
+.carouselcon {position: relative; background: #00344d url("../img/carousel-arr.png") no-repeat center 110%; padding-bottom: 10px; margin-bottom: 50px; border-bottom: 1px dotted #1a4565 }
 .arr { position: absolute; left: 49%; bottom: -10px; }
 .slidenav{ width: 200px; position: absolute; }
 .carousel-caption{/*background: url("../img/background-trans.png"); background: rgb(0, 52, 77) transparent;*/ /* default fallback  background: rgba(0, 52, 77, 0.8); *//* nice browsers */ padding: 10px; left: 57%; bottom: 30px; text-align: left; }
@@ -302,8 +302,8 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .innerspace{padding: 30px 20px; }
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
    .mobhead a.navbar-brand {float: left;padding: 0 0 0 0;margin: 0 0 0 5px; position: static; /*height: 104px; width: 98px*/height: 65px; width:51px; display: inline;background: transparent url("../img/cis-mob-logo-sm.png") no-repeat !important; background-size: 51px 65px;text-indent: -9999px}
-   .banner{background-color: #f9e526; padding: 0 0 0 10px; background-image: none}
-   .mobhead{ border-bottom: 2px dotted #89A8BD; background-color: #00344d; padding: 5px; }
+   .banner{background-color: #f9e526; padding: 0 0 0 10px; background-image: none; border: none;}
+   .mobhead{ border-bottom: 1px dotted #476e88; background-color: #00344d; padding: 5px; }
    /*a.mob-contact {float: left; width: 150px; font-size: .8em; padding: 16px 5px; text-transform: uppercase; color: #b5ae2a;margin-top: 4px;} */
    a.mob-contact {width: 36px; height: 29px; background-image: url("../img/search-icon.png"); background-repeat: none; background-position: center center; text-indent: -9999px; margin-top: 4px;}
    a.mob-contact:focus, a.mob-contact:hover  {background-color: #ece00a; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;} 
@@ -363,18 +363,17 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 .carousel-caption{right: 20%; left: 20%; bottom: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; }
    
-
     }
 
 @media (min-width: 992px) { 
    .topBanner li.rss{display: none;}
    .collapse{ display:block;}
-    span.strapline { float: right; margin: 12px 0 0 0;}
+    span.strapline { float: right; margin: 10px 0 0 0;}
    .feature img{ width: 50%; float: left;}
    .carousel-caption{right: 20%; left: 20%;}
     .carousel-caption h2{font-size: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; border-radius: 30px 0 0 30px;}
-   
+ 
 
 }
 
