@@ -31,6 +31,7 @@ register_sidebar(array(
     'after_title'   => '</h3>',
   ));  
 
+  /*
   register_sidebar(array(
     'name'          => __('Footer', 'roots'),
     'id'            => 'sidebar-footer',
@@ -39,9 +40,10 @@ register_sidebar(array(
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+  */
 
   register_sidebar(array(
-    'name'          => __('Footer2', 'roots'),
+    'name'          => __('Footer-Links', 'roots'),
     'id'            => 'sidebar-footer2',
     'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',

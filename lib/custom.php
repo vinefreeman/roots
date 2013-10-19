@@ -80,6 +80,4 @@ function myplugin_save_postdata( $post_id ) {
 		        }
 		 
 		    add_action('wp_print_styles', 'load_google_fonts');
-
 ?>  
-
