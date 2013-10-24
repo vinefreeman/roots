@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page with Inner Column
+Template Name: Inner Column + Client Stories
 */
 ?>
 
