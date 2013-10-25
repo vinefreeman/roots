@@ -81,7 +81,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-nav li { margin-right: 4px; }
 .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:transparent ; color: #f9e526;}
 .navbar-nav > li > a { color: #ffffff; font-size: 1em; font-family: 'Oxygen'; }
-.navbar-nav > li.jobs > a { color:  #89A8BD; font-size: 1em; font-style: italic; font-family: 'Oxygen'; }
+.navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; }
 .strap{padding-top: 14px; float: right; position: relative;}
 
 /* =========
