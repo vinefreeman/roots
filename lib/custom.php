@@ -2,8 +2,6 @@
 /**
  * Custom functions
  */
-
-  
 /* Define the custom box */
 
 add_action( 'add_meta_boxes', 'myplugin_add_custom_box' );
@@ -37,7 +35,7 @@ function myplugin_inner_custom_box( $post ) {
   // Use get_post_meta to retrieve an existing value from the database and use the value for the form
   $value = get_post_meta( $post->ID, '_nicetitle', true );
   echo '<label for="myplugin_new_field">';
-       _e("Text", 'myplugin_textdomain' );
+  echo  _e("Text", 'myplugin_textdomain' ); //2 5/10/13 VF added the echo line at the start as this was causing an error adding and removing categories, and adding cats on the post pages.
   echo '</label> ';
   echo '<input type="text" id="myplugin_new_field" name="myplugin_new_field" value="'.esc_attr($value).'" size="100" style="width: 100%" />';
 }
@@ -73,11 +71,11 @@ function myplugin_save_postdata( $post_id ) {
 }
 
 
-		/*Google Fonts*/
-		function load_google_fonts() {
-		            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Oxygen');
-		            wp_enqueue_style( 'googleFonts');
-		        }
-		 
-		    add_action('wp_print_styles', 'load_google_fonts');
-?>  
+  /*Google Fonts*/
+    function load_google_fonts() {
+                wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Oxygen');
+                wp_enqueue_style( 'googleFonts');
+            }
+     
+        add_action('wp_print_styles', 'load_google_fonts');
+?>

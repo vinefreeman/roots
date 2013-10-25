@@ -303,5 +303,4 @@ class Example_Widget extends WP_Widget {
   <?php
   }
 }
-
 ?>
