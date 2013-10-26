@@ -22,7 +22,7 @@ a:hover, a:focus{color: #afc7d7;}
 
 
 
-.banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none; border-bottom: 1px dotted #1a4565 ;}
+.banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none; border-bottom: 1px dotted #1a4565 ; box-shadow: 1px 0 4px 0 #333;}
 .topBanner { background-color: #f9e526; height: 40px; }
 .topBanner ul.nav-pills li { background: transparent url("../img/bannerlist-sep.jpg") no-repeat center right;margin-right: 2px; padding-right: 4px; }
 .topBanner ul.nav-pills li a { background: none; color: #88821b; font-size: .9em; padding: 10px 4px 10px 0px; }
@@ -84,13 +84,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; }
 .strap{padding-top: 14px; float: right; position: relative;}
 
-/* =========
-   Top Sticky Menu Changes
-   ========== */
-.banner {margin-top: 40px;} /*will need removing for mobile view*/
-a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
-.wrap{padding-top: 140px;}/*cannot see content otherwise*/
-.
+
 /* =========
    Top Banner
    ========== */
@@ -319,7 +313,14 @@ span.icon-phone{padding-right: 30px;background-image: url("../img/phone.png"); b
 span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
 
 
-
+/* =========
+   Top Sticky Menu Changes
+   ========== */
+.banner {margin-top: 40px;} /*will need removing for mobile view*/
+a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
+.wrap{padding-top: 140px;}/*cannot see content otherwise*/
+.carouselcon{margin-top: 131px;}
+.home > .wrap{padding-top: 0;}
 
 
 
@@ -341,6 +342,11 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
    .mobhead a.navbar-brand {float: left;padding: 0 0 0 0;margin: 0 0 0 5px; position: static; /*height: 104px; width: 98px*/height: 65px; width:51px; display: inline;background: transparent url("../img/cis-mob-logo-sm.png") no-repeat !important; background-size: 51px 65px;text-indent: -9999px}
    .banner{background-color: #f9e526; padding: 0 0 0 10px; background-image: none; border: none;}
+    /*changes for sticky menu*/
+   .banner {margin-top: 0px;} 
+   .wrap{padding-top: 120px;}
+   .carouselcon{margin-top: 111px;}
+   /*end sticky changes*/
    .mobhead{ border-bottom: 1px dotted #476e88; background-color: #00344d; padding: 5px; }
    /*a.mob-contact {float: left; width: 150px; font-size: .8em; padding: 16px 5px; text-transform: uppercase; color: #b5ae2a;margin-top: 4px;} */
    a.mob-contact {width: 36px; height: 29px; background-image: url("../img/search-icon.png"); background-repeat: none; background-position: center center; text-indent: -9999px; margin-top: 4px;}
@@ -400,7 +406,9 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .feature h2, .feature p{ padding-left: 50%;}
 .carousel-caption{right: 20%; left: 20%; bottom: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; }
-   
+   /*changes for sticky menu*/
+   .carouselcon{margin-top: 161px;}
+   /*end sticky changes*/
     }
 
 @media (min-width: 992px) { 
@@ -411,7 +419,9 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
    .carousel-caption{right: 20%; left: 20%;}
     .carousel-caption h2{font-size: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; border-radius: 30px 0 0 30px;}
- 
+  /*changes for sticky menu*/
+   .carouselcon{margin-top: 131px;}
+   /*end sticky changes*/
 
 }
 
@@ -425,5 +435,8 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
  .carousel-caption h2{font-size: 36px;}
  .feature h2, .feature p { padding-left: 45%; padding-right: 5%;}
  .feature a.btn{margin-right: 5%;}
+  /*changes for sticky menu*/
+   .carouselcon{margin-top: 131px;}
+   /*end sticky changes*/
 
 }
