@@ -85,6 +85,13 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .strap{padding-top: 14px; float: right; position: relative;}
 
 /* =========
+   Top Sticky Menu Changes
+   ========== */
+.banner {margin-top: 40px;} /*will need removing for mobile view*/
+a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
+.wrap{padding-top: 140px;}/*cannot see content otherwise*/
+.
+/* =========
    Top Banner
    ========== */
 

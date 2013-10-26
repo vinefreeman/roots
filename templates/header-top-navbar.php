@@ -1,4 +1,5 @@
- <div class="topBanner hidden-xs">
+<div class="navbar-fixed-top"><!-- VF added this class to make entire top nav sticky on scrolling see related css to make effect. -->
+ <div class="topBanner navbar-fixed-top hidden-xs">
       <div class="container">
           <div class="row">
               <div class="col-lg-6 col-md-5 col-xs-6">
@@ -20,7 +21,7 @@
           </div>
       </div>    
   </div>
-<header class="banner navbar navbar-static-top" role="banner">
+<header class="banner navbar" role="banner"><!--  was navbar-static-top -->
     <div class="container">
       
       <a class="mob-contact visible-xs" href="#sch">Search</a>
@@ -53,5 +54,5 @@
                  <?php get_template_part('templates/social'); ?>
             </div>
      </div>
-  
+  </div>
   <?php if (is_front_page()) : get_template_part('templates/page', 'hero'); endif; //VF hero placement?>
