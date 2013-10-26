@@ -283,6 +283,20 @@ ul.foottweet{padding: 0;margin:0;}
 .footsearch .input-group-btn .btn:hover{background-color: #8e8c1c;}
 .footsearch{padding-bottom:20px;}
 
+
+/* Fix Google Maps canvas
+ *
+ * Wrap your Google Maps embed in a `.google-map-canvas` to reset Bootstrap's
+ * global `box-sizing` changes. You may optionally need to reset the `max-width`
+ * on images in case you've applied that anywhere else. (That shouldn't be as
+ * necessary with Bootstrap 3 though as that behavior is relegated to the
+ * `.img-responsive` class.)
+ */
+
+.google-map-canvas,
+.google-map-canvas * { .box-sizing(content-box); }
+
+
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -296,6 +310,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /*MyIcons*/
 span.icon-phone{padding-right: 30px;background-image: url("../img/phone.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
 span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
+
+
+
+
 
 
 /* ==========================================================================
