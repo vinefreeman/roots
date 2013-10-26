@@ -152,6 +152,16 @@ border-radius: 30px;
    ========================================================================== */
 
 
+#large_bg_img_overlay {
+    background: url("../img/dots.png") repeat top left;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
 .carousel-inner { text-align:center; width: 100%; }
 .carousel-inner img{ width: 100%; height: auto;
 -moz-opacity: 0.70;opacity: 0.70;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);}

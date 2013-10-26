@@ -7,20 +7,20 @@
        
          
         <div class="active item">
-
+            <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide1.jpg" class="hero img-responsive">
-            <span class="fade"></span>
+            <!--<span class="fade"></span>-->
               <div class="carousel-caption"><h2><span>Leading the Way</span></h2><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
         </div>
-        <div class="item">
+        <div class="item"> <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide2.jpg" class="hero img-responsive">
             <div class="carousel-caption"><h2><span>Behind the scenes</span></h2><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
          </div>
-         <div class="item">
+         <div class="item"> <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide3.jpg" class="hero img-responsive">
             <div class="carousel-caption"><h2><span>A closer look</span></h2><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
          </div>
-          <div class="item">
+          <div class="item"> <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide4.jpg" class="hero img-responsive">
             <div class="carousel-caption"><h2><span>Securing London against corporate threat</span></h2><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
          </div>
