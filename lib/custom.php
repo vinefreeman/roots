@@ -81,4 +81,35 @@ function myplugin_save_postdata( $post_id ) {
   
    #allow adding of shortcodes to text     
    add_filter('widget_text', 'do_shortcode');
+
+
+  #Custom post type test
+  function custom_post_job() {
+    $labels = array(
+      'name'               => _x( 'Vacancies', 'post type general name' ),
+      'singular_name'      => _x( 'Job', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'book' ),
+      'add_new_item'       => __( 'Add New Position' ),
+      'edit_item'          => __( 'Edit Position' ),
+      'new_item'           => __( 'New Position' ),
+      'all_items'          => __( 'All Positions' ),
+      'view_item'          => __( 'View Position' ),
+      'search_items'       => __( 'Search positions' ),
+      'not_found'          => __( 'No positions found' ),
+      'not_found_in_trash' => __( 'No positions found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'CIS Vacancies'
+    );
+    $args = array(
+      'labels'        => $labels,
+      'description'   => 'Holds CIS job positions and related data',
+      'public'        => true,
+      'menu_position' => 5,
+      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+      'has_archive'   => true,
+    );
+    register_post_type( 'jobs', $args ); 
+  }
+add_action( 'init', 'custom_post_job' );
+
 ?>
