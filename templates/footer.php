@@ -1,10 +1,5 @@
 <footer class="content-info foot" role="contentinfo">
 	<div class="container footclear">	
-		<div class="row visible-xs" id="sch">
-			<div class="col-xs-12 footsearch">
-				<?php get_template_part('templates/searchform'); ?>
-			</div>
-		</div>	
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-sm-8">
 				<h3 class="ontwitter yellow">CIS on Twitter</h3>
@@ -15,10 +10,15 @@
 		    	<div class="socialMiddle">
 		    	<?php get_template_part('templates/social'); ?>
 		    </div>
-		    	<div class="clearfix"></div>
+		    	<div id="sch" class="clearfix"></div>
 		      <?php dynamic_sidebar('sidebar-footer'); ?>
 		    </div>
 		</div>
+		<div class="row visible-xs">
+			<div class="col-xs-12 footsearch">
+				<?php get_template_part('templates/searchform'); ?>
+			</div>
+		</div>	
 	</div>
 	<div class="footcontact">
 		<div class="container clearfix">

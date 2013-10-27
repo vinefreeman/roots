@@ -292,7 +292,7 @@ ul.foottweet{padding: 0;margin:0;}
 .content-info .form-control input:-moz-placeholder { color:#7e791d; }
 .footsearch .btn{padding: 4px 6px; background-color: #adab27; border: 1px solid #adab27; font-size: .9em;}
 .footsearch .input-group-btn .btn:hover{background-color: #8e8c1c;}
-.footsearch{padding-bottom:20px;}
+.footsearch{padding:40px;}
 
 
 /* Fix Google Maps canvas
