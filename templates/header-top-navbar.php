@@ -7,12 +7,12 @@
                   wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
                 ?>
               </div>
-              <div class="col-lg-3 col-md-4 col-xs-3 top10 pull-right">
+              <div class="col-lg-3 col-md-4 col-xs-3 top10 pull-right ie7">
                 <?php 
                   get_template_part('templates/searchform'); 
                 ?>
               </div>
-              <div class="col-lg-3 col-md-3 col-xs-3 top10 pull-right">
+              <div class="col-lg-3 col-md-3 col-xs-3 top10 pull-right iesoc">
                <?php 
                   get_template_part('templates/social'); 
                 ?>

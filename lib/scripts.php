@@ -16,8 +16,12 @@ function roots_scripts() {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
   wp_enqueue_style('roots_ie8', get_template_directory_uri() . '/assets/css/ie8-and-down.css', false, null);
+  wp_enqueue_style('roots_ie7', get_template_directory_uri() . '/assets/css/ie7-and-down.css', false, null);
+ // wp_enqueue_style('roots_ie7b', get_template_directory_uri() . '/assets/css/boostrap-ie7.css', false, null);
   global $wp_styles; 
   $wp_styles->add_data( 'roots_ie8', 'conditional', 'lte IE 9' );
+  $wp_styles->add_data( 'roots_ie7', 'conditional', 'lte IE 7' );
+  //$wp_styles->add_data( 'roots_ie7b', 'conditional', 'lte IE 7' );
   
 
     // jQuery is loaded using the same method from HTML5 Boilerplate:

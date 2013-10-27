@@ -164,7 +164,7 @@ border-radius: 30px;
 
 .carousel-inner { text-align:center; width: 100%; }
 .carousel-inner img{ width: 100%; height: auto;
--moz-opacity: 0.70;opacity: 0.70;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);}
+-moz-opacity: 0.90;opacity: 0.90;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
 }
 .carousel-inner .item{  }
 span.fade{position: absolute; background: rgba(39,62,84,0.82);
