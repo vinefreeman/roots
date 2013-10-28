@@ -7,7 +7,8 @@
 <?php endif; ?>
 <div class="innerspace">
   <?php 
-  $round = 1; //loopcount for toggle on vacancies in the template below?>
+   $round = 0; //loop count for toggle #ids on vacancies in the template below   
+  ?>
   <?php while (have_posts()) : the_post(); ?>
         
           <article <?php post_class(); ?>>
@@ -17,9 +18,8 @@
             <div class="panel-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $round;?>">
                 <?php the_title() ?>
-              </a>
-            </div>
-            <div id="collapse<?php echo $round; ?>" class="panel-collapse collapse">
+              </a>            </div>
+            <div id="collapse<?php echo $round; ?>" class="panel-collapse collapse<?php if ( $round == '0' ) { echo " in"; } ?>">
               <div class="panel-body">
                  <div class="entry-summary">
                   <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -54,4 +54,7 @@
       </ul>
     </nav>
   <?php endif; ?>
+
+
+
 </div>

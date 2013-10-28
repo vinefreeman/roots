@@ -422,7 +422,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 
 
 @media (min-width: 768px) {
-  .collapse{ display:block;}
+ /* .collapse{ display:block;}*/
    span.strapline { float: left; margin: 0 0 0 116px; }
    .feature img{ width: 40%; float: left;}
    .feature h2, .feature p{ padding-left: 50%;}
@@ -443,7 +443,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 
 @media (min-width: 992px) { 
    .topBanner li.rss{display: none;}
-   .collapse{ display:block;}
+   /*.collapse{ display:block;}*/
     span.strapline { float: right; margin: 10px 0 0 0;}
    .feature img{ width: 50%; float: left;}
    .carousel-caption{right: 20%; left: 20%;}
@@ -467,7 +467,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 @media (min-width: 1200px) { 
    .topBanner li.rss{display: inline;}
    span.strapline { float: right; margin: 12px 0 0 0; }
-   .collapse{ display: block;}
+  /* .collapse{ display: block;}*/
    .feature img{ width: 40%; float: left;}
  .carousel-caption{right: 20%; left: 20%; bottom: 50px;}
  .carousel-caption h2{font-size: 36px;}
