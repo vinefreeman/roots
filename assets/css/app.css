@@ -15,6 +15,7 @@ body.home .content{ color: #f6f6f6;}
 a { color: #89A8BD;text-decoration: none;}
 .content h1{color:#f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 a:hover, a:focus{color: #afc7d7;}
+h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; padding: 2px 5px;}
 
 /* =============================================================================
    Header
