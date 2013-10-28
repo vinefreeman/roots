@@ -84,7 +84,9 @@ function myplugin_save_postdata( $post_id ) {
 
 
   #Custom post type test
-  function custom_post_job() {
+
+  #first create custom post type with labels and related info 
+  function _custom_post_job() {
     $labels = array(
       'name'               => _x( 'Vacancies', 'post type general name' ),
       'singular_name'      => _x( 'Job', 'post type singular name' ),
@@ -100,16 +102,87 @@ function myplugin_save_postdata( $post_id ) {
       'parent_item_colon'  => '',
       'menu_name'          => 'CIS Vacancies'
     );
-    $args = array(
+        $args = array(
       'labels'        => $labels,
       'description'   => 'Holds CIS job positions and related data',
       'public'        => true,
       'menu_position' => 5,
       'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
       'has_archive'   => true,
-    );
-    register_post_type( 'jobs', $args ); 
+      'rewrite' => array( 'slug' => 'security-jobs', 'with_front' => false ),
+      'capability_type' => 'cisjob',
+      'capabilities' => array(
+        'publish_posts' => 'publish_cisjobs',
+        'edit_posts' => 'edit_cisjobs',
+        'edit_others_posts' => 'edit_others_cisjobs',
+        'delete_posts' => 'delete_cisjobs',
+        'delete_others_posts' => 'delete_others_cisjobs',
+        'read_private_posts' => 'read_private_cisjobs',
+        'edit_post' => 'edit_cisjob',
+        'delete_post' => 'delete_cisjob',
+        'read_post' => 'read_cisjob',
+      ),
+          );
+
+    register_post_type( 'cisjob', $args ); 
   }
-add_action( 'init', 'custom_post_job' );
+add_action( 'init', '_custom_post_job' );
+
+#add custom interaction messages  
+function my_updated_messages( $messages ) {
+  global $post, $post_ID;
+  $messages['product'] = array(
+    0 => '', 
+    1 => sprintf( __('Position upated. <a href="%s">View position</a>'), esc_url( get_permalink($post_ID) ) ),
+    2 => __('Custom field updated.'),
+    3 => __('Custom field deleted.'),
+    4 => __('Job updated.'),
+    5 => isset($_GET['revision']) ? sprintf( __('Vacancy restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+    6 => sprintf( __('Position published. <a href="%s">View position</a>'), esc_url( get_permalink($post_ID) ) ),
+    7 => __('Job saved.'),
+    8 => sprintf( __('Job submitted. <a target="_blank" href="%s">Preview job</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+    9 => sprintf( __('Position scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview job</a>'), date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
+    10 => sprintf( __('Job draft updated. <a target="_blank" href="%s">Preview job</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+  );
+  return $messages;
+}
+add_filter( 'post_updated_messages', 'my_updated_messages' );
+
+#change the enter title here text
+
+function change_default_title( $title ){
+     $screen = get_current_screen();
+ 
+     if  ( 'cisjob' == $screen->post_type ) {
+          $title = 'Enter Job Title Here';
+     }
+ 
+     return $title;
+}
+ 
+add_filter( 'enter_title_here', 'change_default_title' );
+
+#taxonomy or categories for the jobs
+function my_taxonomies_job() {
+  $labels = array(
+    'name'              => _x( 'Job Categories', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Job Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Job Categories' ),
+    'all_items'         => __( 'All Job Categories' ),
+    'parent_item'       => __( 'Parent Job Category' ),
+    'parent_item_colon' => __( 'Parent Job Category:' ),
+    'edit_item'         => __( 'Edit Job Category' ), 
+    'update_item'       => __( 'Update Job Category' ),
+    'add_new_item'      => __( 'Add New Job Category' ),
+    'new_item_name'     => __( 'New Job Category' ),
+    'menu_name'         => __( 'Job Categories' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'job_category', 'cisjob', $args );
+}
+add_action( 'init', 'my_taxonomies_job', 0 );
 
 ?>
