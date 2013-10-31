@@ -2,8 +2,8 @@
   <article <?php post_class(); ?>>
     <header>
       <div class="page-header">
-      <h1 class="entry-title"><?php the_title(); ?> - this is for Vancancies</h1>
-      <?php get_template_part('templates/entry-meta'); ?>
+      <h1 class="entry-title"><?php the_title(); ?></h1>
+      <?php get_template_part('templates/job-meta'); ?>
       </div>
     </header>
     <div class="innerspace">

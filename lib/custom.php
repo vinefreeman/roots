@@ -82,6 +82,106 @@ function myplugin_save_postdata( $post_id ) {
    #allow adding of shortcodes to text     
    add_filter('widget_text', 'do_shortcode');
 
+    #================================================================
+  #               Custom Home Box
+  #================================================================
+  #first create custom post type with labels and related info 
+  function _custom_post_home() {
+    $labels = array(
+      'name'               => _x( 'Home Boxes', 'post type general name' ),
+      'singular_name'      => _x( 'Home Box', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'book' ),
+      'add_new_item'       => __( 'Add New Home Box' ),
+      'edit_item'          => __( 'Edit Home Box' ),
+      'new_item'           => __( 'New Home Box' ),
+      'all_items'          => __( 'All Home Boxes' ),
+      'view_item'          => __( 'View Home Boxes' ),
+      'search_items'       => __( 'Search Home Boxes' ),
+      'not_found'          => __( 'No Home Boxes found' ),
+      'not_found_in_trash' => __( 'No Home Boxes found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Home Boxes'
+    );
+        $args = array(
+      'labels'        => $labels,
+      'description'   => 'Holds front page information',
+      'public'        => true,
+      'menu_position' => 6,
+      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+      'has_archive'   => true,
+      //'rewrite' => array( 'slug' => 'security-jobs', 'with_front' => false ),
+    );
+
+    register_post_type( 'homebox', $args ); 
+  }
+
+add_action( 'init', '_custom_post_home' );
+
+add_action( 'load-post.php', 'cis_homebox_setup' );
+add_action( 'load-post-new.php', 'cis_homebox_setup' );
+
+/* Meta box setup function. */
+function cis_homebox_setup() {
+
+  /* Add meta boxes on the 'add_meta_boxes' hook. */
+  add_action( 'add_meta_boxes', 'cis_homebox' );
+
+  /* Save post meta on the 'save_post' hook. */
+  add_action( 'save_post', 'cis_homebox_save', 10, 2 );
+}
+
+
+# Metabox for post
+function cis_homebox() {
+    add_meta_box( 
+        'cis_homebox',
+        __( 'Link for home box', 'example' ),
+        'cis_homebox_content',
+        'homebox',
+        'normal',
+        'high'
+    );
+}
+
+/* Display the post meta box. */
+function cis_homebox_content( $object ) { ?>
+
+  <?php wp_nonce_field( basename( __FILE__ ), 'cis_homebox_nonce' ); ?>
+
+  <p>
+    <label for="box_url"><?php _e( "Enter link i.e. 'www.cis-security.co.uk/my_page' do not enter http://", 'example' ); ?></label>
+    <br />
+    <input class="widefat" type="text" name="box_url" id="box_url" value="<?php echo esc_attr( get_post_meta( $object->ID, 'box_url', true ) ); ?>" size="30" />
+  </p>
+  
+ 
+<?php }
+
+/* Save the meta box's post metadata. */
+function cis_homebox_save( $post_id, $post) {
+
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  return;
+
+  /* Verify the nonce before proceeding. */
+  if ( !isset( $_POST['cis_homebox_nonce'] ) || !wp_verify_nonce( $_POST['cis_homebox_nonce'], basename( __FILE__ ) ) )
+    return $post_id;
+
+  /* Get the post type object. */
+  $post_type = get_post_type_object( $post->post_type );
+
+  /* Check if the current user has permission to edit the post. */
+  if ( !current_user_can( $post_type->cap->edit_post, $post_id ) )
+    return $post_id;
+
+  /* Get the posted data and sanitize it text. */
+  $new_box_value = ( isset( $_POST['box_url'] ) ? sanitize_text_field( $_POST['box_url'] ) : '' );
+  /* Get the meta key. */
+  $meta_box_key = 'box_url';
+  /*  Update meta on post - VF*/
+  update_post_meta( $post_id, $meta_box_key, $new_box_value ); 
+
+}
   #================================================================
   #               Custom post type job
   #================================================================

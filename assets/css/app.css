@@ -154,7 +154,7 @@ border-radius: 30px;
 
 
 #large_bg_img_overlay {
-    background: url("../img/dots.png") repeat top left;
+    background: url("../img/dots-grey.png") repeat top left;
     display: block;
     height: 100%;
     overflow: hidden;
