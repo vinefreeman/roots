@@ -10,7 +10,7 @@
             <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide1.jpg" class="hero img-responsive">
             <!--<span class="fade"></span>-->
-              <div class="carousel-caption"><h2><span>Leading the Way</span></h2><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
+              <div class="carousel-caption"><h1><span>Leading the Way</span></h1><p><em>Developing internally, we endeavour to progress and build upon our successes...</em></p></div>
         </div>
         <div class="item"> <div id="large_bg_img_overlay"></div>
             <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide2.jpg" class="hero img-responsive">

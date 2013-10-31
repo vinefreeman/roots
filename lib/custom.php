@@ -82,6 +82,41 @@ function myplugin_save_postdata( $post_id ) {
    #allow adding of shortcodes to text     
    add_filter('widget_text', 'do_shortcode');
 
+      #================================================================
+  #               Custom Home Slides
+  #================================================================
+  #first create custom post type with labels and related info 
+  function _home_slides() {
+    $labels = array(
+      'name'               => _x( 'Home Slides', 'post type general name' ),
+      'singular_name'      => _x( 'Home Slide', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'slide' ),
+      'add_new_item'       => __( 'Add New Home Slide' ),
+      'edit_item'          => __( 'Edit Home Slide' ),
+      'new_item'           => __( 'New Home Slide' ),
+      'all_items'          => __( 'All Home Slides' ),
+      'view_item'          => __( 'View Home Slides' ),
+      'search_items'       => __( 'Search Home Slides' ),
+      'not_found'          => __( 'No Home Slides found' ),
+      'not_found_in_trash' => __( 'No Home Slides found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Home Slides'
+    );
+        $args = array(
+      'labels'        => $labels,
+      'description'   => 'Front page slider',
+      'public'        => true,
+      'menu_position' => 6,
+      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+      'has_archive'   => true,
+      //'rewrite' => array( 'slug' => 'security-jobs', 'with_front' => false ),
+    );
+
+    register_post_type( 'homeslides', $args ); 
+  }
+
+add_action( 'init', '_home_slides' );
+
     #================================================================
   #               Custom Home Box
   #================================================================
@@ -90,7 +125,7 @@ function myplugin_save_postdata( $post_id ) {
     $labels = array(
       'name'               => _x( 'Home Boxes', 'post type general name' ),
       'singular_name'      => _x( 'Home Box', 'post type singular name' ),
-      'add_new'            => _x( 'Add New', 'book' ),
+      'add_new'            => _x( 'Add New', 'box' ),
       'add_new_item'       => __( 'Add New Home Box' ),
       'edit_item'          => __( 'Edit Home Box' ),
       'new_item'           => __( 'New Home Box' ),

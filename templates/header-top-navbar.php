@@ -55,4 +55,4 @@
             </div>
      </div>
   </div>
-  <?php if (is_front_page()) : get_template_part('templates/page', 'hero'); endif; //VF hero placement?>
+  <?php if (is_front_page()) : get_template_part('templates/page', 'hero-slide'); endif; //VF hero placement?>
