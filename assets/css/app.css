@@ -16,7 +16,7 @@ a { color: #89A8BD;text-decoration: none;}
 .content h1{color:#f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 a:hover, a:focus{color: #afc7d7;}
 h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; padding: 2px 5px;}
-
+.show-grid{ margin-bottom: 15px;}/*adds margin to every row as they are a bit stacked*/
 /* =============================================================================
    Header
    ========================================================================== */
@@ -324,9 +324,24 @@ span.icon-phone{padding-right: 30px;background-image: url("../img/phone.png"); b
 span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.png"); background-repeat: no-repeat; background-position: center left; width: 20px; }
 
 
+.dark .alert-info {
+    background-color: #00344d;
+    border: 1px dashed #00405e;
+    border-color: #00405e;
+    color:  #f9e526;
+}
+.dark h3, .dark h2{margin-top: 0px;}
+
 /* =========
    Top Sticky Menu Changes
-   ========== */
+   ========== 
+colors
+yel - #f9e526
+dark yel - #e7dc00
+light blue - #89A8BD
+med blue - like main page back - #00405e
+dark back blue - #00344d
+   */
 .banner {margin-top: 40px;} /*will need removing for mobile view*/
 a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 .wrap{padding-top: 140px;}/*cannot see content otherwise*/

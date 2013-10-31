@@ -16,7 +16,7 @@
 	'suppress_filters' => true
  		);		
  	$posts_array = get_posts( $args ); ?>
- 	<div class="row dark feature">
+ 	<div class="row dark feature show-grid">
  	<?php foreach ( $posts_array as $post ): setup_postdata( $post );?>
  		<?php $boxlink = get_post_meta(  $post->ID, 'box_url', true ); //is url set on home box ?>
  		
@@ -52,6 +52,12 @@
 
  	<?php endforeach; 
  	wp_reset_postdata(); ?>
+ 	</div>
+
+ 	<div class="row dark show-grid">
+ 			<?php while (have_posts()) : the_post(); ?>
+			  <?php the_content(); ?>
+			<?php endwhile; ?>
  	</div>
 <!--=======================================
 Home Template
