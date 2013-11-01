@@ -10,7 +10,7 @@ med blue - like main page back - #00405e
 dark back blue - #00344d
 */
 html, body { width:100%;  overflow-x:hidden; }/*portrait/landscape bug fix*/
-body { background-color: #00405e; font-family: helvetica, arial, sans-serif}
+body { background-color: #00405e; font-family: helvetica, arial, sans-serif; color: #57646D;}
 body.home .content{ color: #f6f6f6;}
 a { color: #89A8BD;text-decoration: none;}
 .content h1{color:#f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
@@ -82,7 +82,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-nav li { margin-right: 4px; }
 .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:transparent ; color: #f9e526;}
 .navbar-nav > li > a { color: #ffffff; font-size: 1em; font-family: 'Oxygen'; }
-.navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; }
+.navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; font-weight: bold; }
 .strap{padding-top: 14px; float: right; position: relative;}
 
 
@@ -147,6 +147,9 @@ border-radius: 30px;
 .wrap{  }
 .page-header{border:none;}
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+
+.jobpanels p{color:#f6f6f6;}
+.jobpanels .panel p{color: #57646D}
 
 /* ==========================================================================
    Carousel
@@ -351,8 +354,10 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 color: #275B74;
 font-weight: bold;
   }
-
-
+.post-type-archive-cisjob .panel span.badge{float: right; background-color:#002638; color:#3E697E; font-size: .7em; margin-top: 3px;}
+.post-type-archive-cisjob .panel-body span.badge{float: right; background-color:#ccc; color:#666; font-size: .8em; margin-top: 0px;}
+p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em;}
+.post-type-archive-cisjob .panel-body time{font-size: .7em; position: relative; bottom: -10px}
 /* =========
    Top Sticky Menu Changes
    ========== 

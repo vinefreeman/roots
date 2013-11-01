@@ -15,7 +15,8 @@
       <?php
         $post_job = get_post(302); 
         $content = $post_job->post_content;
-        echo "<div class='col-lg-12 col-md-12 col-sm-12'>" . $content . "</div>";
+        $nice_content = apply_filters( 'the_content', $content );
+              echo "<div class='col-lg-12 col-md-12 col-sm-12 show-grid'>" . $nice_content . "</div>";
       ?> 
       
       <?php while (have_posts()) : the_post(); ?>
@@ -23,19 +24,37 @@
             <?php   
                   if ($round == 0) {echo '<div class="col-lg-6 col-md-6 col-sm-6"><div class="panel-group" id="accordion">';}
                   if ($round == (round($wp_query->post_count / 2))) { $acc = 1; echo "</div></div><div class='clearfix visible-xs' style='margin-top: 5px'></div><div class='col-lg-6 col-md-6 col-sm-6'><div class='panel-group' id='accordion$acc'>"; }
+                  // get job meta info
+                  $client = get_post_meta( $post->ID, 'job_client', true ); 
+                  $pay = get_post_meta(  $post->ID, 'job_pay', true ); 
+                  $shift = get_post_meta(  $post->ID, 'job_shift', true ); 
+                  $ref = get_post_meta(  $post->ID, 'job_ref', true );
+
             ?>
                         
               <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading"><?php if ( ! empty( $pay )){echo "<span class='badge'>" . $pay . "</span>" ;}?>
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion<?php if (isset($acc)){echo $acc;} ?>" href="#collapse<?php echo $round;?>">
                   <?php the_title() ?>&nbsp;<span>+</span>
                   </a>            
                 </div>
                 <div id="collapse<?php echo $round; ?>" class="panel-collapse collapse<?php if ( $round == '0' ) { echo " in"; } ?>">
                   <div class="panel-body">
-                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                      <?php get_template_part('templates/entry-meta'); ?>
-                      <?php the_excerpt(); ?>
+                   <?php                          
+                        echo "<p class='jobdeets'>";                
+                        // job ref in badge        
+                        if ( ! empty( $ref )){ echo "<span class='badge'>Ref: " . $ref . "</span>" ;}
+                       
+                        // job details         
+                        if ( ! empty( $client )){ echo "Client/Location: <strong>" . $client . "</strong><br />" ;}
+                        if ( ! empty( $pay )){ echo "Pay: <strong>" . $pay . "</strong><br />" ;}
+                        
+                        if ( ! empty( $shift )){ echo "Shift Information: <strong>" . $shift . "</strong>" ;}
+                        echo "</p>";
+
+                       the_content(); 
+                       // date
+                        get_template_part('templates/job-meta');?>
                   </div>
                 </div>
               </div>
