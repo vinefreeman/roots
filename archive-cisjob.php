@@ -9,8 +9,8 @@
   <?php 
    $round = 0; //loop count for toggle #ids on vacancies in the template below   
   ?>
-  <?php  get_template_part('templates/searchformjob');  ?>
-    <div class="row">
+  <?php // get_template_part('templates/searchformjob');  ?>
+    <div class="row jobpanels">
   <!--<div class="panel-group" id="accordion"> accordion outside loop if needed -->
       
       <?php while (have_posts()) : the_post(); ?>
@@ -26,7 +26,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion<?php if (isset($acc)){echo $acc;} ?>" href="#collapse<?php echo $round;?>">
-                    <?php the_title() ?>
+                  <?php the_title() ?>&nbsp;<span>+</span>
                   </a>            
                 </div>
                 <div id="collapse<?php echo $round; ?>" class="panel-collapse collapse<?php if ( $round == '0' ) { echo " in"; } ?>">

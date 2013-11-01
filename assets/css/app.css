@@ -332,6 +332,27 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 }
 .dark h3, .dark h2{margin-top: 0px;}
 
+.post-type-archive-cisjob .panel-heading{
+  background-color: #00344d;
+  color: #f9e526;
+}
+
+.post-type-archive-cisjob .panel{
+  border: 1px solid #134963;
+  background-color: #eee;  
+  -webkit-background-clip: padding-box;
+}
+.post-type-archive-cisjob a.accordion-toggle{
+   color: #D8C430;
+   font-family: 'Oxygen';
+
+}
+.post-type-archive-cisjob a.accordion-toggle span{
+color: #275B74;
+font-weight: bold;
+  }
+
+
 /* =========
    Top Sticky Menu Changes
    ========== 
@@ -341,6 +362,7 @@ dark yel - #e7dc00
 light blue - #89A8BD
 med blue - like main page back - #00405e
 dark back blue - #00344d
+really dark blue - #002638
    */
 .banner {margin-top: 40px;} /*will need removing for mobile view*/
 a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
