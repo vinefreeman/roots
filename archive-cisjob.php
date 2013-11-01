@@ -5,19 +5,21 @@
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
-<!-- <div class="innerspace">   remove for job page - white back -->
+
   <?php 
    $round = 0; //loop count for toggle #ids on vacancies in the template below   
   ?>
-  <?php // get_template_part('templates/searchformjob');  ?>
+  
     <div class="row jobpanels">
-  <!--<div class="panel-group" id="accordion"> accordion outside loop if needed -->
+  
+      <?php
+        $post_job = get_post(302); 
+        $content = $post_job->post_content;
+        echo "<div class='col-lg-12 col-md-12 col-sm-12'>" . $content . "</div>";
+      ?> 
       
       <?php while (have_posts()) : the_post(); ?>
             
-            <!--<article <?php post_class(); ?>>-->
-           <!-- Column Code -->
-
             <?php   
                   if ($round == 0) {echo '<div class="col-lg-6 col-md-6 col-sm-6"><div class="panel-group" id="accordion">';}
                   if ($round == (round($wp_query->post_count / 2))) { $acc = 1; echo "</div></div><div class='clearfix visible-xs' style='margin-top: 5px'></div><div class='col-lg-6 col-md-6 col-sm-6'><div class='panel-group' id='accordion$acc'>"; }
@@ -38,11 +40,11 @@
                 </div>
               </div>
            
-            <!-- </article> -->
+           
              <?php if ($round == (round($wp_query->post_count) - 1)) {echo '</div></div>'; } ?>
             <?php $round ++ ;?>
      <?php endwhile; ?>
-  <!--</div> end of accordion old accordion -->
+  
   </div> <!-- row -->
 
   <?php if ($wp_query->max_num_pages > 1) : ?>
@@ -53,7 +55,3 @@
       </ul>
     </nav>
   <?php endif; ?>
-
-
-
-<!-- </div> white space inner div-->
