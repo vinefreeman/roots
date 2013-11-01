@@ -9,6 +9,7 @@
   <?php 
    $round = 0; //loop count for toggle #ids on vacancies in the template below   
   ?>
+  <?php  get_template_part('templates/searchformjob');  ?>
     <div class="row">
   <!--<div class="panel-group" id="accordion"> accordion outside loop if needed -->
       

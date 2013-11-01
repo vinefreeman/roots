@@ -144,6 +144,7 @@ add_action( 'init', '_home_slides' );
       'menu_position' => 6,
       'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
       'has_archive'   => true,
+      'exclude_from_search' => true,
       //'rewrite' => array( 'slug' => 'security-jobs', 'with_front' => false ),
     );
 
