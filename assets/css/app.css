@@ -358,6 +358,8 @@ font-weight: bold;
 .post-type-archive-cisjob .panel-body span.badge{float: right; background-color:#ccc; color:#666; font-size: .8em; margin-top: 0px;}
 p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em;}
 .post-type-archive-cisjob .panel-body time{font-size: .7em; position: relative; bottom: -10px}
+.post-type-archive-cisjob .btn-dark:hover, .post-type-archive-cisjob .btn-dark:focus, .post-type-archive-cisjob .btn-dark:active{background-color: #012e43; color: #f6f6f6;}
+.post-type-archive-cisjob .btn-dark{color: #f9e526 ;}
 /* =========
    Top Sticky Menu Changes
    ========== 

@@ -29,6 +29,8 @@
                   $pay = get_post_meta(  $post->ID, 'job_pay', true ); 
                   $shift = get_post_meta(  $post->ID, 'job_shift', true ); 
                   $ref = get_post_meta(  $post->ID, 'job_ref', true );
+                  $mytitle = get_the_title($post->ID);
+                  $jobname = sanitize_text_field( $mytitle ) ;
 
             ?>
                         
@@ -52,8 +54,9 @@
                         if ( ! empty( $shift )){ echo "Shift Information: <strong>" . $shift . "</strong>" ;}
                         echo "</p>";
 
-                       the_content(); 
-                       // date
+                       the_content(); ?>
+                       <a href="<?php echo get_option('home');  ?>/job-application-form/?jb=<?php echo $jobname;?>&amp;ref=<?php echo $ref; ?>" class='btn btn-dark apply'>Apply Online</a>
+                       <?php // date
                         get_template_part('templates/job-meta');?>
                   </div>
                 </div>
