@@ -16,5 +16,39 @@
 			
 		
 		} ?>
+	<?php // check if top level page then show children. don't show top level if two levels down
+	$grandad = $post->post_parent;
+	// echo "Grandad: " . $grandad . "<br />";
+	$greatgrandad = get_post_ancestors( $grandad );
+	//if (empty($greatgrandad)){echo "top level";}
+	 if (empty($greatgrandad)) {	$children = get_pages(array(
+				'child_of' => $post->ID,
+				'parent' => $post->ID,
+				'sort_order' => 'ASC',
+				'sort_column' => 'menu_order'
+				));	
+	} else { $children = get_pages(array(
+				'child_of' => $post->post_parent,
+				'parent' => $post->post_parent,
+				'sort_order' => 'ASC',
+				'sort_column' => 'menu_order'
+				));	
+	 }
+			$thispage = $post->ID;
+			// echo "this: " . $thispage;
+			if ($children){
+				//echo "<ul>";
+				foreach ($children as $child) {
+					$subpage = $child->ID;
+					$childlink = get_page_link( $child->ID );
+					if ($thispage == $subpage){ $active = " current";} else {$active = "";}
+					$alttitle = get_post_meta($child->ID, 'alt_title', true);
+					if ($alttitle) { $title = $alttitle ;} else {$title = $child->post_title;}
+					echo "<a href='". $childlink ."' class='btn btn-dark btn-xs" . $active . "'> " . $title .  "</a> &nbsp; ";
+					}
+			//echo "</ul>";
+			}
+	
+	?>
 </div>
 <?php endif; ?>

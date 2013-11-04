@@ -21,7 +21,8 @@ h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; p
    Header
    ========================================================================== */
 
-
+.page-header a.btn{float: none; margin-bottom: 0; font-size: .8em;}
+.page-header a.current {color: #f9e526 !important;}
 
 .banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none; border-bottom: 1px dotted #1a4565 ; box-shadow: 1px 0 4px 0 #333;}
 .topBanner { background-color: #f9e526; height: 40px; }
@@ -225,7 +226,7 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
    Sidebar
    ========================================================================== */
 
-.sidebar { padding-top: 120px;}
+.sidebar { padding-top:0px;}
 .textwidget img{-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; ;}
 .text-5 img{display:block;}
 .text-5 a{color: #f9e526; margin-bottom: 20px; display:block; }

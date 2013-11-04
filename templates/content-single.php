@@ -1,11 +1,11 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    <header>
+    <!-- <header>
       <div class="page-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
+      <?php //get_template_part('templates/entry-meta'); ?>
     </div>
-    </header>
+    </header> -->
     <div class="innerspace">
     <div class="entry-content">
       <?php the_content(); ?>
