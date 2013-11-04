@@ -10,7 +10,7 @@ med blue - like main page back - #00405e
 dark back blue - #00344d
 */
 html, body { width:100%;  overflow-x:hidden; }/*portrait/landscape bug fix*/
-body { background-color: #00405e; font-family: helvetica, arial, sans-serif; color: #57646D;}
+body { background-color: #00405e; font-family: helvetica, arial, sans-serif; color: #57646D; }
 body.home .content{ color: #f6f6f6;}
 a { color: #89A8BD;text-decoration: none;}
 .content h1{color:#f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
@@ -236,7 +236,10 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
 /* inner sidebar styling*/
 .miniside ul {padding: 0 0 0 10px; margin: 0 0 20px 0px; border-left: 6px solid #f6f6f6;}
 .miniside ul li{list-style-type: none;}
-.miniside ul li.current_page_item a{color: #00405e;}
+.miniside ul li.current_page_item a{color: #00405e; }
+.miniside ul li.current_page_item {background-color: #f6f6f6; margin-left: -10px; padding-left: 6px;}
+.miniside ul li {line-height: 1.2em; margin-bottom: 6px;}
+
 
 /* ==========================================================================
    Posts
