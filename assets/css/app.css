@@ -233,6 +233,10 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
 .text-5{-moz-opacity: 0.80;opacity: 0.80;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out;}
 .text-5:hover{-moz-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=1); }
 
+/* inner sidebar styling*/
+.miniside ul {padding: 0 0 0 10px; margin: 0 0 20px 0px; border-left: 6px solid #f6f6f6;}
+.miniside ul li{list-style-type: none;}
+.miniside ul li.current_page_item a{color: #00405e;}
 
 /* ==========================================================================
    Posts

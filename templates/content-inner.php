@@ -12,7 +12,7 @@
 			  <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 			<?php endwhile; ?>
 		</div>
-		<div class="col-sm-12 col-md-3 col-lg-3">
+		<div class="col-sm-12 col-md-3 col-lg-3 miniside">
 
 			<!-- Sub page list -->
 			<ul class="clearfix">
