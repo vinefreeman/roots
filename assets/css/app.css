@@ -149,8 +149,7 @@ border-radius: 30px;
 .page-header{border:none;}
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
 
-.jobpanels p{color:#f6f6f6;}
-.jobpanels .panel p{color: #57646D}
+
 
 /* ==========================================================================
    Carousel
@@ -236,8 +235,8 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
 /* inner sidebar styling*/
 .miniside ul {padding: 0 0 0 10px; margin: 0 0 20px 0px; border-left: 6px solid #f6f6f6;}
 .miniside ul li{list-style-type: none;}
-.miniside ul li.current_page_item a{color: #00405e; }
-.miniside ul li.current_page_item {background-color: #f6f6f6; margin-left: -10px; padding-left: 6px;}
+.miniside ul li.current_page_item a, .miniside ul li.current_page_parent a, .miniside ul li.current_page_ancestor a{color: #00405e; }
+.miniside ul li.current_page_item, .miniside ul li.current_page_parent, .miniside ul li.current_page_ancestor {background-color: #f6f6f6; margin-left: -10px; padding-left: 6px;}
 .miniside ul li {line-height: 1.2em; margin-bottom: 6px;}
 
 
@@ -343,6 +342,10 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 }
 .dark h3, .dark h2{margin-top: 0px;}
 
+/* ==========================================================================
+   JobSection 
+   ========================================================================== */
+
 .post-type-archive-cisjob .panel-heading{
   background-color: #00344d;
   color: #f9e526;
@@ -368,6 +371,29 @@ p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em
 .post-type-archive-cisjob .panel-body time{font-size: .7em; position: relative; bottom: -10px}
 .post-type-archive-cisjob .btn-dark:hover, .post-type-archive-cisjob .btn-dark:focus, .post-type-archive-cisjob .btn-dark:active{background-color: #012e43; color: #f6f6f6;}
 .post-type-archive-cisjob .btn-dark{color: #f9e526 ;}
+
+.jobpanels p{color:#f6f6f6;}
+.jobpanels .panel p{color: #57646D}
+
+/* ==========================================================================
+   Senior Management
+   ========================================================================== */
+.our-senior-management-team .panel-heading{
+  background-color: #00344d;
+  color: #f9e526;
+}
+
+.our-senior-management-team .panel{
+  float: left;
+  width: 320px;
+  margin: 10px;
+
+}
+
+.panel-group .panel + .panel {
+    margin-top: 10px;
+}
+
 /* =========
    Top Sticky Menu Changes
    ========== 

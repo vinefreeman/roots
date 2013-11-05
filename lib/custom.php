@@ -218,6 +218,122 @@ function cis_homebox_save( $post_id, $post) {
   update_post_meta( $post_id, $meta_box_key, $new_box_value ); 
 
 }
+
+   #================================================================
+  #              Senior Mangement Team
+  #================================================================
+  #first create custom post type with labels and related info 
+  function _custom_post_team() {
+    $labels = array(
+      'name'               => _x( 'Senior Management Team', 'post type general name' ),
+      'singular_name'      => _x( 'Senior Management Team', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'Member' ),
+      'add_new_item'       => __( 'Add New Senior Staff' ),
+      'edit_item'          => __( 'Edit Senior Staff' ),
+      'new_item'           => __( 'New Senior Staff Member' ),
+      'all_items'          => __( 'All Senior Staff Members' ),
+      'view_item'          => __( 'View Senior Staff Members' ),
+      'search_items'       => __( 'Search Senior Staff Members' ),
+      'not_found'          => __( 'No Senior Staff Members found' ),
+      'not_found_in_trash' => __( 'No Senior Staff Members found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Senior Management'
+    );
+        $args = array(
+      'labels'        => $labels,
+      'description'   => 'Holds Senior Management information',
+      'public'        => true,
+      'menu_position' => 6,
+      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+      'has_archive'   => true,
+      'exclude_from_search' => true,
+      'rewrite' => array( 'slug' => 'senior-management', 'with_front' => false ),
+    );
+
+    register_post_type( 'manteam', $args ); 
+  }
+
+add_action( 'init', '_custom_post_team' );
+
+add_action( 'load-post.php', 'cis_manteam_setup' );
+add_action( 'load-post-new.php', 'cis_manteam_setup' );
+
+/* Meta box setup function. */
+function cis_manteam_setup() {
+
+  /* Add meta boxes on the 'add_meta_boxes' hook. */
+  add_action( 'add_meta_boxes', 'cis_manteam' );
+
+  /* Save post meta on the 'save_post' hook. */
+  add_action( 'save_post', 'cis_manteam_save', 10, 2 );
+}
+
+
+# Metabox for post
+function cis_manteam() {
+    add_meta_box( 
+        'cis_manteam',
+        __( 'Job Title', 'example' ),
+        'cis_manteam_content',
+        'manteam',
+        'normal',
+        'high'
+    );
+}
+
+/* Display the post meta box. */
+function cis_manteam_content( $object ) { ?>
+
+  <?php wp_nonce_field( basename( __FILE__ ), 'cis_manteam_nonce' ); ?>
+
+  <p>
+    <label for="job_title"><?php _e( "Enter job title", 'example' ); ?></label>
+    <br />
+    <input class="widefat" type="text" name="job_title" id="job_title" value="<?php echo esc_attr( get_post_meta( $object->ID, 'job_title', true ) ); ?>" size="30" />
+  </p>
+  
+ 
+<?php }
+
+/* Save the meta box's post metadata. */
+function cis_manteam_save( $post_id, $post) {
+
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  return;
+
+  /* Verify the nonce before proceeding. */
+  if ( !isset( $_POST['cis_manteam_nonce'] ) || !wp_verify_nonce( $_POST['cis_manteam_nonce'], basename( __FILE__ ) ) )
+    return $post_id;
+
+  /* Get the post type object. */
+  $post_type = get_post_type_object( $post->post_type );
+
+  /* Check if the current user has permission to edit the post. */
+  if ( !current_user_can( $post_type->cap->edit_post, $post_id ) )
+    return $post_id;
+
+  /* Get the posted data and sanitize it text. */
+  $new_manteam_value = ( isset( $_POST['job_title'] ) ? sanitize_text_field( $_POST['job_title'] ) : '' );
+  /* Get the meta key. */
+  $meta_manteam_key = 'job_title';
+  /*  Update meta on post - VF*/
+  update_post_meta( $post_id, $meta_manteam_key, $new_manteam_value ); 
+
+}
+
+#change title of staff name box
+function change_default_title_team( $title ){
+     $screen = get_current_screen();
+ 
+     if  ( 'manteam' == $screen->post_type ) {
+          $title = "Enter staff member's name here - then bio below";
+     }
+ 
+     return $title;
+}
+ 
+add_filter( 'enter_title_here', 'change_default_title_team' );
+
   #================================================================
   #               Custom post type job
   #================================================================
