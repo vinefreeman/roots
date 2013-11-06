@@ -147,6 +147,7 @@ border-radius: 30px;
 .content { }
 .wrap{  }
 .page-header{border:none;}
+.single-manteam .page-header {padding: 0px;}
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
 
 
@@ -378,22 +379,17 @@ p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em
 /* ==========================================================================
    Senior Management
    ========================================================================== */
-.our-senior-management-team .panel-heading{
-  background-color: #00344d;
-  color: #f9e526;
-}
-
-.our-senior-management-team .panel{
-  float: left;
-  width: 320px;
-  margin: 10px;
-
-}
-
-.panel-group .panel + .panel {
-    margin-top: 10px;
-}
-
+.our-senior-management-team .panel-heading{ background-color: #00344d; color: #f9e526;}
+.our-senior-management-team .panel{ float: left;  width: 320px;  margin: 10px;}
+.panel-group .panel + .panel {   margin-top: 10px;}
+.manteam li {position: relative; float: left; list-style: none; background-color: #00344d; padding: 0; margin: 10px ; max-width: 150px; height: 260px; overflow: hidden;}
+.manteam li:hover{background-color: #002638;}
+.manteam {margin: 0 0 20px 0; padding: 0; }
+span.jperson{color: #f9e526; font-family: Oxygen, arial,sans-serif; font-size: 13px; }
+span.jtitle{color: #89A8BD; font-size: 12px; line-height: .9em;}
+.mteam-info{padding: 6px; line-height: 1em; position: relative;}
+span.golink{position:absolute; top: 0; right: 0; padding: 0px 6px; background-color:#00405e; color: #f9e526; ;}
+a:hover span.golink{background-color: #002638;}
 /* =========
    Top Sticky Menu Changes
    ========== 

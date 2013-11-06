@@ -16,16 +16,16 @@
         $post_man = get_post(106); 
         $content = $post_man->post_content;
         $nice_content = apply_filters( 'the_content', $content );
-              echo "<div class='col-lg-12 col-md-12 col-sm-12 show-grid'>" . $nice_content . "</div>";
+              echo "<div class='col-lg-10 col-md-12 col-sm-12 show-grid'>" . $nice_content . "</div>";
       ?> 
       
       <?php //while (have_posts()) : the_post();
       		$args = array(
-				//'posts_per_page'   => -1,
+				'posts_per_page'   => -1,
 				'offset'           => 0,
 				'category'         => '',
-				'orderby'          => 'menu_order',
-				'order'            => 'DESC',
+				'orderby'          => 'post_date',
+				'order'            => 'ASC',
 				'include'          => '',
 				'exclude'          => '',
 				'meta_key'         => '',
@@ -37,25 +37,36 @@
 				'suppress_filters' => true );
 
       		$cisstaff = get_posts( $args);?>
-      		<div class="col-lg-12 col-md-12 col-sm-12">
-      		<ul>
+      		<div class="col-lg-10 col-md-12 col-sm-12">
+      		<ul class="manteam">
       		<?php foreach ($cisstaff as $staff) : setup_postdata( $staff );
-			$content = $staff->post_content;
+			 //$content = $staff->post_content;
       		$title = get_post_meta( $staff->ID, 'job_title', true );
-				echo "<li>";       			
-       			echo get_the_post_thumbnail( $staff->ID, array(100,200)) . "<br />"; ?>
-       			get_the	
-       			<button data-title="Tracy Plant" type="button" data-container="body" data-trigger="click" data-toggle="popover" data-placement="bottom" data-content="<?php echo $content ?> ?>" class="osc_popover btn btn-sm btn-default " data-original-title="" title=""> Click </button>
-	
-
-				<?php echo $staff->post_title; ?>&nbsp;-&nbsp;<?php if ($title) {echo $title;} ?><span>+</span>;
-				echo "</li>";
-			    
-            <?php $round ++ ;?>
+          $person = $staff->post_title;
+         $link = get_permalink($staff->ID);
+				echo "<li>";?>
+        <a href="<?php echo $link; ?>" title="<?php echo $person; ?>">
+        <span class="golink">+</span>  
+        <?php $attr = array(
+            'class' => "img-responsive",
+            'alt' => trim(strip_tags( $attachment->post_excerpt )),
+            'title' => trim(strip_tags( $attachment->post_title )),
+    );
+       			if (has_post_thumbnail($staff->ID)){
+            echo get_the_post_thumbnail( $staff->ID, 'staff-list', $attr) . "<br />"; 
+          } else { ?>
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/newstaff-150.jpg" /><br /></a>
+        <?php } ?>
+        <div class="mteam-info">
+        <a href="<?php echo $link; ?>" title="<?php echo $person; ?>">
+				<?php echo "<span class='jperson'>" . $staff->post_title . "</span>"; ?>
+        <?php if ($title) {echo "<br /><span class='jtitle'>" . $title . "</span>";} ?>
+				<?php echo "</a></div></li>"; ?>
+			  <?php $round ++ ;?>
  		    <?php //endwhile; 
-     		endforeach; ?>
+     		endforeach; ?> 
      		</ul>
-     		</div><!-- end main column from  line 40 -->
+      	</div><!-- end main column from  line 40 -->
      		
   
   </div> <!-- row -->

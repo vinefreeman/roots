@@ -7,15 +7,22 @@
 		$showme = true;
 	}
 	?>
+	
   	<h1><?php echo roots_title(); ?><?php if ($showme){echo "<span class='badge'>".$jobs."</span>";} ?></h1> 
 	<?php if (is_home()){
 				
-				if(get_post_meta( 16, '_nicetitle', true )){
-					echo "<span class='nicetitle'>" . get_post_meta( 16, '_nicetitle', true) . "</span>";
-				} 
+			if(get_post_meta( 16, '_nicetitle', true )){
+				echo "<span class='nicetitle'>" . get_post_meta( 16, '_nicetitle', true) . "</span>";
+			} 
 			
 		
 		} ?>
+	<?php
+		if (is_singular('manteam')){
+			$jtitle = get_post_meta( $post->ID, 'job_title', true );?>
+      <span class='nicetitle'><?php echo $jtitle ;?></span>
+	<?php }	?>
+	
 	<?php // check if top level page then show children. don't show top level if two levels down
 	$grandad = $post->post_parent;
 	// echo "Grandad: " . $grandad . "<br />";

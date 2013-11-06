@@ -620,4 +620,12 @@ function get_post_top_ancestor_id(){
     return $post->ID;
 }}
 
+
+# Thumbnails - esp staff.
+
+if ( function_exists( 'add_image_size' ) ) { 
+  add_image_size( 'staff-minithumb', 77, 9999 ); //300 pixels wide (and unlimited height)
+  add_image_size( 'staff-list', 150, 9999 ); //(cropped)
+}
+
 ?>
