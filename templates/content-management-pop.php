@@ -55,7 +55,7 @@
        			if (has_post_thumbnail($staff->ID)){
             echo get_the_post_thumbnail( $staff->ID, 'staff-list', $attr) . "<br />"; 
           } else { ?>
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/newstaff-150.jpg" /><br /></a>
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/newstaff-150.jpg" class="img-responsive" /><br /></a>
         <?php } ?>
         <div class="mteam-info">
         <a href="<?php echo $link; ?>" title="<?php echo $person; ?>">
