@@ -628,4 +628,21 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'staff-list', 150, 9999 ); //(cropped)
 }
 
+// Fix nav menu active classes for custom post types
+function roots_cpt_active_menu($menu) {
+  global $post;
+  if ('manteam' === get_post_type()) {
+    $menu = str_replace('active', '', $menu);
+    $menu = str_replace('menu-about-us', 'menu-about-us active', $menu);
+    $menu = str_replace('menu-our-senior-management-team', 'menu-our-senior-management-team active', $menu);
+  }
+
+  if ('cisjob' === get_post_type()) {
+    $menu = str_replace('active', '', $menu);
+    $menu = str_replace('menu-work-for-us', 'menu-work-for-us active', $menu);
+  }
+  return $menu;
+}
+add_filter('nav_menu_css_class', 'roots_cpt_active_menu', 400);
+
 ?>

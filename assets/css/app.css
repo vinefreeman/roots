@@ -81,7 +81,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-nav li.active.menu-home a, .navbar-nav li.menu-home a { background: transparent url("../img/home1.png") no-repeat center 46%; text-indent: -9999px }
 .navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus { background: transparent url("../img/home-over1.png") no-repeat center 42%; -webkit-transition: all ease 0.2s; -moz-transition: all ease 0.2s; -o-transition: all ease 0.2s; -ms-transition: all ease 0.2s; transition: all ease 0.2s;}
 .navbar-nav li { margin-right: 4px; }
-.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a { background-color:transparent ; color: #f9e526;}
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a, .navbar-nav > li.jobs.active a { background-color:transparent ; color: #f9e526;}
 .navbar-nav > li > a { color: #ffffff; font-size: 1em; font-family: 'Oxygen'; }
 .navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; font-weight: bold; }
 .strap{padding-top: 14px; float: right; position: relative;}
@@ -147,9 +147,10 @@ border-radius: 30px;
 .content { }
 .wrap{  }
 .page-header{border:none;}
-.single-manteam .page-header {padding: 0px;}
+.single-manteam .page-header, .single-post .page-header {padding: 0px;}
+.single-post .page-header {margin-bottom: 0px;}
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
-
+.single-post .innerspace{margin-top:12px;}
 
 
 /* ==========================================================================
@@ -271,6 +272,7 @@ h3.intouch{ font-size: 1.1em; text-align:right; padding-left: 30px; }
 h3.ontwitter{ font-size: 1.1em;  }
 span.nicetitle{color:#00405e; font-size: 1.5em; line-height: 1.4em; padding-bottom: 16px; display: block; font-family: "Oxygen", helvetica, arial, sans-serif}
 span.nicetitle {border-left: 3px solid #CCCCCC; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.5em;  line-height: 1.4em; margin-bottom: 26px; padding: 0 0 0 10px; ;}
+.page-header span.nicetitle{color: #89A8BD;}
 .main blockquote{background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
 a.mail{text-align:center; display: block; font-size: 1.2em; margin-bottom: 4px;}
 a.phone{text-align:center; display: block; font-size: 1.1em;}
@@ -327,7 +329,7 @@ ul.foottweet{padding: 0;margin:0;}
 
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; }
-.alignright { float: right; }
+.alignright { float: right; margin: 20px 0 20px 20px; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /*MyIcons*/
