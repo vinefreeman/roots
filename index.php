@@ -1,3 +1,4 @@
+<div class="innerspace"><!-- containing bx-->
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php if (!have_posts()) : ?>
   <div class="alert">
@@ -6,9 +7,15 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 
+<?php if (is_home()){ // check for main news page
+
+     get_template_part('templates/content', 'blog-home'); 
+
+    } else {?>
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
+<? } // end bloghome check for main news page ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
@@ -18,3 +25,4 @@
     </ul>
   </nav>
 <?php endif; ?>
+</div><!-- /innerspace -->
