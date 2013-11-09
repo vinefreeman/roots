@@ -147,8 +147,9 @@ border-radius: 30px;
 .content { }
 .wrap{  }
 .page-header{border:none;}
-.single-manteam .page-header, .single-post .page-header {padding: 0px;}
+.single-manteam .page-header, .single-post .page-header, .blog .page-header {padding: 0px;}
 .single-post .page-header {margin-bottom: 0px;}
+
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
 .single-post .innerspace{margin-top:12px;}
 
@@ -409,6 +410,20 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 
 .sidestaff .manteam{clear: left;}
 
+/* ==========================================================================
+   Blog home news panels
+   ========================================================================== */
+.newspanels .manteam li{width: 30%; max-width: 30%;}
+.newspanels .manteam {width: 100%;}
+.newspanels .manteam li a img{width: 100%; height: auto;}
+.newspanels .manteam li .mteam-info a span{font-size: 18px;}
+.newspic{height: 200px; overflow:hidden;}
+.newspanels .manteam li a span.badge{position: absolute; bottom: 30%; right: 4%; color: #3E697E; background-color: #002638; -moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
+
+.newspanelitems .manteam li{height: 100px;}
+.newspanelitems .manteam {display: table;}
+.newspanelitems .manteam li .mteam-info{display: table-cell; vertical-align: middle; height: 100px;}
+.newspanelitems .manteam li .mteam-info a span{color: #89A8BD; font-size: 16px;}
 /* =========
    Top Sticky Menu Changes
    ========== 
@@ -437,10 +452,12 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 
 
 @media (max-width: 767px) {
-  .dropdown-backdrop {
-    position: static;
-}
-.manteam  li{max-width: 110px;height: 230px;}
+  .dropdown-backdrop {position: static;}
+.newspanels .manteam li{width: 100%; max-width: 100%;}
+.newspanels .manteam li{margin-left: 0px; height: 260px;}
+.staffpanels .manteam  li{max-width: 110px;height: 230px;}
+.newspanelitems .manteam li{max-width: 300px; margin-left: 0px;}
+.newspic{height: 180px;}
   .page-header{padding: 0; margin: 0;}
   .page-header h1{margin-top: 5px;}
   img.mob-social{ padding: 0}

@@ -1,4 +1,4 @@
-<div class="innerspace"><!-- containing bx-->
+
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php if (!have_posts()) : ?>
   <div class="alert">
@@ -12,17 +12,19 @@
      get_template_part('templates/content', 'blog-home'); 
 
     } else {?>
-<?php while (have_posts()) : the_post(); ?>
+<div class="innerspace"><!-- containing bx-->
+<?php 
+while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
+</div><!-- /innerspace -->
 <? } // end bloghome check for main news page ?>
-
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
     <ul class="pager">
-      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+      <li class="previous"><?php next_posts_link(__('&larr; Older news', 'roots')); ?></li>
+      <li class="next"><?php previous_posts_link(__('More recent news &rarr;', 'roots')); ?></li>
     </ul>
   </nav>
 <?php endif; ?>
-</div><!-- /innerspace -->
+
