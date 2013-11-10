@@ -1,12 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    <!-- <header>
-      <div class="page-header">
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-      
-    </div>
-    </header> -->
-    <?php get_template_part('templates/entry-meta'); ?>
     <div class="innerspace">
     <div class="entry-content">
 
@@ -20,11 +13,17 @@
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </footer>
     <?php //comments_template('/templates/comments.php'); ?>
+    <div class="nextpostnav">
+        <div class="previous"><?php previous_post_link(); ?></div>
+        <div class="next"><?php next_post_link(); ?></div>
+        <p class="clearfix">&nbsp;</p>
+    </div>
+
   </div>
   </article>
   <?php 
-    global $singlepost;
-    $singlepost = $post->ID ; 
-    echo $singlepost;
-   ?>
+    global $single;
+    $single = $post->ID ; 
+    //id of curr post for exclusion in side lists
+    ?>
 <?php endwhile; ?>

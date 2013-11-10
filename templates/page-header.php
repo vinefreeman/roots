@@ -17,6 +17,13 @@
 			
 		
 		} ?>
+	<?php if ((is_single()) && (! is_singular('manteam')) && (! is_singular('cisjob'))){  
+	global $post;
+	$thispost = $post->ID;
+	get_template_part('templates/entry-meta'); 
+	
+
+	} // display date over single post:  helps clear sidebar called here?>	
 	<?php
 		if (is_singular('manteam')){
 			$jtitle = get_post_meta( $post->ID, 'job_title', true );?>

@@ -148,10 +148,10 @@ border-radius: 30px;
 .wrap{  }
 .page-header{border:none;}
 .single-manteam .page-header, .single-post .page-header, .blog .page-header {padding: 0px;}
-.single-post .page-header {margin-bottom: 0px;}
+.single-post .page-header {margin-bottom: 12px;}
 
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
-.single-post .innerspace{margin-top:12px;}
+
 
 
 /* ==========================================================================
@@ -248,7 +248,7 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
    ========================================================================== */
 
 .hentry header { }
-.single-post .hentry time {color: #fff; }
+.single-post .hentry time, .single-post .page-header time {color: #fff; }
 .hentry .byline { }
 .hentry .entry-content { }
 .hentry footer { }
@@ -412,12 +412,15 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 
 /*Blog sidebar*/
 
-.recent-posts-2 ul li {position: relative; float: left; list-style: none; background-color: #00344d; padding: 10px; }
-.recent-posts-2 ul li a{font-size: 13px ; color: #f9e526;}
-.recent-posts-2 ul {padding: 0; margin: 0; background-color: #00344d;}
-.recent-posts-2 ul li span.post-date{font-size: 12px; color: #89A8BD; }
-.widget-inner h3{color: #89A8BD; }
-.recent-posts-2{-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.widget-inner ul li, .sidenews ul li {width: 100%;position: relative; float: left; list-style: none; padding: 10px; background-color: #00344d; }
+.widget-inner ul li a, .sidenews ul li a{font-size: 13px ; color: #f9e526;}
+.widget-inner ul, .sidenews ul {padding: 0; margin: 0; width: 100%; }
+.widget-inner ul li span.post-date, .sidenews ul li span.post-date{font-size: 12px; color: #89A8BD; }
+.widget-inner h3, .sidenews h3, aside h3{color: #89A8BD; }
+.widget-inner{-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.sidenews{background-color: #00344d; width: 100%;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-bottom: 20px; }
+.sidenews ul li.grad-alt{background-color: #033953;}
+.first{margin-top: 0px;}
 /* ==========================================================================
    Blog home news panels
    ========================================================================== */
@@ -435,6 +438,12 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 .newspanelitems .manteam li span.date{color: #89A8BD; font-size: 11px; position: absolute; bottom: 0; width: 100%; display: block; background-color: #00405e; border-top: 1px dashed #89A8BD; line-height: 1em ; padding-top: 4px;}
 .yel {color: #f9e256;}
 .newspanels a.btn-default{background-color: #00344d;}
+span.meta{color: #89A8BD; font-size: 12px;}
+span.meta a{color: #f9e526;}
+#ssba{margin: 20px 0;}
+.nextpostnav{padding-top: 20px; border-top: 1px dotted #f7f7f7;color: #ccc;}
+.previous{float: left; width: 40%;}
+.next{float: right; width: 40%; }
 /* =========
    Top Sticky Menu Changes
    ========== 
