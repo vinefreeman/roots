@@ -410,20 +410,31 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 
 .sidestaff .manteam{clear: left;}
 
+/*Blog sidebar*/
+
+.recent-posts-2 ul li {position: relative; float: left; list-style: none; background-color: #00344d; padding: 10px; }
+.recent-posts-2 ul li a{font-size: 13px ; color: #f9e526;}
+.recent-posts-2 ul {padding: 0; margin: 0; background-color: #00344d;}
+.recent-posts-2 ul li span.post-date{font-size: 12px; color: #89A8BD; }
+.widget-inner h3{color: #89A8BD; }
+.recent-posts-2{-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 /* ==========================================================================
    Blog home news panels
    ========================================================================== */
 .newspanels .manteam li{width: 30%; max-width: 30%;}
 .newspanels .manteam {width: 100%;}
 .newspanels .manteam li a img{width: 100%; height: auto;}
-.newspanels .manteam li .mteam-info a span{font-size: 18px;}
+.newspanels .manteam li .mteam-info a span.jperson{font-size: 17px; text-align: center;}
 .newspic{height: 200px; overflow:hidden;}
-.newspanels .manteam li a span.badge{position: absolute; bottom: 30%; right: 4%; color: #3E697E; background-color: #002638; -moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
+.newspanels .manteam li a span.topdate{position: absolute; bottom: 0; right:0; color: #3E697E; font-size: 11px; padding: 2px; }
 
-.newspanelitems .manteam li{height: 100px;}
+.newspanelitems .manteam li{height: 120px;}
 .newspanelitems .manteam {display: table;}
-.newspanelitems .manteam li .mteam-info{display: table-cell; vertical-align: middle; height: 100px;}
+.newspanelitems .manteam li .mteam-info{display: table-cell; vertical-align: middle; height: 100px; margin-bottom: 4px;}
 .newspanelitems .manteam li .mteam-info a span{color: #89A8BD; font-size: 16px;}
+.newspanelitems .manteam li span.date{color: #89A8BD; font-size: 11px; position: absolute; bottom: 0; width: 100%; display: block; background-color: #00405e; border-top: 1px dashed #89A8BD; line-height: 1em ; padding-top: 4px;}
+.yel {color: #f9e256;}
+.newspanels a.btn-default{background-color: #00344d;}
 /* =========
    Top Sticky Menu Changes
    ========== 

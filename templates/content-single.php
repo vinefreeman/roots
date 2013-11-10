@@ -22,4 +22,9 @@
     <?php //comments_template('/templates/comments.php'); ?>
   </div>
   </article>
+  <?php 
+    global $singlepost;
+    $singlepost = $post->ID ; 
+    echo $singlepost;
+   ?>
 <?php endwhile; ?>

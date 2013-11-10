@@ -18,7 +18,7 @@ while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
 </div><!-- /innerspace -->
-<? } // end bloghome check for main news page ?>
+
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
     <ul class="pager">
@@ -27,4 +27,4 @@ while (have_posts()) : the_post(); ?>
     </ul>
   </nav>
 <?php endif; ?>
-
+<? } // end bloghome check for main news page ?>
