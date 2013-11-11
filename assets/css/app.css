@@ -247,7 +247,7 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
    Posts
    ========================================================================== */
 
-.hentry header { }
+.hentry header { margin-bottom: 12px;}
 .single-post .hentry time, .single-post .page-header time {color: #fff; }
 .hentry .byline { }
 .hentry .entry-content { }
@@ -258,6 +258,14 @@ border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
 /* ==========================================================================
    Footer
    ========================================================================== */
+.modal-header{background-color: #eee; -webkit-border-top-left-radius: 6px;
+-webkit-border-top-right-radius: 6px;
+-moz-border-radius-topleft: 6px;
+-moz-border-radius-topright: 6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;}
+.modal-title{color: #00344d; font-family: Oxygen, arial, sans-serif; }
+.modal-body{color: #00344d;}
 
 .content-info {background-color: #00344d; color: #89a8bd; }
 .footclear{ margin-top: 80px;padding: 20px 0; }
@@ -280,6 +288,8 @@ a.phone{text-align:center; display: block; font-size: 1.1em;}
 a span{text-decoration: none;}
 span.sep{display: block; padding: 4px 0; margin: 10px 0; border-bottom: 1px dotted #5089b1;}
 a.btn.phone{padding-left: 0; color: #5089b1;}
+h2.entry-title{font-size: 22px;}
+.main h2{font-size: 22px;}
 
 /*Buttons*/
 .btn-dark {background-color: #00344d;color: #89A8BD; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
@@ -366,9 +376,10 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 
 .post-type-archive-cisjob .panel{
   border: 1px solid #134963;
-  background-color: #eee;  
   -webkit-background-clip: padding-box;
-}
+  background: #00405E url("../img/panel-back.gif") repeat-x bottom left;
+  }
+.post-type-archive-cisjob .panel .panel-collapse{background-color: #eee;}
 .post-type-archive-cisjob a.accordion-toggle{
    color: #D8C430;
    font-family: 'Oxygen';
@@ -410,6 +421,27 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 
 .sidestaff .manteam{clear: left;}
 
+/*staff in inner sidebar: content-leaders template*/
+.leader-img{height: 120px; overflow: hidden;}
+.leader-img img{margin-top: -6px;}
+h3.innov{font-size: 16px;}
+ul.leaders li{position: relative;}
+ul.leaders li span.jperson {
+    color: #00344d;
+    font-family: Oxygen,arial,sans-serif;
+    font-size: 14px;
+}
+ul.leaders li span.golink {
+    background-color: #5089B1;
+    color: #f6f6f6;
+    padding: 2px 3px 4px 3px;
+    position: absolute;
+    right: 0;
+    top:95%;
+    font-weight: bold;
+    
+
+}
 /*Blog sidebar*/
 
 .widget-inner ul li, .sidenews ul li {width: 100%;position: relative; float: left; list-style: none; padding: 10px; background-color: #00344d; }
@@ -421,6 +453,7 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 .sidenews{background-color: #00344d; width: 100%;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-bottom: 20px; }
 .sidenews ul li.grad-alt{background-color: #033953;}
 .first{margin-top: 0px;}
+aside .btn-dark{float: none;}
 /* ==========================================================================
    Blog home news panels
    ========================================================================== */
@@ -440,10 +473,13 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 .newspanels a.btn-default{background-color: #00344d;}
 span.meta{color: #89A8BD; font-size: 12px;}
 span.meta a{color: #f9e526;}
+span.meta.archive{ padding: 3px; border-top: 1px dashed #89A8BD; border-bottom: 1px dashed #89A8BD;}
+span.meta.archive a{color: #00405e;}
 #ssba{margin: 20px 0;}
 .nextpostnav{padding-top: 20px; border-top: 1px dotted #f7f7f7;color: #ccc;}
 .previous{float: left; width: 40%;}
-.next{float: right; width: 40%; }
+.next{float: right; width: 40%; text-align: right;}
+.error404 ul li, .error404 p {color: #89A8BD;}
 /* =========
    Top Sticky Menu Changes
    ========== 

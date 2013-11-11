@@ -246,7 +246,7 @@ function cis_homebox_save( $post_id, $post) {
       'menu_position' => 6,
       'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
       'has_archive'   => true,
-      'exclude_from_search' => true,
+      'exclude_from_search' => false,
       'rewrite' => array( 'slug' => 'senior-management', 'with_front' => false ),
     );
 

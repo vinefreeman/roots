@@ -17,7 +17,8 @@
 			
 		
 		} ?>
-	<?php if ((is_single()) && (! is_singular('manteam')) && (! is_singular('cisjob'))){  
+	<?php if ( is_search() || is_404() ) : else : ?>	
+	<?php if ((is_single()) && (! is_singular('manteam')) && (! is_singular('cisjob')) ){  
 	global $post;
 	$thispost = $post->ID;
 	get_template_part('templates/entry-meta'); 
@@ -63,6 +64,6 @@
 			//echo "</ul>";
 			}
 	
-	?>
+	endif; //is search or 404 ?>
 </div>
 <?php endif; ?>

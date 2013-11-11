@@ -3,8 +3,14 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-6 col-md-5 col-xs-6">
+                
+                <ul id="menu-header-menu" class="nav nav-pills">
+                  <li class="menu-location"><a href="">Location</a></li>
+                  <li class="menu-login"><a href="">Login</a></li>
+                  <li class="menu-ask-a-question"><a data-toggle="modal" href="#myModal">Ask a question</a></li>
+                </ul>  
                 <?php
-                  wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
+                 //wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
                 ?>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-3 top10 pull-right ie7">

@@ -19,7 +19,7 @@
 
       		$sidestories = get_posts( $sideargs);
 
-   ?><h3 class="first">Also see</h3>
+   ?><h3 class="first"><?php if (is_archive('cisjob') || is_search() || is_404()){echo "CIS News";} else {echo "Also see";} ?></h3>
    <div class="sidenews">
 
    	   <ul>	
@@ -35,4 +35,15 @@
 		     	<?php $colourgrad ++;	
 		  		 endforeach;?>
 			</ul>
+
+
+
 	</div>
+
+	<a href="<?php echo get_option('home'); ?>/insights" class ="btn-dark btn btn-sm" title="News and Awards">More News</a>
+
+	<h4 class="yel">News Archive</h4>
+	<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+  <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
+  <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
+</select>

@@ -20,6 +20,14 @@
 			    <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
 			</ul>
 
+			<!-- Button trigger modal - located in footer template-->
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				Contact us
+				</button>
+
+			<?php get_template_part('templates/content', 'leaders'); ?>
+
+			
 			<?php dynamic_sidebar('sidebar-inner'); ?>
 			
 		</div>
