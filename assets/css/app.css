@@ -396,12 +396,14 @@ p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em
 .post-type-archive-cisjob .btn-dark:hover, .post-type-archive-cisjob .btn-dark:focus, .post-type-archive-cisjob .btn-dark:active{background-color: #012e43; color: #f6f6f6;}
 .post-type-archive-cisjob .btn-dark{color: #f9e526 ;}
 
-.jobpanels p{color:#f6f6f6;}
+.jobpanels p, .staffpanels p{color:#f6f6f6;}
 .jobpanels .panel p{color: #57646D}
 
 /* ==========================================================================
    Senior Management
    ========================================================================== */
+
+ .manteam #ssba{display: none;}  
 .our-senior-management-team .panel-heading{ background-color: #00344d; color: #f9e526;}
 .our-senior-management-team .panel{ float: left;  width: 320px;  margin: 10px;}
 .panel-group .panel + .panel {   margin-top: 10px;}
@@ -476,7 +478,7 @@ span.meta a{color: #f9e526;}
 span.meta.archive{ padding: 3px; border-top: 1px dashed #89A8BD; border-bottom: 1px dashed #89A8BD;}
 span.meta.archive a{color: #00405e;}
 #ssba{margin: 20px 0;}
-.nextpostnav{padding-top: 20px; border-top: 1px dotted #f7f7f7;color: #ccc;}
+.nextpostnav{padding-top: 20px; border-top: 1px dashed #89A8BD;color: #ccc;}
 .previous{float: left; width: 40%;}
 .next{float: right; width: 40%; text-align: right;}
 .error404 ul li, .error404 p {color: #89A8BD;}
@@ -498,6 +500,11 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 .home > .wrap{padding-top: 0;}
 
 
+/*Performance / Stats page*/
+
+.performance blockquote{margin: 0;float: none;background-color: transparent; padding-right: 30px; border: none; color: #00405e; width: 90%; ;}
+.performance .main blockquote p{font-size: 78px;line-height: 1em; padding-top: 0px;}
+.performance .main p{font-size: 20px; padding-top: 10px;}
 
 /* ==========================================================================
 

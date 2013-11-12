@@ -17,6 +17,14 @@
 			
 		
 		} ?>
+	<?php if (is_page('106')){
+				
+			if(get_post_meta( 106, '_nicetitle', true )){
+				echo "<span class='nicetitle'>" . get_post_meta( 106, '_nicetitle', true) . "</span>";
+			} 
+			
+		
+		} ?>
 	<?php if ( is_search() || is_404() ) : else : ?>	
 	<?php if ((is_single()) && (! is_singular('manteam')) && (! is_singular('cisjob')) ){  
 	global $post;

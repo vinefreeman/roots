@@ -17,7 +17,7 @@
  		);		
  	$posts_array = get_posts( $args ); ?>
  	<div class="row dark feature show-grid">
- 	<?php foreach ( $posts_array as $post ): setup_postdata( $post );?>
+ 	 	<?php foreach ( $posts_array as $post ): setup_postdata( $post );?>
  		<?php $boxlink = get_post_meta(  $post->ID, 'box_url', true ); //is url set on home box ?>
  		
  		<div class="col-lg-4 col-md-4 col-sm-4 clearfix">
