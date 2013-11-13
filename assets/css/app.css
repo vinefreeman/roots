@@ -472,7 +472,7 @@ aside .btn-dark{float: none;}
 .newspanelitems .manteam li .mteam-info a span{color: #89A8BD; font-size: 16px;}
 .newspanelitems .manteam li span.date{color: #89A8BD; font-size: 11px; position: absolute; bottom: 0; width: 100%; display: block; background-color: #00405e; border-top: 1px dashed #89A8BD; line-height: 1em ; padding-top: 4px;}
 .yel {color: #f9e256;}
-.newspanels a.btn-default{background-color: #00344d;}
+.newspanels a.btn-default{background-color: #00344d; margin-bottom: 6px;}
 span.meta{color: #89A8BD; font-size: 12px;}
 span.meta a{color: #f9e526;}
 span.meta.archive{ padding: 3px; border-top: 1px dashed #89A8BD; border-bottom: 1px dashed #89A8BD;}
@@ -563,7 +563,10 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
    .navbar-nav > li.active.menu-home > a, .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover, .navbar-nav li.menu-home > a:focus, .navbar-nav li.menu-home > a:hover{background-color:#e7dc00 ;}
    .navbar-nav > li > a, .navbar-nav > li.active > a { color: #88821b;}
    .navbar-nav > li > a.active{font-weight:  bold;}
-   .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} 
+   .navbar-nav > li.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover{background-image: none;  color: #88821b;} .navbar-nav > li.jobs.active a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #D73980;
+}
    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus { background-color: #e7dc00; color: #88821b; -webkit-transition: all ease 0.2s;-moz-transition: all ease 0.2s;-o-transition: all ease 0.2s;-ms-transition: all ease 0.2s;transition: all ease 0.2s;} 
    .navbar-nav li.active.menu-home > a:focus, .navbar-nav li.active.menu-home > a:hover { background-color: #e7dc00; }
       .mob-social{padding-top: 20px;margin-right: 5px; }

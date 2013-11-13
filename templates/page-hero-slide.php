@@ -31,7 +31,7 @@
               ?>
 
                   <div class="<?php if ($i == 0){echo "active ";}  ?>item">
-                    <div id="large_bg_img_overlay" class="hide-xs"></div>
+                    <!--<div id="large_bg_img_overlay" class="hide-xs"></div>-->
                       <?php
                         if (has_post_thumbnail()){
                             the_post_thumbnail('full', array('class' => 'img-responsive hero'));

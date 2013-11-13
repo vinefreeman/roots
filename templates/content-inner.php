@@ -5,7 +5,7 @@
 					echo "<span class='nicetitle'>" . get_post_meta( $post->ID, '_nicetitle', true) . "</span>";
 				}
 			?>
-		<div class="col-sm-12 col-md-9 col-lg-9">
+		<div class="col-sm-12 col-md-9 col-lg-9 show-grid">
 			
 			<?php while (have_posts()) : the_post(); ?>
 			  <?php the_content(); ?>

@@ -5,7 +5,7 @@
               <div class="col-lg-6 col-md-5 col-xs-6">
                 
                 <ul id="menu-header-menu" class="nav nav-pills">
-                  <li class="menu-location"><a href="">Location</a></li>
+                  <li class="menu-location"><a href="<?php echo get_option('home') ?>/contact/">Location</a></li>
                   <li class="menu-login"><a href="">Login</a></li>
                   <li class="menu-ask-a-question"><a data-toggle="modal" href="#myModal">Ask a question</a></li>
                 </ul>  
