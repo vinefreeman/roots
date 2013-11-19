@@ -184,12 +184,10 @@ z-index: -2}
 .arr { position: absolute; left: 49%; bottom: -10px; }
 .slidenav{ width: 200px; position: absolute; }
 .carousel-caption{/*background: url("../img/background-trans.png"); background: rgb(0, 52, 77) transparent;*/ /* default fallback  background: rgba(0, 52, 77, 0.8); *//* nice browsers */ padding: 10px; left: 57%; bottom: 30px; text-align: left; }
-.carousel-caption p {text-shadow: 2px 1px 1px #222; padding-left: 5px;}
+.carousel-caption p {text-shadow: 2px 1px 1px #222; padding-left: 5px; font-size: 18px;}
 /*.carousel-control img{position: absolute; top: 50%;}*/
 .carousel-control.left, .carousel-control.right {background: none; -moz-opacity: 0.90; opacity: 0.90; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
-.carousel-caption h2{display: inline-block; font-size: 1.4em; padding: 8px 20px 8px 10px; color:#f9e526; background-color: transparent ; margin-top: 6px; margin: 0px 0 10px 0px; -webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
+.carousel-caption h2{display: inline-block; font-size: 1.4em; padding: 8px 20px 8px 10px; color:#f9e526; background-color: rgba(0, 38, 56, 0.7) ; margin-top: 6px; margin: 0px 0 10px 0px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
 .carousel-control{height: 40px; width: 40px; z-index: 9999;}
 .carousel-control.left{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 10px;}
 .carousel-control.right{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 50px;}
@@ -279,8 +277,9 @@ border-top-right-radius: 6px;}
 .lblue{ color: #89A8BD; }
 h3.intouch{ font-size: 1.1em; text-align:right; padding-left: 30px; }
 h3.ontwitter{ font-size: 1.1em;  }
-span.nicetitle{color:#00405e; font-size: 1.5em; line-height: 1.4em; padding-bottom: 16px; display: block; font-family: "Oxygen", helvetica, arial, sans-serif}
-span.nicetitle {border-left: 3px solid #CCCCCC; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.5em;  line-height: 1.4em; margin-bottom: 26px; padding: 0 0 0 10px; ;}
+span.nicetitle{color:#00405e; font-size: 1.9em; line-height: 1.2em; padding-bottom: 16px; display: block; /*font-family: "Oxygen", helvetica, arial, sans-serif*/ font-family: Georgia, serif;}
+span.nicetitle {border-left: none; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 2em;  line-height: 1.2em; margin-bottom: 26px; padding: 0px; font-family: Georgia, serif;}
+.innerspace span.nicetitle{padding-left: 10px;}
 .page-header span.nicetitle{color: #89A8BD;}
 .main blockquote{background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
 a.mail{text-align:center; display: block; font-size: 1.2em; margin-bottom: 4px;}
@@ -293,6 +292,7 @@ h2.entry-title{font-size: 22px;}
 
 /*Buttons*/
 .btn-dark {background-color: #00344d;color: #89A8BD; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
+.page-header .btn-dark{background-color: #336b92;color: #fff;}
 .btn{ padding: 4px 10px; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
 .btn-primary {background-color: #5089b1; border-color:#4882aa; font-weight: normal; font-size: 13px;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{background-color: #4882aa} 

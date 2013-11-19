@@ -6,9 +6,10 @@
 				<?php get_template_part('templates/foottweet'); ?>
 			</div>	
 		    <div class="col-lg-4 col-md-4 col-sm-4">
-		    	<h3 class="lblue intouch clearfix">Stay in touch</h3>
+		    	<!--<h3 class="lblue intouch clearfix">Stay in touch</h3>
 		    	<div class="socialMiddle">
-		    	<?php get_template_part('templates/social'); ?>
+		    	<?php // get_template_part('templates/social'); ?>-->
+		    	<a href="http://www.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?all" class="siahome" title="SIA">SIA</a>
 		    </div>
 		    	<div id="sch" class="clearfix"></div>
 		      <?php dynamic_sidebar('sidebar-footer'); ?>
