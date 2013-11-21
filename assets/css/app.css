@@ -38,6 +38,7 @@ span.strapline { float: right; text-indent: -9999px; background-image: url("../i
 /* =========
    Nav
    ========== */
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu{ display: block; } /*BS3 dropdown fix http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ */
 .navbar-nav > .dropdown > a .caret {border-top-color: #f9e526; border-bottom-color: #f9e526;}
 .navbar-nav > .dropdown > a:hover .caret{border-top-color: #5089b1; border-bottom-color: #5089b1;}
 .navbar-nav > .dropdown > a:hover .caret{border-top-color: #f9e526; border-bottom-color: #f9e526;}
