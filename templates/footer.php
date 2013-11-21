@@ -9,7 +9,7 @@
 		    	<!--<h3 class="lblue intouch clearfix">Stay in touch</h3>
 		    	<div class="socialMiddle">
 		    	<?php // get_template_part('templates/social'); ?>-->
-		    	<a href="http://www.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?all" class="siahome" title="SIA">SIA</a>
+		    	<a href="http://www.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?all" target="_blank" class="siahome" title="SIA - More...">SIA</a>
 		    </div>
 		    	<div id="sch" class="clearfix"></div>
 		      <?php dynamic_sidebar('sidebar-footer'); ?>
@@ -34,7 +34,7 @@
 		<div class="container clearfix">
 			<div class="row">	
 				<div class="col-lg-12">
-					<p class="pull-left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>&nbsp;|&nbsp;<a href="http://www.redheadmedia.co.uk">Website: Redhead Media</a></p>
+					<p class="pull-left">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>&nbsp;|&nbsp;<a href="http://www.redheadmedia.co.uk">Website</a></p>
 					 <?php
 	                  wp_nav_menu(array('menu' => 'Footer Links', 'menu_class' => 'footlinks'));
 	                ?>
@@ -53,7 +53,7 @@
 				      </div>
 				      <div class="modal-body">
 
-				      Email: <a href="mailtp:info@cis-security.co.uk" title="email us">info@cis-security.co.uk</a><br />
+				      Email: <a href="mailt0:general@cis-security.co.uk" title="email us">general@cis-security.co.uk</a><br />
 				      Tel: 020 8690 1903<br />
 				      Alternatively, complete the form below and ask a question:
 				      <br /><br />	

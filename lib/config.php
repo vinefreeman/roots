@@ -60,6 +60,7 @@ function roots_display_sidebar() {
       'is_front_page',
       'is_home',
       array('is_singular', 'manteam'),
+      array('is_archive', 'cisjob'),
     ),
     /**
      * Page template checks (via is_page_template())

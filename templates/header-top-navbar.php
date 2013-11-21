@@ -5,9 +5,9 @@
               <div class="col-lg-6 col-md-5 col-xs-6">
                 
                 <ul id="menu-header-menu" class="nav nav-pills">
-                  <li class="menu-location"><a href="<?php echo get_option('home') ?>/contact/">Location</a></li>
-                  <li class="menu-login"><a href="">Login</a></li>
+                  <!-- <li class="menu-location"><a href="<?php // echo get_option('home') ?>/contact/">Location</a></li> -->
                   <li class="menu-ask-a-question"><a data-toggle="modal" href="#myModal">Ask a question</a></li>
+                  <li class="menu-login"><a href="">Login</a></li>
                 </ul>  
                 <?php
                  //wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
@@ -31,7 +31,7 @@
     <div class="container">
       
       <a class="mob-contact visible-xs" href="#sch">Search</a>
-      <a class="navbar-brand hidden-xs shadow" href="<?php echo home_url(); ?>/"><?php bloginfo('description'); ?></a>
+      <a class="navbar-brand hidden-xs" href="<?php echo home_url(); ?>/"><?php bloginfo('description'); ?></a><!-- cis revison1 removed shadow class -->
       <span class="strapline hidden-xs">Passion. Determination. Leadership</span>
       <!--<img class="hidden-xs pull-right strap" src="<?php bloginfo('stylesheet_directory');?>/assets/img/strapline.gif" width="" height="" />-->
       <div class="navbar-header">  

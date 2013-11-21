@@ -31,7 +31,7 @@ h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; p
 .topBanner ul.nav-pills li a:hover, .topBanner ul.nav-pills li a:focus { background: none; color: #88821b; text-decoration: underline;  }
 .topBanner ul.nav-pills li.menu-ask-a-question a{font-weight: bold; }
 .topBanner ul.nav-pills li:last-child { background-image: none; }
-.topBanner ul.nav-pills{ padding-left: 116px; }
+.topBanner ul.nav-pills{ padding-left: 0px; }
 span.strapline { float: right; text-indent: -9999px; background-image: url("../img/cis-passion.png"); width: 240px; height: 30px; background-repeat: no-repeat; background-size: 240px 30px ; }
 .shadow { -moz-box-shadow:    3px 0px 3px 1px #000;   -webkit-box-shadow: 3px 0px 3px 1px #000;  box-shadow: 1px 0px 2px 0px #222;}
 
@@ -71,6 +71,10 @@ ul.dropdown-menu{border-radius: 0; -moz-box-shadow:    0px 5px 2px -2px #183446;
 
 
 a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cis-security@2x.jpg") no-repeat left center; background-size: 91px 152px;  text-indent: -9999px}
+/*VF logo change revision1*/
+a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 120px; width: 97px; z-index: 99; top: 0px; background: url("../img/cis-lg-v2@2x.jpg") no-repeat left center; background-size: 97px 120px;  text-indent: -9999px; border-right: 1px solid #012e43; border-left: 1px solid #012e43 ;}
+
+
 a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
 
 .navbar { margin-bottom: 0 }
@@ -80,7 +84,7 @@ a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTran
 .navbar-toggle:hover, .navbar-toggle:focus { background-color: #e7dc00 ;}
 .navbar-nav li.active.menu-home a, .navbar-nav li.menu-home a { background: transparent url("../img/home1.png") no-repeat center 46%; text-indent: -9999px }
 .navbar-nav > li.active.menu-home > a:hover, .navbar-nav > li.active.menu-home > a:focus, .navbar-nav > li.menu-home > a:hover, .navbar-nav > li.menu-home > a:focus { background: transparent url("../img/home-over1.png") no-repeat center 42%; -webkit-transition: all ease 0.2s; -moz-transition: all ease 0.2s; -o-transition: all ease 0.2s; -ms-transition: all ease 0.2s; transition: all ease 0.2s;}
-.navbar-nav li { margin-right: 4px; }
+.navbar-nav li { margin-right:0px; }
 .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a, .navbar-nav > li.jobs.active a { background-color:transparent ; color: #f9e526;}
 .navbar-nav > li > a { color: #ffffff; font-size: 1em; font-family: 'Oxygen'; }
 .navbar-nav > li.jobs > a { color:  #D73980; font-size: 1em; font-style: normal; font-family: 'Oxygen'; font-weight: bold; }
@@ -289,8 +293,13 @@ span.sep{display: block; padding: 4px 0; margin: 10px 0; border-bottom: 1px dott
 a.btn.phone{padding-left: 0; color: #5089b1;}
 h2.entry-title{font-size: 22px;}
 .main h2{font-size: 22px;}
+.siahome{width:65px; height:76px; text-indent: -9999px; background: transparent url("../img/sia-logo.jpg") no-repeat top left; float: right; -webkit-border-radius: 5px;
+-moz-border-radius: 5px;border-radius: 5px; overflow: hidden;}
 
-/*Buttons*/
+
+/*==================
+Buttons
+====================*/
 .btn-dark {background-color: #00344d;color: #89A8BD; display: inline-block; float:right; margin-top: 10px; font-weight: normal; font-size: 13px;margin-bottom: 10px;}
 .page-header .btn-dark{background-color: #336b92;color: #fff;}
 .btn{ padding: 4px 10px; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
@@ -389,7 +398,7 @@ span.icon-envelope{padding-right: 36px;background-image: url("../img/envelope.pn
 color: #275B74;
 font-weight: bold;
   }
-.post-type-archive-cisjob .panel span.badge{float: right; background-color:#002638; color:#3E697E; font-size: .7em; margin-top: 3px;}
+.post-type-archive-cisjob .panel span.badge{float: right; background-color:#002638; color:#89A8BD; font-size: .7em; margin-top: 3px;}
 .post-type-archive-cisjob .panel-body span.badge{float: right; background-color:#ccc; color:#666; font-size: .8em; margin-top: 0px;}
 p.jobdeets {padding-bottom: 6px; border-bottom: 1px dashed #ccc; font-size: .9em;}
 .post-type-archive-cisjob .panel-body time{font-size: .7em; position: relative; bottom: -10px}
@@ -494,7 +503,8 @@ dark back blue - #00344d
 really dark blue - #002638
    */
 .banner {margin-top: 40px;} /*will need removing for mobile view*/
-a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
+/*a.navbar-brand{z-index: 1050;} place it over upper bar removed revision1*/
+
 .wrap{padding-top: 140px;}/*cannot see content otherwise*/
 .carouselcon{margin-top: 131px;}
 .home > .wrap{padding-top: 0;}
@@ -528,7 +538,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
    .sidebar { padding-top: 40px;}
    .innerspace{padding: 30px 20px; }
    .carousel-caption { display: block; position: relative; bottom: 0; padding: 10px 5px; left: 0; right: 0; text-align: center; margin: 0;}
-   .mobhead a.navbar-brand {float: left;padding: 0 0 0 0;margin: 0 0 0 5px; position: static; /*height: 104px; width: 98px*/height: 65px; width:51px; display: inline;background: transparent url("../img/cis-mob-logo-sm.png") no-repeat !important; background-size: 51px 65px;text-indent: -9999px}
+   .mobhead a.navbar-brand {float: left;padding: 0 0 0 0;margin: 0 0 0 5px; position: static; /*height: 104px; width: 98px*/height: 65px; width:51px; display: inline;background: transparent url("../img/cis-mob-logo-sm.png") no-repeat !important; background-size: 51px 65px;text-indent: -9999px; border: none;}
    .banner{background-color: #f9e526; padding: 0 0 0 10px; background-image: none; border: none;}
     /*changes for sticky menu*/
    .banner {margin-top: 0px;} 
@@ -599,6 +609,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 
 
 @media (min-width: 768px) {
+  .banner{padding: 20px 0;}
  /* .collapse{ display:block;}*/
    span.strapline { float: left; margin: 0 0 0 116px; }
    .feature img{ width: 40%; float: left;}
@@ -620,6 +631,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 }
 
 @media (min-width: 992px) { 
+  .banner{padding: 35px 0;}
    .topBanner li.rss{display: none;}
 .feature p {font-size: 14px;}
    /*.collapse{ display:block;}*/
@@ -644,6 +656,7 @@ a.navbar-brand{z-index: 1050;}/*place it over upper bar*/
 
 
 @media (min-width: 1200px) { 
+  .banner{padding: 35px 0;}
   .feature p {font-size: 14px;}
    .topBanner li.rss{display: inline;}
    span.strapline { float: right; margin: 12px 0 0 0; }

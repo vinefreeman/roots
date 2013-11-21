@@ -49,5 +49,5 @@ foreach ($info as $tweet){
 		echo "<li>". $chirp . "</li>";	
 }
 echo "</ul>";
-
 ?>
+<a class="btn btn-primary" href="http://twitter.com/CIS_SecurityLtd">Join us on Twitter</a>

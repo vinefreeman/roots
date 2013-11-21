@@ -3,14 +3,14 @@ IE 7 and down styling
 */
 /*to combat retina double size logo*/
 a.navbar-brand {
-    width: 91px;
-    height: 152px;
+    width: 97px;
+    height: 120px;
     background-repeat: no-repeat;
-    background-size: 91px 152px;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-security@2x.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-security@2x.jpg', sizingMethod='scale')";
-    background-image: url('../img/cislogo-b.gif');
-    z-index: 1050;
+    background-size: 97px 120px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-lg-v2@2x.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/cis-lg-v2@2x.jpg', sizingMethod='scale')";
+    background-image: url('../img/cis-ie7.jpg');
+    
 }
 .banner{position: absolute; top: 30;/*z-index: 1000;*/ z-index: 1029;padding-bottom:20px;}
 span.strapline { float: right; text-indent: -9999px; background-image: url("../img/strapline-lg.png"); width: 120px; height: 15px; background-repeat: no-repeat; background-size: 120px 15px ; }
