@@ -475,7 +475,7 @@ aside .btn-dark{float: none;}
 /* ==========================================================================
    Blog home news panels
    ========================================================================== */
-.newspanels .manteam li{width: 30%; max-width: 30%;}
+.newspanels .manteam li{width: 30%; max-width: 30%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center;}
 .newspanels .manteam {width: 100%;}
 .newspanels .manteam li a img{width: 100%; height: auto;}
 .newspanels .manteam li .mteam-info a span.jperson{font-size: 17px; text-align: center;}

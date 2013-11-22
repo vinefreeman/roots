@@ -12,7 +12,7 @@
 
 <?php if (is_home()){ // check for main news page
 
-     get_template_part('templates/content', 'blog-home'); 
+     get_template_part('templates/content', 'blog-current'); 
 
     } else {?>
 <?php if (!isset($noinner)){ // display innder div ?><div class="innerspace"><!-- containing bx--><?php } ?>
