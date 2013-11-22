@@ -36,7 +36,7 @@
                         if (has_post_thumbnail()){
                             the_post_thumbnail('full', array('class' => 'img-responsive hero'));
                             } else { ?>
-                                <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/slide2.jpg" class="hero img-responsive">
+                                <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/background-hold.jpg" class="hero img-responsive">
                            <?php }  
                       ?>
                     <!--<span class="fade"></span>-->
@@ -73,7 +73,7 @@
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
       </div> <!-- end #myCarousel -->
         
-      <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/carousel-arr.png" class="arr" width="26px" height="14px">
+      <!-- DOWN ARROW <img src="<?php // bloginfo('stylesheet_directory');?>/assets/img/carousel-arr.png" class="arr" width="26px" height="14px">-->
       
 </div><!-- end carouselcon -->
 
