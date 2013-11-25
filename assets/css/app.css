@@ -157,7 +157,7 @@ border-radius: 30px;
 .content { }
 .wrap{  }
 .page-header{border:none;}
-.single-manteam .page-header, .single-post .page-header, .blog .page-header {padding: 0px;}
+.single-manteam .page-header, .single-post .page-header, .blog .page-header, .archive .page-header {padding: 0px;}
 .single-post .page-header {margin-bottom: 12px;}
 
 .innerspace{background-color: #fff;border-top: 3px solid #5089b1; padding: 40px; background-color: #fff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
@@ -481,7 +481,7 @@ aside .btn-dark{float: none;}
 .newspanels .manteam li .mteam-info a span.jperson{font-size: 17px; text-align: center;}
 .newspic{height: 200px; overflow:hidden;}
 .newspanels .manteam li a span.topdate{position: absolute; bottom: 0; right:0; color: #3E697E; font-size: 11px; padding: 2px; }
-
+.newspanels .manteam li{margin: 10px 10px 10px 0px;}
 .newspanelitems .manteam li{height: 120px;}
 .newspanelitems .manteam {display: table;}
 .newspanelitems .manteam li .mteam-info{display: table-cell; vertical-align: middle; height: 100px; margin-bottom: 4px;}

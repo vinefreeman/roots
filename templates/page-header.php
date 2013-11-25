@@ -25,6 +25,15 @@
 			
 		
 		} ?>
+
+
+	 <?php
+	 if (is_category){
+	  $current_category = single_cat_title("", false);  $category_id = get_cat_ID($current_category); 
+	  echo "<span class='nicetitle'>";
+	  echo category_description( $category_id ); 
+	  echo "</span>";
+	 }?> 	
 	<?php if ( is_search() || is_404() ) : else : ?>	
 	<?php if ((is_single()) && (! is_singular('manteam')) && (! is_singular('cisjob')) ){  
 	global $post;
