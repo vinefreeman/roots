@@ -113,7 +113,7 @@
                             <span class="meta<?php if (is_archive()){echo " archive";} ?>"><?php echo $postdate; ?></span>
                         </header>
                         <div class="entry-summary">
-                        <?php echo $snip; ?>
+                        <?php the_excerpt(); ?>
                         </div>
                      </article>
                 <?php endforeach; ?>
