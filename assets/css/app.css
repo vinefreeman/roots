@@ -69,9 +69,9 @@ ul.dropdown-menu{-moz-box-shadow:0px 5px 2px -2px #183446;  -webkit-box-shadow: 
 }
 
 
-a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cis-security@2x.jpg") no-repeat left center; background-size: 91px 152px;  text-indent: -9999px}
+/*a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 152px; width: 91px; z-index: 99; top: -40px; background: url("../img/cis-security@2x.jpg") no-repeat left center; background-size: 91px 152px;  text-indent: -9999px}*/
 /*VF logo change revision1*/
-a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 120px; width: 97px; z-index: 99; top: 0px; background: url("../img/cis-lg-v2@2x.jpg") no-repeat left center; background-size: 97px 120px;  text-indent: -9999px; border-right: 1px solid #012e43; border-left: 1px solid #012e43 ;}
+a.navbar-brand {transition: opacity .25s ease-in-out;  -moz-transition: opacity .25s ease-in-out;  -webkit-transition: opacity .25s ease-in-out;position: absolute;  display: block; height: 120px; width: 97px; z-index: 99; top: 0px; background: url("../img/cis-logo-c.png") no-repeat left center; background-size: 97px 120px;  text-indent: -9999px; /*border-right: 1px solid #012e43; border-left: 1px solid #012e43 */}
 
 
 a.navbar-brand:hover{-moz-opacity: .8;opacity: .8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80); }
@@ -197,7 +197,12 @@ z-index: -2}
 .carousel-caption p {text-shadow: 2px 1px 1px #222; padding-left: 5px; font-size: 18px;}
 /*.carousel-control img{position: absolute; top: 50%;}*/
 .carousel-control.left, .carousel-control.right {background: none; -moz-opacity: 0.90; opacity: 0.90; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
-.carousel-caption h2{display: inline-block; font-size: 1.4em; padding: 8px 20px 8px 10px; color:#f9e526; background-color: rgba(0, 38, 56, 0.7) ; margin-top: 6px; margin: 0px 0 10px 0px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;}
+.carousel-caption h2{display: inline-block; font-size: 1.4em; padding: 8px 20px 16px 10px; color:#f9e526; background-color: rgba(0, 38, 56, 0.7) ; margin-top: 6px; margin: 0px 0 10px 0px; font-family: 'Oxygen'; text-shadow: 2px 1px 1px #222;-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;}
 .carousel-control{height: 40px; width: 40px; z-index: 9999;}
 .carousel-control.left{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 10px;}
 .carousel-control.right{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 50px;}
@@ -441,7 +446,7 @@ span.golink{position:absolute; top: 0; right: 0; padding: 0px 3px; background-co
 
 /*staff in inner sidebar: content-leaders template*/
 .leader-img{height: 120px; overflow: hidden;}
-.leader-img img{margin-top: -6px;}
+.leader-img img{margin-top: -6px; }
 h3.innov{font-size: 16px;}
 ul.leaders li{position: relative;}
 ul.leaders li span.jperson {
@@ -481,7 +486,7 @@ aside .btn-dark{float: none;}
 .newspanels .manteam li .mteam-info a span.jperson{font-size: 17px; text-align: center;}
 .newspic{height: 200px; overflow:hidden;}
 .newspanels .manteam li a span.topdate{position: absolute; bottom: 0; right:0; color: #3E697E; font-size: 11px; padding: 2px; }
-.newspanels .manteam li{margin: 10px 34px 10px 0px;}
+.newspanels .manteam li{margin: 10px 30px 10px 0px;}
 .newspanelitems .manteam li{height: 120px;}
 .newspanelitems .manteam {display: table;}
 .newspanelitems .manteam li .mteam-info{display: table-cell; vertical-align: middle; height: 100px; margin-bottom: 4px;}

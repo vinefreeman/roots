@@ -17,6 +17,7 @@ function roots_scripts() {
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
   wp_enqueue_style('roots_ie8', get_template_directory_uri() . '/assets/css/ie8-and-down.css', false, null);
   wp_enqueue_style('roots_ie7', get_template_directory_uri() . '/assets/css/ie7-and-down.css', false, null);
+  wp_enqueue_style('roots_odom', get_template_directory_uri() . '/assets/css/odometer-theme-default.css', false, null);
    // wp_enqueue_style('roots_ie7b', get_template_directory_uri() . '/assets/css/boostrap-ie7.css', false, null);
   global $wp_styles; 
   $wp_styles->add_data( 'roots_ie8', 'conditional', 'lte IE 9' );
@@ -41,11 +42,13 @@ function roots_scripts() {
   wp_register_script('roots_plugins', get_template_directory_uri() . '/assets/js/plugins.js', false, null, true);
   wp_register_script('roots_main', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
   wp_register_script('respond', get_template_directory_uri() . '/assets/js/vendor/respond.min.js', false, null, false);
-    wp_enqueue_script('jquery');
+  wp_register_script('odometer', get_template_directory_uri() . '/assets/js/vendor/odometer.js', false, null, false);
+  wp_enqueue_script('jquery');
   wp_enqueue_script('modernizr');
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_main');
   wp_enqueue_script('respond');
+  wp_enqueue_script('odometer');
   }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 

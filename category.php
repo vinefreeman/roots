@@ -13,88 +13,26 @@
   // then post list and year archive.
   //================================================
   ?>
-  <?php
-  $round = 0; //loop count for toggle #ids on vacancies in the template below   
-  ?>
-
-  <?php //while (have_posts()) : the_post();
-        $args = array(
-        'posts_per_page'   => 6,
-        'offset'           => 0,
-        'category'         => '',
-        'orderby'          => 'post_date',
-        'order'            => 'DESC',
-        'include'          => '',
-        'tag'              => 'featured', 
-        'exclude'          => '',
-        'meta_key'         => '',
-        'meta_value'       => '',
-        'post_type'        => '',
-        'post_mime_type'   => '',
-        'post_parent'      => '',
-        'post_status'      => 'publish',
-        'suppress_filters' => true );
-
-          $cisnews = get_posts( $args);?>
- <!-- innerspace was here --> 
-        <div class="row newspanels show-grid">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <!-- 3 featured posts with images -->
-               <h2 class="yel">Featured</h2>
-               <ul class="manteam">
-                       <?php foreach ($cisnews as $news) : setup_postdata( $news );
-                        $title = $news->post_title;
-                        $link = get_permalink($news->ID);
-                        echo "<li>";?>
-                        <a href="<?php echo $link; ?>" title="<?php echo $title; ?>">
-                  
-                        <span class="golink">+</span>
-                        <?php $attr = array(
-                            'class' => "img-responsive",
-                            'alt' => trim(strip_tags( $attachment->post_excerpt )),
-                            'title' => trim(strip_tags( $attachment->post_title )),
-                         );
-                         if (has_post_thumbnail($news->ID)){
-                            echo "<div class='newspic'>";
-                            echo get_the_post_thumbnail( $news->ID, 'full', $attr);
-                            echo "</div>"; 
-                             } else { ?>
-                              <div class='newspic'>
-                             <img src="<?php bloginfo('template_url'); ?>/assets/img/cis-security-news.jpg" class="img-responsive" /><br /></a>
-                              </div>
-                        <?php } ?>
-                        <div class="mteam-info"> <!-- div closed in php below -->
-                            <a href="<?php echo $link; ?>" title="<?php echo $title; ?>">
-                            <?php echo "<span class='jperson'>" . $news->post_title . "</span>"; ?>
-                            <?php echo "</a></div></li>"; ?>
-                        <?php $round ++ ;?>
-                        <?php //endwhile; 
-                        endforeach; ?> 
-                        <?php wp_reset_query(); ?>
-                </ul>
-            </div><!-- end main column from  line 40 -->
-        </div> <!-- row -->
         <div class="innerspace"> 
         <div class="row newspanelitems">
         <?php
                 $curr_cat = single_cat_title("", false);  
                 $cat = get_cat_ID($curr_cat); 
                 $today = getdate();
-              //  $yr = $today[ 'year' ];
+                //$yr = $today[ 'year' ];
                 $args = array(
-                'posts_per_page'   =>6,
+                'posts_per_page'   => 6,
                 'offset'           => 0,
                 'category'         => $cat,
-                'tag__not_in'      => array('39'),  
                 'orderby'          => 'post_date',
                 'order'            => 'DESC',
-               // 'year'             => $yr,
+                //'year'             => $yr,
                 'post_status'      => 'publish',
                 'suppress_filters' => true );
 
                   $cisnewslist = get_posts( $args);?>
           <div class="col-lg-9 col-md-9 col-sm-9">
-              <h2>Also See</h2>
+              <!-- cat title was here -->
                 <?php 
                 foreach ($cisnewslist as $news) : setup_postdata( $news );   ?>
                 <?php //vars 
