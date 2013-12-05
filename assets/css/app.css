@@ -522,11 +522,28 @@ really dark blue - #002638
 .home > .wrap{padding-top: 0;}
 
 
-/*Performance / Stats page*/
+/*Performance / Stats page / Odometer*/
 
 .performance blockquote{margin: 0;float: none;background-color: transparent; padding-right: 30px; border: none; color: #00405e; width: 90%; ;}
 .performance .main blockquote p{font-size: 78px;line-height: 1em; padding-top: 0px;}
 .performance .main p{font-size: 20px; padding-top: 10px;}
+#odometer, #odometer1{width: 100%; font-family: arial, sans-serif; font-size: 100px; color: #f9e526; padding-right: 40px;background-image: url("../img/percent.gif"); background-repeat: no-repeat; background-position: 140px 22%; line-height: 1em !important;}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {line-height: 1em;}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+        margin-right: 2px;
+
+-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+background: #002638; /* Old browsers */
+background: -moz-linear-gradient(top, #002638 0%, #00405e 63%, #00546d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#002638), color-stop(63%,#00405e), color-stop(100%,#00546d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #002638 0%,#00405e 63%,#00546d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #002638 0%,#00405e 63%,#00546d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #002638 0%,#00405e 63%,#00546d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #002638 0%,#00405e 63%,#00546d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002638', endColorstr='#00546d',GradientType=0 ); /* IE6-9 */
+}
+.odometer-value{padding: 0 4px; text-shadow: 0 2px 3px #000000;}
+.odometer-digit{padding: 0 4px;}
 
 /* ==========================================================================
 
