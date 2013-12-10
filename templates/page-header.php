@@ -28,9 +28,9 @@
 
 
 	 <?php
-	 if (is_category){
+	 if (is_category()){
 	  $current_category = single_cat_title("", false);  $category_id = get_cat_ID($current_category); 
-	  echo "<span class='nicetitle'>";
+	  echo "<span class='nicetitle cat'>";
 	  echo category_description( $category_id ); 
 	  echo "</span>";
 	 }?> 	

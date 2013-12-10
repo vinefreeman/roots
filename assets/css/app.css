@@ -14,6 +14,7 @@ body { background-color: #00405e; font-family: helvetica, arial, sans-serif; col
 body.home .content{ color: #f6f6f6;}
 body.home{background-color: #00344D;}
 a { color: #89A8BD;text-decoration: none;}
+p a{text-decoration: underline;}
 .content h1{color:#f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 a:hover, a:focus{color: #afc7d7;}
 h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; padding: 2px 5px;}
@@ -544,6 +545,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002638', end
 }
 .odometer-value{padding: 0 4px; text-shadow: 0 2px 3px #000000;}
 .odometer-digit{padding: 0 4px;}
+.performance .innerspace .row .row{border-bottom: 3px solid #eee; margin-bottom: 10px;}
 
 /* ==========================================================================
 
