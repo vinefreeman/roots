@@ -522,6 +522,8 @@ really dark blue - #002638
 .carouselcon{margin-top: 131px;}
 .home > .wrap{padding-top: 0;}
 
+article img.pdf-thumb{width: auto; height: auto; max-width: 150px; max-height: 80px; float: left; margin-right: 30px; margin-bottom: 10px; ;}
+body.archive article{clear: left; margin-bottom: 10px;}
 
 /*Performance / Stats page / Odometer*/
 
@@ -547,6 +549,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002638', end
 .odometer-digit{padding: 0 4px;}
 .performance .innerspace .row .row{border-bottom: 3px solid #eee; margin-bottom: 10px;}
 
+
+
 /* ==========================================================================
 
    Media Queries
@@ -556,6 +560,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002638', end
 
 
 @media (max-width: 767px) {
+  article img.pdf-thumb{float: none; margin-bottom: 0px;}
+  body.archive article{margin-bottom: 20px;}
   .siahome{float: left; margin-top: 20px;}
   .dropdown-backdrop {position: static;}
 .newspanels .manteam li{width: 100%; max-width: 100%;}
