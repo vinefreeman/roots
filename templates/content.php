@@ -5,7 +5,7 @@
   	 <?php get_template_part('templates/entry-meta'); ?>
   </header>
    <div class="entry-summary">
-    <?php the_excerpt(); ?>
+    <?php if (in_category(array('newsletter','security-bulletin'), $post->ID)) {} else { the_excerpt(); } ?>
   </div>
 <!--</div>-->
 </article>

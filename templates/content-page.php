@@ -14,6 +14,13 @@
 			  <?php the_content(); ?>
 			  <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 			<?php endwhile; ?>
+			<?php
+				if (is_page('3738')){
+					echo "<div class='col-lg-6 col-md-6 col-sm-12'>" ;
+					get_template_part('templates/content', 'feedbackform');
+					echo "</div>";
+				}
+			 ?>
 		</div>
 	</div>
 </div>

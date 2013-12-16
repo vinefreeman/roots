@@ -371,6 +371,9 @@ ul.foottweet{padding: 0;margin:0 0 30px 0;}
 
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; margin: 20px 20px 20px 0px;}
+.what-our-employees-say .alignleft{margin: 0px 20px 20px 0px ; }
+.feedback textarea{width: 100%;}
+.clearleft{clear: left;}
 .alignright { float: right; margin: 20px 0 20px 20px; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 .accreds img.alignright{margin-top: 0px;}
@@ -549,7 +552,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002638', end
 .odometer-digit{padding: 0 4px;}
 .performance .innerspace .row .row{border-bottom: 3px solid #eee; margin-bottom: 10px;}
 
-
+em.error{color: #e66464;}
+.feedback label {font-weight: normal;}
 
 /* ==========================================================================
 

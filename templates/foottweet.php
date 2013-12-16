@@ -50,4 +50,4 @@ foreach ($info as $tweet){
 }
 echo "</ul>";
 ?>
-<a class="btn btn-primary" href="http://twitter.com/CIS_SecurityLtd">Join us on Twitter</a>
+<a class="btn btn-primary" target="_blank" href="http://twitter.com/CIS_SecurityLtd">Join us on Twitter</a>
