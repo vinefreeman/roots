@@ -2,27 +2,27 @@
  <div class="topBanner navbar-fixed-top hidden-xs">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 col-md-5 col-xs-6">
+              <div class="col-lg-3 col-md-4 col-xs-3">
                 
                 <ul id="menu-header-menu" class="nav nav-pills">
                   <!-- <li class="menu-location"><a href="<?php // echo get_option('home') ?>/contact/">Location</a></li> -->
-                  <li class="menu-ask-a-question"><a data-toggle="modal" href="#myModal">Ask a question</a></li>
-                  <li class="menu-login"><a href="">Login</a></li>
+                  <li class="menu-login"><a href="" class="btn btn-sm login">Login</a></li>
                 </ul>  
                 <?php
                  //wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));
                 ?>
               </div>
-              <div class="col-lg-3 col-md-4 col-xs-3 top10 pull-right ie7">
+              <div class="col-lg-3 col-md-3 col-xs-3 top10 pull-right ie7">
                 <?php 
                   get_template_part('templates/searchform'); 
                 ?>
               </div>
-              <div class="col-lg-3 col-md-3 col-xs-3 top10 pull-right iesoc">
-               <?php 
+              <div class="col-lg-5 col-md-5 col-xs-5 top10 pull-right iesoc">
+              
+                           <?php 
                   get_template_part('templates/social'); 
                 ?>
-
+                <a data-toggle="modal" class="askaquestion" href="#myModal">Ask a question</a>
               </div>
           </div>
       </div>    

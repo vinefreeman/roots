@@ -23,13 +23,14 @@ h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; p
    Header
    ========================================================================== */
 
-.page-header a.btn{float: none; margin-bottom: 0; font-size: .8em;}
+.page-header a.btn{float: none; margin-bottom: 0; font-size: 11px;}
 .page-header a.current {color: #f9e526 !important;}
 
 .banner { background: #00344d url("../img/header-shine-wide-b.jpg") no-repeat top center; padding: 20px 0; border: none; border-bottom: 1px dotted #1a4565 ; box-shadow: 1px 0 4px 0 #333;}
 .topBanner { background-color: #f9e526; height: 40px; }
 .topBanner ul.nav-pills li { background: transparent url("../img/bannerlist-sep.jpg") no-repeat center right;margin-right: 2px; padding-right: 4px; }
 .topBanner ul.nav-pills li a { background: none; color: #88821b; font-size: .9em; padding: 10px 4px 10px 0px; }
+.topBanner ul.nav-pills li a.login { background: #e7dc00; color: #88821B; font-size: 12px; padding: 4px 10px;margin: 5px 0 0 18px; }
 .topBanner ul.nav-pills li a:hover, .topBanner ul.nav-pills li a:focus { background: none; color: #88821b; text-decoration: underline;  }
 .topBanner ul.nav-pills li.menu-ask-a-question a{font-weight: bold; }
 .topBanner ul.nav-pills li:last-child { background-image: none; }
@@ -102,7 +103,7 @@ border-top-right-radius: 3px;}
    Top Banner
    ========== */
 
-.topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px;
+.topBanner .form-control { font-size:11px;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-border-radius: 30px;
 -webkit-border-top-right-radius: 2px;
 -moz-border-radius: 30px;
 border-radius: 30px;
@@ -114,14 +115,14 @@ border-radius: 30px;
 .top10 {padding-top: 6px;}
 .topBanner .btn{padding: 4px 6px; background-color: #adab27; border: 1px solid #adab27; font-size: .9em;}
 .topBanner .input-group-btn .btn:hover{background-color: #8e8c1c;}
-
+.topBanner a.askaquestion{font-size: 12px; color:#88821B; float: right; font-weight: bold; line-height: 28px; padding-right: 20px;}
 
 /*social icons*/
 
   
 .topBanner ul.social-icons { float: right; padding: 1px 0 0 0; }
 .topBanner ul.social-icons li { list-style: none; float: left; margin-right: 4px; }
-.topBanner ul.social-icons li a { width:26px; height:26px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;  -moz-transition: all ease 0.2s;   -o-transition: all ease 0.2s;   -ms-transition: all ease 0.2s;   transition: all ease 0.2s;}
+.topBanner ul.social-icons li a { width:26px; height:25px; text-indent: -9999px; display: inline-block; -webkit-transition: all ease 0.2s;  -moz-transition: all ease 0.2s;   -o-transition: all ease 0.2s;   -ms-transition: all ease 0.2s;   transition: all ease 0.2s;}
 .topBanner ul.social-icons li.fb a { background: transparent url("../img/icons-social-top.png") no-repeat -35px 0px } 
 .topBanner ul.social-icons li.in a{ background: transparent url("../img/icons-social-top.png") no-repeat 0px 0px  } 
 .topBanner ul.social-icons li.tweet a{ background: transparent url("../img/icons-social-top.png") no-repeat -69px 0px  }
@@ -322,7 +323,7 @@ Buttons
 
 .btn-default{background-color: #00405e; border: none; color: #f9e526;}
 .btn-default:hover, .btn-default:focus{color: white; background-color:#002638 ;}
-ul.foottweet li{color: #89a8bd; font-size: .9em; margin-bottom: 8px; list-style:none; background: transparent url("../img/yel-tweet.png") no-repeat 0px 4px; padding-left: 30px;}
+ul.foottweet li{color: #89a8bd; font-size: 14px; margin-bottom: 8px; list-style:none; background: transparent url("../img/yel-tweet.png") no-repeat 0px 4px; padding-left: 30px;}
 ul.foottweet li a { color: #f9e526; }
 ul.foottweet{padding: 0;margin:0 0 30px 0;}
 

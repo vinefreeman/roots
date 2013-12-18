@@ -53,7 +53,7 @@
 				      </div>
 				      <div class="modal-body">
 
-				      Email: <a href="mailt0:general@cis-security.co.uk" title="email us">general@cis-security.co.uk</a><br />
+				      Email: <a href="mailto:general@cis-security.co.uk" title="email us">general@cis-security.co.uk</a><br />
 				      Tel: 020 8690 1903<br />
 				      Alternatively, complete the form below and ask a question:
 				      <br /><br />	
