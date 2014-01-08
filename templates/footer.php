@@ -2,7 +2,7 @@
 	<div class="container footclear">	
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-sm-8">
-				<h3 class="ontwitter yellow">CIS on Twitter</h3>
+				<h3 class="ontwitter yellow">CIS Security on Twitter</h3>
 				<?php get_template_part('templates/foottweet'); ?>
 			</div>	
 		    <div class="col-lg-4 col-md-4 col-sm-4">

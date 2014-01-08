@@ -529,6 +529,10 @@ really dark blue - #002638
 article img.pdf-thumb{width: auto; height: auto; max-width: 150px; max-height: 80px; float: left; margin-right: 30px; margin-bottom: 10px; ;}
 body.archive article{clear: left; margin-bottom: 10px;}
 
+/*Colours change for accordion on why cis page*/
+.blueyellow .panel-heading{background-color: #00405e }
+.blueyellow .panel-heading .panel-title > a{color: #f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
+
 /*Performance / Stats page / Odometer*/
 
 .performance blockquote{margin: 0;float: none;background-color: transparent; padding-right: 30px; border: none; color: #00405e; width: 90%; ;}
