@@ -14,8 +14,9 @@
     </footer>
     <?php //comments_template('/templates/comments.php'); ?>
     <div class="nextpostnav">
-        <div class="previous"><?php previous_post_link(); ?></div>
-        <div class="next"><?php next_post_link(); ?></div>
+      <p class="blue">Also see...</p>
+        <div class="previous"><?php previous_post_link('< %link','%title',TRUE); ?></div>
+        <div class="next"><?php next_post_link('%link >','%title',TRUE); ?></div>
         <p class="clearfix">&nbsp;</p>
     </div>
 
