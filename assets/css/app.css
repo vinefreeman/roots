@@ -185,7 +185,7 @@ border-radius: 30px;
 .carousel-inner img{ width: 100%; height: auto;
 -moz-opacity: 0.90;opacity: 0.90;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}
 }
-.carousel-inner .item{  }
+/*.carousel-inner .item{  }*/
 span.fade{position: absolute; background: rgba(39,62,84,0.82);
 overflow: hidden;
 height: 100%;
@@ -205,9 +205,10 @@ z-index: -2}
 -moz-border-radius-bottomright: 5px;
 border-top-left-radius: 5px;
 border-bottom-right-radius: 5px;}
-.carousel-control{height: 40px; width: 40px; z-index: 9999;}
-.carousel-control.left{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 10px;}
-.carousel-control.right{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 50px;}
+.carousel-control{height: 20px; width: 20px; z-index: 9999; top: 60%;}
+/*.carousel-control.left{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 10px;}
+.carousel-control.right{position: absolute; left: auto;right: 10% !important; top:auto; bottom: 50px;}*/
+a.carousel-control{text-decoration: none}
 .carousel-indicators {bottom: 10px; list-style: none outside none; margin-left: 0;padding-left: 0;position: absolute; left: 50%; width: 50%; z-index: 15;}
 .carousel-indicators li {
     border: 1px solid #89A8BD;
@@ -505,8 +506,8 @@ span.meta.archive{ padding: 3px; border-top: 1px dashed #89A8BD; border-bottom: 
 span.meta.archive a{color: #00405e;}
 #ssba{margin: 20px 0;}
 .nextpostnav{padding-top: 20px; border-top: 1px dashed #89A8BD;color: #ccc;}
-.previous{float: left; width: 40%;}
-.next{float: right; width: 40%; text-align: right;}
+.nextpostnav .previous{float: left; width: 40%;}
+.nextpostnav .next{float: right; width: 40%; text-align: right;}
 .error404 ul li, .error404 p {color: #89A8BD;}
 /* =========
    Top Sticky Menu Changes
@@ -534,6 +535,8 @@ body.archive article{clear: left; margin-bottom: 10px;}
 .blueyellow .panel-heading .panel-title > a{color: #f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
 
 /*Performance / Stats page / Odometer*/
+#performance-carousel .carousel-indicators{width: 100%; left: 0; bottom: 30px;}
+
 
 .performance blockquote{margin: 0;float: none;background-color: transparent; padding-right: 30px; border: none; color: #00405e; width: 90%; ;}
 .performance .main blockquote p{font-size: 78px;line-height: 1em; padding-top: 0px;}
@@ -569,6 +572,21 @@ em.error{color: #e66464;}
 
 
 @media (max-width: 767px) {
+  #performance-carousel .item span {
+    background-color: rgba(0, 38, 56, 0.9);
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #F9E526;
+    display: inline-block;
+    font-family: 'Oxygen';
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding: 8px 0 8px 0px;
+    text-shadow: 2px 1px 1px #222222;
+    font-style: normal;
+}
+#performance-carousel .carousel-caption{padding: 0;}
+#performance-carousel .carousel-indicators{width: 100%; left: 0;}
   article img.pdf-thumb{float: none; margin-bottom: 0px;}
   body.archive article{margin-bottom: 20px;}
   .siahome{float: left; margin-top: 20px;}
@@ -663,6 +681,22 @@ em.error{color: #e66464;}
    .feature h2, .feature p{ padding-left: 50%;}
    .feature p {font-size: 13px;}
 .carousel-caption{right: 20%; left: 20%; bottom: 30px;}
+
+#performance-carousel .carousel-caption{top: 150px; left:10%;}
+#performance-carousel .item span{
+    background-color: rgba(0, 38, 56, 0.7);
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #F9E526;
+    display: inline-block;
+    font-family: 'Oxygen';
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding: 8px 10px 8px 26px;
+    text-shadow: 2px 1px 1px #222222;
+    font-style: normal;
+}
+
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; }
    /*changes for sticky menu*/
    .carouselcon{margin-top: 161px;}
