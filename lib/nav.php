@@ -25,8 +25,8 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
 
     if ($item->is_dropdown && ($depth === 0)) {
       //replace so top dropdown is clickable
-      //$item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"', $item_html);
-      $item_html = str_replace('<a', '<a class="dropdown-toggle"', $item_html);
+      $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"', $item_html);
+      //$item_html = str_replace('<a', '<a class="dropdown-toggle"', $item_html);
       //removed caret for drop down
       //$item_html = str_replace('</a>', ' <b class="caret"></b></a>', $item_html);
     }

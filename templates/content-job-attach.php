@@ -48,12 +48,4 @@ if (is_uploaded_file($fileatt)) {
               $data . "\n\n" .
               "--{$mime_boundary}--\n";
 }
-
-// Send the message
-//$ok = @mail($to, $subject, $message, $headers);
-//if ($ok) {
-//  echo "<p>Mail sent! Yay PHP!</p>";
-//} else {
- // echo "<p>Mail could not be sent. Sorry!</p>";
-//}
 ?>

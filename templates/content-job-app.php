@@ -1,33 +1,50 @@
  <?php if (!isset($_GET['check'])) { ?>
  <?php if (isset($_GET['ref'])) {$urlref = $_GET['ref']; } else {$urlref = "n-a";} ?>
- <form action="thank-you.php?ref=<?php echo $urlref ; ?>&check" method="POST" enctype="multipart/form-data">
+ 
+ <form action="?check&ref=<?php echo $urlref ; ?>" method="POST" enctype="multipart/form-data">
 						<fieldset class=" labels-top">
+							<?php
+								if ($_GET['ref']){ $myref = $_GET['ref']; if ($_GET['jb']){$myjb = $_GET['jb'];} ?>
+									<div class="alert alert-success">
+										<p>Position: <strong><?php echo $myjb; ?></strong>.  Ref: <strong><?php echo $myref; ?></strong> </p>
+									</div>
+								<?php } else { ?>
+										<div class="alert alert-success">
+											<p>You will need a <strong>job title</strong> and <strong>reference</strong> to complete this form; please choose a position from our <a href="<?php echo GET_OPTION('home'); ?>/security-jobs">online job listings page</a>.</p>
+										</div>
+
+
+								<?php	} ?>
+							<p></p>
 							<p>Please complete this form:</p>
 							
-							<div class="columns-2 formsection">
+							<div class="row formsection"><div class="col-lg-12">
                            <p><strong>1. PERSONAL INFORMATION</strong></p>
-								<div class="column1">
-									<label for="first-name"><sup>* </sup>First Name.</label>
-									<input id="first-name" name="first-name" type="text" class="text" />
-									<label for="middle-name">Middle Name.</label>
-									<input id="middle-name" name="middle-name" type="text" class="text" />
-							    <label for="surname"><sup>* </sup>Surname.</label>
-									<input id="surname" name="surname" type="text" class="text" />
-                                    <label for="email"><sup>* </sup>Email Address.</label>
-									<input id="email" name="email" type="text" class="text" />
-                                 
-                                       
-								</div>
-								
-								<div class="column2">
-									<label for="address"><sup>* </sup>Street Address.</label>
-									<input id="address" name="address" type="text" class="text" />
-                                    <label for="address"><sup>* </sup>City, Postcode.</label>
-									<input id="city" name="city" type="text" class="text" />
-                                    <label for="phone"><sup>* </sup>Phone Number / Mobile.</label>
-									<input id="phone" name="phone" type="text" class="text" />
-                                    
-								</div>
+                                                    			
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<label for="first-name"><sup>* </sup>First Name.</label>
+											<input id="first-name" name="first-name" type="text" class="text" />
+											<label for="middle-name">Middle Name.</label>
+											<input id="middle-name" name="middle-name" type="text" class="text" />
+									    <label for="surname"><sup>* </sup>Surname.</label>
+											<input id="surname" name="surname" type="text" class="text" />
+		                                    <label for="email"><sup>* </sup>Email Address.</label>
+											<input id="email" name="email" type="text" class="text" />
+		                                 
+		                                       
+										</div>
+										
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<label for="address"><sup>* </sup>Street Address.</label>
+											<input id="address" name="address" type="text" class="text" />
+		                                    <label for="address"><sup>* </sup>City, Postcode.</label>
+											<input id="city" name="city" type="text" class="text" />
+		                                    <label for="phone"><sup>* </sup>Phone Number / Mobile.</label>
+											<input id="phone" name="phone" type="text" class="text" />
+		                                    
+										</div>
+								</div> <!-- /col-lg-12 -->	
+							</div><!-- /.row -->
                                 <div class="clear"><br />
                                  <label for="ukeligible"><sup>* </sup>Are you eligible to work in the UK?</label>
 								  
@@ -50,8 +67,9 @@
                                      <label for="fileatt">Upload Your CV: </label>
                                     <input type="file" name="fileatt" />
                                     </div>
-							</div><!-- columns-2 -->
+							<hr />
 							<div class="formsection">
+
                              <p><strong>2. Position / Availability</strong></p>
                              
                              <label for="job"><sup>* </sup>Position Applied For.</label>
@@ -60,7 +78,7 @@
                                       <input id="jobref" name="jobref" type="text" class="text" value="<?php if (isset($_GET['ref'])) {$apply2 = $_GET['ref']; echo $apply2;} else {echo "N/A";} ?>" readonly="readonly" />
                                     <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun). </label>
 									<textarea id="days" name="days" cols="50" rows="3"></textarea>
-                                    Hours Available:
+                                    <p>Hours Available:</p>
                                     <label for="days_nights"><sup>* </sup>Days &amp; Nights:</label>
 									 <input type="radio" name="days_nights" value="dn0" id="days_nights_0" />yes
 									 <input type="radio" name="days_nights" value="dn1" id="days_nights_1" />no
@@ -80,6 +98,7 @@
                             <label for="sia"><sup>* </sup>SIA Licence No./ Application No.  </label>
 									<input id="sia" name="sia" type="text" class="text" />
 							</div>
+							<hr />
                             <div class="formsection">
                              <p><strong>3. Employment History</strong></p>
                              Present Or Last Position:
@@ -104,10 +123,10 @@
                            
                             
 							<div class="submit">
-                             <label for="answer"><strong>To avoid spam, please answer the following question</strong><br /><sup>* </sup>What is 1 + 1? (enter number below)</label>
+                             <label for="answer"><strong>So that we know you're human, please answer the following question</strong><br /><sup>* </sup>What is 1 + 1? (enter number below)</label>
 									<input id="answer" name="answer" type="text" class="text" />
                            <p><br /> Please ensure that you have completed all the required fields.</p>
-								<input id="submit" name="submit" type="image" src="images/forms/btn-submit.png" alt="Submit" />
+									<input id="submit" name="submit" type="submit" class="btn btn-default" alt="Submit" value="Send" />
 							</div>
 						</fieldset>
 					</form>
@@ -215,13 +234,16 @@ $emailback = $_POST['email'];
                     <?php //echo $forminvalid;   if ($forminvalid != true) {echo "the form is complete";} else {echo "incomplete";} echo "<br />$errors";  ?>
                     <?php if (isset($_GET['ref'])) {$urlref = $_GET['ref']; } else {$urlref = "n-a";} ?>
                     
-                    <form action="thank-you.php?ref=<?php echo $urlref ; ?>&check" method="POST" enctype="multipart/form-data">
+                    <form action="?check&ref=<?php echo $urlref ; ?>" method="POST" enctype="multipart/form-data">
 						<fieldset class=" labels-top">
+							<div class="alert alert-success">
 							<p><strong>The form is incomplete, please see below and update your answers where indicated - thank you.</strong></p>
+							</div>
+						<div class="row formsection"><div class="col-lg-12">
 							
-							<div class="columns-2 formsection">
                            <p><strong>1. PERSONAL INFORMATION</strong></p>
-								<div class="column1">
+										
+								<div class="col-lg-6 col-md-6 col-sm-6">
 									<label for="first-name"><sup>* </sup>First Name.</label><?php if (!$_POST['first-name']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="first-name" name="first-name" type="text" class="text" value="<?php echo $_POST['first-name'] ; ?>" />
 									<label for="middle-name">Middle Name.</label>
@@ -234,7 +256,7 @@ $emailback = $_POST['email'];
                                        
 								</div>
 								
-								<div class="column2">
+								<div class="col-lg-6 col-md-6 col-sm-6">
 									<label for="address"><sup>* </sup>Street Address.</label><?php if (!$_POST['address']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="address" name="address" type="text" class="text" value="<?php echo $_POST['address'] ; ?>" />
                                     <label for="city"><sup>* </sup>City, Postcode.</label><?php if (!$_POST['city']) {echo "<em class='error'>(please complete)</em>" ; } ?>
@@ -243,7 +265,8 @@ $emailback = $_POST['email'];
 									<input id="phone" name="phone" type="text" class="text" value="<?php echo $_POST['phone'] ; ?>" />
                                     
 								</div>
-                                
+                    	    </div>
+                    	</div> <!-- /.row & ./col-lg-12 -->
                                 <div class="clear"><br />
                                  <label for="ukeligible"><sup>* </sup>Are you eligible to work in the UK?</label>
 								  <?php $radio = 0; if ($_POST['ukeligible'] == "uk_yes") { $radio ++;} 
@@ -271,7 +294,8 @@ $emailback = $_POST['email'];
                                      <label for="fileatt">Upload Your CV: <em class='error'>(please select if you want to include CV)</em> </label>
                                     <input type="file" name="fileatt" />
                                     </div>
-							</div><!-- columns-2 -->
+                                    <hr />
+							<!--</div> columns-2 -->
 							<div class="formsection">
                              <p><strong>2. Position / Availability</strong></p>
                              <label for="job"><sup>* </sup>Position Applied For.</label><?php if (!$_POST['job']) {echo "<em class='error'>(please complete)</em>" ; } ?>
@@ -280,7 +304,7 @@ $emailback = $_POST['email'];
                                       <input id="jobref" name="jobref" type="text" class="text" value="<?php echo $_POST['jobref'] ; ?>" readonly="readonly" />
                                     <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun). </label><?php if (!$_POST['days']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<textarea id="days" name="days" cols="50" rows="3"><?php echo $_POST['days'] ; ?></textarea>
-                                    Hours Available:
+                                    <p>Hours Available:</p>
                                      <label for="days_nights"><sup>* </sup>Days &amp; Nights:</label>
                                      <?php $radio2 = 0; if ($_POST['days_nights'] == "dn0") { $radio2 ++;} 
 								  if ($_POST['days_nights'] == "dn1") { $radio2 ++;} 
@@ -311,6 +335,7 @@ $emailback = $_POST['email'];
                             <label for="sia"><sup>* </sup>SIA Licence No./ Application No.  </label><?php if (!$_POST['sia']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="sia" name="sia" type="text" class="text" value="<?php echo $_POST['sia'] ; ?>" />
 							</div>
+							<hr />
                             <div class="formsection">
                              <p><strong>3. Employment History</strong></p>
                              Present Or Last Position:
@@ -335,11 +360,11 @@ $emailback = $_POST['email'];
                            
                             
 							<div class="submit">
-                             <label for="answer"><strong>To avoid spam, please answer the following question</strong><br /><sup>* </sup>What is 1 + 1? (enter number below)</label>
+                             <label for="answer"><strong>So that we know you're human, please answer the following question</strong><br /><sup>* </sup>What is 1 + 1? (enter number below)</label>
                              <?php if (!$_POST['answer'] or $_POST['answer'] != "2") {echo "<em class='error'>(please enter answer)</em>" ; } ?>
 									<input id="answer" name="answer" type="text" class="text" value="<?php echo $_POST['answer'] ; ?>" />
                            <p><br /> Please ensure that you have completed all the required fields.</p>
-								<input id="submit" name="submit" type="image" src="images/forms/btn-submit.png" alt="Submit" />
+									<input id="submit" name="submit" type="submit" class="btn btn-default" alt="Submit" value="Send" />
 							</div>
 						</fieldset>
 					</form>
