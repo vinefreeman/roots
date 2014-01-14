@@ -693,7 +693,7 @@ em.error{color: #e66464;}
    .feature img{ width: 40%; float: left;}
    .feature h2, .feature p{ padding-left: 50%;}
    .feature p {font-size: 13px;}
-.carousel-caption{right: 20%; left: 20%; bottom: 30px;}
+.carousel-caption{right: 20%; left: 5%; bottom: 10px;}
 
 #performance-carousel .carousel-caption{top: 180px; left:5%; right: 10%;}
 #performance-carousel .item span{
@@ -733,7 +733,7 @@ em.error{color: #e66464;}
    /*.collapse{ display:block;}*/
     span.strapline { float: right; margin: 10px 0 0 0;}
    .feature img{ width: 40%; float: left;}
-   .carousel-caption{right: 20%; left: 20%;}
+   .carousel-caption{right: 20%; left: 10%; bottom: 30px;}
     .carousel-caption h2{font-size: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; border-radius: 30px 0 0 30px;}
   /*changes for sticky menu*/
@@ -760,7 +760,7 @@ em.error{color: #e66464;}
    span.strapline { float: right; margin: 12px 0 0 0; }
   /* .collapse{ display: block;}*/
    .feature img{ width: 40%; float: left;}
- .carousel-caption{right: 20%; left: 20%; bottom: 50px;}
+ .carousel-caption{right: 20%; left: 20%; bottom: 20px;}
  .carousel-caption h2{font-size: 36px;}
  .feature h2, .feature p { padding-left: 45%; padding-right: 5%;}
  .feature a.btn{margin-right: 5%;}

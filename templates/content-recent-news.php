@@ -40,10 +40,10 @@
 
 	</div>
 
-	<a href="<?php echo get_option('home'); ?>/insights" class ="btn-dark btn btn-sm" title="News and Awards">More News</a>
+	<a href="<?php echo get_option('home'); ?>/current-news" class ="btn-dark btn btn-sm" title="News and Awards">More News</a>
 
 	<h4 class="yel">News Archive</h4>
 	<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-  <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
-  <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
+  <option value=""><?php echo esc_attr( __( 'Select Year' ) ); ?></option> 
+  <?php wp_get_archives( array( 'type' => 'yearly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
 </select>
