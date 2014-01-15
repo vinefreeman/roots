@@ -4,8 +4,12 @@
 
 <h2>CIS Security Feedback form</h2>
 						<fieldset class="labels-top">
-                        <p><em>* = required fields</em></p>
+						<div class="alert alert-success">	
+                        <p>Please complete the form below.<br /><em>* = required fields</em></p>
+                        </div>
+
                         <p><strong>Type of feedback</strong></p>
+
 							
 						  <label for="feedback-purpose">*I would like to (please select)</label><br />
 										  <label>
@@ -203,18 +207,19 @@
 		
 				
 			//mail variablesc
-			$emailto = "tony.graves@cis-security.co.uk";
+			//$emailto = "tony.graves@cis-security.co.uk";
+			$emailto = "vinny@redheadmedia.co.uk";
 			$subject = "CIS Security feedback form submission";
 			$message = "Hi Tony\n\nThe below information has been submitted from the CIS Security website feedback form:\n\n\nType of feedback: $feedback\n\nComments:\n$comments\n\nRequires a reply: $reply\n\nContacted CIS before: $contactbefore\n\nTitle: $title\n\nFirst Name: $name\n\nSurname: $surname\n\nTelephone: $telephone\n\nEmail Address: $email\n\nFirst part of Postcode: $postcode\n\nUnder 18: $underage\n\n\n\n\n-------------------------\nCIS Security $year";
-		mail( $emailto, $subject, $message, "From: general@cis-security.co.uk", '-fgeneral@cis-security.co.uk' );
+		mail( $emailto, $subject, $message, "From: CIS Security <general@cis-security.co.uk>", '-fgeneral@cis-security.co.uk' );
   		   
 //send nice email to potential customer
 if ($_POST["email"]){
 $emailback = $_POST['email'];
-			$headersb = "From: general@cis-security.co.uk";
-			$subjectb = "CIS Security: Thanks for contacting us";
+			$headersb = "From: CIS Security <general@cis-security.co.uk>";
+			$subjectb = "Thanks for contacting us";
 			$who = $_POST['firstname'];
 			 $messageb = "Hi $who,\n\nThanks for contacting CIS Security, this is just a quick confirmation email to let you know we have received your feedback form submission.\n\n\n\nKind regards\n\nCIS Security\n\n-------------------------\n\nweb: http://www.cis-security.co.uk";
 		mail( $emailback, $subjectb, $messageb, $headersb, '-fgeneral@cis-security.co.uk' ); }
-		echo "<h2>Thankyou</h2><br /><p>Your details have been received.</p>"  ;} // end else send the form
+		echo "<div class='alert alert-success'><p>Thank you for the feedback.</p><p>Your information has been received.</p></div>"  ;} // end else send the form
 		} // end check entire form ?>

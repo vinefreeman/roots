@@ -6,7 +6,7 @@
                 
                 <ul id="menu-header-menu" class="nav nav-pills">
                   <!-- <li class="menu-location"><a href="<?php // echo get_option('home') ?>/contact/">Location</a></li> -->
-                  <li class="menu-login"><a href="" class="btn btn-sm login">Login</a></li>
+                  <li class="menu-login"><a href="http://ez.cis-security.co.uk/Logon.aspx" class="btn btn-sm login">Login</a></li>
                 </ul>  
                 <?php
                  //wp_nav_menu(array('menu' => 'Header Menu', 'menu_class' => 'nav nav-pills'));

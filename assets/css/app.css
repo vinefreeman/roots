@@ -300,7 +300,7 @@ span.nicetitle{color:#00405e; font-size: 1.9em; line-height: 1.2em; padding-bott
 span.nicetitle {border-left: none; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 2em;  line-height: 1.2em; margin-bottom: 26px; padding: 0px; font-family: Georgia, serif;}
 .innerspace span.nicetitle{padding-left: 10px;}
 .page-header span.nicetitle{color: #89A8BD;}
-.main blockquote{background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
+.main blockquote{-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
 a.mail{text-align:center; display: block; font-size: 1.2em; margin-bottom: 4px;}
 a.phone{text-align:center; display: block; font-size: 1.1em;}
 a span{text-decoration: none;}
@@ -533,7 +533,7 @@ body.archive article{clear: left; margin-bottom: 10px;}
 /*Colours change for accordion on why cis page*/
 .blueyellow .panel-heading{background-color: #00405e }
 .blueyellow .panel-heading .panel-title > a{color: #f9e526; font-family: "Oxygen", helvetica, arial, sans-serif ;}
-
+.blueyellow .panel-body{font-size: 12px;}
 /*Performance / Stats page / Odometer*/
 #performance-carousel .carousel-indicators{width: 100%; left: 0; bottom: 30px;}
 
