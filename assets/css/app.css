@@ -115,7 +115,7 @@ border-radius: 30px;
 .top10 {padding-top: 6px;}
 .topBanner .btn{padding: 4px 6px; background-color: #adab27; border: 1px solid #adab27; font-size: .9em;}
 .topBanner .input-group-btn .btn:hover{background-color: #8e8c1c;}
-.topBanner a.askaquestion{font-size: 12px; color:#88821B; float: right; font-weight: bold; line-height: 28px; padding-right: 20px;}
+.topBanner a.askaquestion{font-size: 12px; color:#88821B; float: right; font-weight: bold; line-height: 28px; padding-right: 20px; text-decoration: underline;}
 
 /*social icons*/
 
@@ -297,7 +297,7 @@ body.home .footclear{margin-top: 20px;}
 h3.intouch{ font-size: 1.1em; text-align:right; padding-left: 30px; }
 h3.ontwitter{ font-size: 1.1em;  }
 span.nicetitle{color:#00405e; font-size: 1.9em; line-height: 1.2em; padding-bottom: 16px; display: block; /*font-family: "Oxygen", helvetica, arial, sans-serif*/ font-family: Georgia, serif;}
-span.nicetitle {border-left: none; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 2em;  line-height: 1.2em; margin-bottom: 26px; padding: 0px; font-family: Georgia, serif;}
+span.nicetitle {border-left: none; color: #5089B1; display: block; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 29px;  line-height: 1.2em; margin-bottom: 26px; padding: 0px; font-family: Georgia, serif;}
 .innerspace span.nicetitle{padding-left: 10px;}
 .page-header span.nicetitle{color: #89A8BD;}
 .main blockquote{-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;background-color: #5089b1; border-bottom: 1px solid #CCCCCC; color: #fff; display: block; float:right; font-family: "Oxygen",helvetica,arial,sans-serif; font-size: 1.3em;  line-height: 1.2em; margin:15px;border: none; padding: 10px; width: 50%;}
@@ -592,6 +592,8 @@ em.error{color: #e66464;}
     font-style: normal;
     width: 98%;
 }
+.page-header a.btn {margin-bottom: 10px;}
+span.nicetitle{font-size: 20px;}
 #performance-carousel .carousel-caption{padding: 0;}
 #performance-carousel .carousel-indicators{width: 100%; left: 0;}
   article img.pdf-thumb{float: none; margin-bottom: 0px;}
@@ -686,6 +688,7 @@ em.error{color: #e66464;}
 
 
 @media (min-width: 768px) {
+  span.nicetitle{font-size: 26px;}
   ul.navbar-nav li.dropdown:hover ul.dropdown-menu{ display: block; } /*BS3 dropdown fix http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ */
   .banner{padding: 20px 0;}
  /* .collapse{ display:block;}*/
@@ -733,7 +736,7 @@ em.error{color: #e66464;}
    /*.collapse{ display:block;}*/
     span.strapline { float: right; margin: 10px 0 0 0;}
    .feature img{ width: 40%; float: left;}
-   .carousel-caption{right: 20%; left: 10%; bottom: 30px;}
+   .carousel-caption{right: 20%; left: 10%; bottom: 35px;}
     .carousel-caption h2{font-size: 30px;}
 .topBanner .form-control { font-size: .9em;height: 28px; background-color: #e9df21;color: #7e791d; border: none; -webkit-appearance: none; border-radius: 30px 0 0 30px;}
   /*changes for sticky menu*/
@@ -752,6 +755,7 @@ em.error{color: #e66464;}
 
 
 @media (min-width: 1200px) { 
+  span.nicetitle{font-size: 29px;}
   ul.navbar-nav li.dropdown:hover ul.dropdown-menu{ display: block; } /*BS3 dropdown fix http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ */
    #performance-carousel .carousel-caption{top: 260px; left:5%; right: 10%;}
   .banner{padding: 35px 0;}
@@ -760,7 +764,7 @@ em.error{color: #e66464;}
    span.strapline { float: right; margin: 12px 0 0 0; }
   /* .collapse{ display: block;}*/
    .feature img{ width: 40%; float: left;}
- .carousel-caption{right: 20%; left: 20%; bottom: 20px;}
+ .carousel-caption{right: 20%; left: 20%; bottom: 30px;}
  .carousel-caption h2{font-size: 36px;}
  .feature h2, .feature p { padding-left: 45%; padding-right: 5%;}
  .feature a.btn{margin-right: 5%;}
