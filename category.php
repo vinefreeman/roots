@@ -33,24 +33,24 @@
                   $cisnewslist = get_posts( $args);?>
           <div class="col-lg-9 col-md-9 col-sm-9">
               <!-- cat title was here -->
-                <?php 
-                foreach ($cisnewslist as $news) : setup_postdata( $news );   ?>
+                <?php global $post;
+                foreach ($cisnewslist as $post) : setup_postdata( $post );   ?>
                 <?php //vars 
-                $title = $news->post_title;
-                $link = get_permalink($news->ID);
-                $snip = $news->post_excerpt;
+                $title = $post->post_title;
+                $link = get_permalink($post->ID);
+                $snip =  get_the_excerpt();
                 ?>
                      <article <?php post_class(); ?>>
                         <header>
                         <h2 class="entry-title"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h2>
-                         <?php $postdate = mysql2date('j M Y', $news->post_date);?>
+                         <?php $postdate = mysql2date('j M Y', $post->post_date);?>
                             <span class="meta<?php if (is_archive()){echo " archive";} ?>"><?php echo $postdate; ?></span>
                         </header>
                         <div class="entry-summary">
-                        <?php if (in_category(array('newsletter','security-bulletin'), $post->ID)) {} else { the_excerpt(); } ?>
+                        <?php if (in_category(array('newsletter','security-bulletin'), $post->ID)) {} else { echo $snip; } ?>
                         </div>
                      </article>
-                <?php endforeach; ?>
+                <?php endforeach; wp_reset_query(); ?>
           </div><!-- cols -->
           <div class="col-lg-3 col-md-3 col-sm-3">   
                 <h2>News Archive</h2>

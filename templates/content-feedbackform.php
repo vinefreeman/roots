@@ -207,8 +207,8 @@
 		
 				
 			//mail variablesc
-			//$emailto = "tony.graves@cis-security.co.uk";
-			$emailto = "vinny@redheadmedia.co.uk";
+			$emailto = "tony.graves@cis-security.co.uk";
+			//$emailto = "vinny@redheadmedia.co.uk";
 			$subject = "CIS Security feedback form submission";
 			$message = "Hi Tony\n\nThe below information has been submitted from the CIS Security website feedback form:\n\n\nType of feedback: $feedback\n\nComments:\n$comments\n\nRequires a reply: $reply\n\nContacted CIS before: $contactbefore\n\nTitle: $title\n\nFirst Name: $name\n\nSurname: $surname\n\nTelephone: $telephone\n\nEmail Address: $email\n\nFirst part of Postcode: $postcode\n\nUnder 18: $underage\n\n\n\n\n-------------------------\nCIS Security $year";
 		mail( $emailto, $subject, $message, "From: CIS Security <general@cis-security.co.uk>", '-fgeneral@cis-security.co.uk' );

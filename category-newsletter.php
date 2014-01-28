@@ -47,7 +47,7 @@
                    'posts_per_page' => 1,
                    'post_status' => 'any',
                    'post_parent' => $post->ID,
-
+                   'order'       => 'ASC',
                    ); 
                   $attachments = get_posts( $pdfargs );
                   if ($attachments){

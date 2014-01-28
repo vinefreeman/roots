@@ -195,7 +195,7 @@ function roots_excerpt_length($length) {
 }
 
 function roots_excerpt_more($more) {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Read more &raquo;', 'roots') . '</a>';
+  return ' &hellip; <a href="' . get_permalink() . '" class="btn-xs btn-primary">' . __('Read&nbsp;more', 'roots') . '</a>';
 }
 add_filter('excerpt_length', 'roots_excerpt_length');
 add_filter('excerpt_more', 'roots_excerpt_more');

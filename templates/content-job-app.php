@@ -264,9 +264,9 @@
 
 			//mail variablesc
 			
-			//$emailto = "jobs@cis-security.co.uk";
+			$emailto = "jobs@cis-security.co.uk";
 			//testing:
-			$emailto = "vinny@redheadmedia.co.uk";
+			//$emailto = "vinny@redheadmedia.co.uk";
 			// headers is called in the attach.in file above -  removed the -f header - was it causing confusion and errors occasionally
 			$subject = "Job Ref: " . $thisjobref . " - CIS Security Online Application";
 			
