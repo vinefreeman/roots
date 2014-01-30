@@ -19,7 +19,7 @@
 
   <?php //while (have_posts()) : the_post();
         $args = array(
-        'posts_per_page'   => 6,
+        'posts_per_page'   => 3,
         'offset'           => 0,
         'category'         => '',
         'orderby'          => 'post_date',
@@ -85,9 +85,10 @@
                 $today = getdate();
               //  $yr = $today[ 'year' ];
                 $args = array(
-                'posts_per_page'   =>6,
+                'posts_per_page'   =>-1,
                 'offset'           => 0,
-                'category'         => $cat,
+                //'category'         => $cat, list all news on current as per susan j 30/01/14
+                'category'         => '',
                 'tag__not_in'      => array('39'),  
                 'orderby'          => 'post_date',
                 'order'            => 'DESC',
@@ -112,7 +113,7 @@
                             <span class="meta<?php if (is_archive()){echo " archive";} ?>"><?php echo $postdate; ?></span>
                         </header>
                         <div class="entry-summary">
-                        <?php echo $snip; ?>
+                        <?php if (in_category(array('newsletter','security-bulletin'), $post->ID)) {the_content();} else {echo $snip;} ?>
                         </div>
                      </article>
                 <?php endforeach; wp_reset_query(); ?>
@@ -139,3 +140,12 @@
 
       </div> <!-- end row -->
 </div><!-- inner space -->
+<!-- post navigation jan 2014 -->
+<?php if ($wp_query->max_num_pages > 1) : ?>
+    <nav class="post-nav">
+      <ul class="pager">
+        <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
+        <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+      </ul>
+    </nav>
+  <?php endif; ?>

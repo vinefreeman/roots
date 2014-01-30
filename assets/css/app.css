@@ -730,7 +730,7 @@ span.nicetitle{font-size: 20px;}
 
 @media (min-width: 992px) {
   ul.navbar-nav li.dropdown:hover ul.dropdown-menu{ display: block; } /*BS3 dropdown fix http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ */
-  #performance-carousel .carousel-caption{top: 180px; left:5%; right: 10%;}
+  #performance-carousel .carousel-caption{top: 170px; left:5%; right: 10%;}
   .banner{padding: 35px 0;}
    .topBanner li.rss{display: none;}
 .feature p {font-size: 14px;}
@@ -758,7 +758,7 @@ span.nicetitle{font-size: 20px;}
 @media (min-width: 1200px) { 
   span.nicetitle{font-size: 29px;}
   ul.navbar-nav li.dropdown:hover ul.dropdown-menu{ display: block; } /*BS3 dropdown fix http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ */
-   #performance-carousel .carousel-caption{top: 260px; left:5%; right: 10%;}
+   #performance-carousel .carousel-caption{top: 250px; left:5%; right: 10%;}
   .banner{padding: 35px 0;}
   .feature p {font-size: 14px;}
    .topBanner li.rss{display: inline;}

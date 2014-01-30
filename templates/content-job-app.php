@@ -22,24 +22,24 @@
                            <p><strong>1. PERSONAL INFORMATION</strong></p>
                                                     			
 										<div class="col-lg-6 col-md-6 col-sm-6">
-											<label for="first-name"><sup>* </sup>First Name.</label>
+											<label for="first-name"><sup>* </sup>First Name</label>
 											<input id="first-name" name="first-name" type="text" class="text" />
-											<label for="middle-name">Middle Name.</label>
+											<label for="middle-name">Middle Name</label>
 											<input id="middle-name" name="middle-name" type="text" class="text" />
-									    <label for="surname"><sup>* </sup>Surname.</label>
+									    <label for="surname"><sup>* </sup>Surname</label>
 											<input id="surname" name="surname" type="text" class="text" />
-		                                    <label for="email"><sup>* </sup>Email Address.</label>
+		                                    <label for="email"><sup>* </sup>Email Address</label>
 											<input id="email" name="email" type="text" class="text" />
 		                                 
 		                                       
 										</div>
 										
 										<div class="col-lg-6 col-md-6 col-sm-6">
-											<label for="address"><sup>* </sup>Street Address.</label>
+											<label for="address"><sup>* </sup>Street Address</label>
 											<input id="address" name="address" type="text" class="text" />
-		                                    <label for="address"><sup>* </sup>City, Postcode.</label>
+		                                    <label for="address"><sup>* </sup>City, Postcode</label>
 											<input id="city" name="city" type="text" class="text" />
-		                                    <label for="phone"><sup>* </sup>Phone Number / Mobile.</label>
+		                                    <label for="phone"><sup>* </sup>Phone Number / Mobile</label>
 											<input id="phone" name="phone" type="text" class="text" />
 		                                    
 										</div>
@@ -72,11 +72,11 @@
 
                              <p><strong>2. Position / Availability</strong></p>
                              
-                             <label for="job"><sup>* </sup>Position Applied For.</label>
+                             <label for="job"><sup>* </sup>Position Applied For</label>
 									<input id="job" name="job" type="text" class="text" value="<?php if (isset($_GET['jb'])) {$apply = $_GET['jb']; echo $apply;} ?>" />
-                                      <label for="jobref">Job Reference (CIS only).</label>
+                                      <label for="jobref">Job Reference (CIS only)</label>
                                       <input id="jobref" name="jobref" type="text" class="text" value="<?php if (isset($_GET['ref'])) {$apply2 = $_GET['ref']; echo $apply2;} else {echo "N/A";} ?>" readonly="readonly" />
-                                    <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun). </label>
+                                    <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun) </label>
 									<textarea id="days" name="days" cols="50" rows="3"></textarea>
                                     <p>Hours Available:</p>
                                     <label for="days_nights"><sup>* </sup>Days &amp; Nights:</label>
@@ -102,21 +102,21 @@
                             <div class="formsection">
                              <p><strong>3. Employment History</strong></p>
                              Present Or Last Position:
-                               <label for="employer"><sup>* </sup>Employer.</label>
+                               <label for="employer"><sup>* </sup>Employer</label>
 									<input id="employer" name="employer" type="text" class="text" />
                              <label for="emp_address">Address.</label>
 							<textarea id="emp_address" name="emp_address" cols="50" rows="5"></textarea>
-                              <label for="supervisor"><sup>* </sup>Your Supervisor.</label>
+                              <label for="supervisor"><sup>* </sup>Your Supervisor</label>
 									<input id="supervisor" name="supervisor" type="text" class="text" />
-                                     <label for="emp_phone"><sup>* </sup>Phone.</label>
+                                     <label for="emp_phone"><sup>* </sup>Phone</label>
 									<input id="emp_phone" name="emp_phone" type="text" class="text" />
-                                     <label for="emp_fax"><sup>* </sup>Fax.</label>
+                                     <label for="emp_fax"><sup>* </sup>Fax</label>
 									<input id="emp_fax" name="emp_fax" type="text" class="text" />
-                                     <label for="emp_email"><sup>* </sup>Email.</label>
+                                     <label for="emp_email"><sup>* </sup>Email</label>
 									<input id="emp_email" name="emp_email" type="text" class="text" />
-                                    <label for="emp_title"><sup>* </sup>Position Title.</label>
+                                    <label for="emp_title"><sup>* </sup>Position Title</label>
 									<input id="emp_title" name="emp_title" type="text" class="text" />
-                                    <label for="emp_from"><sup>* </sup>From - To.</label>
+                                    <label for="emp_from"><sup>* </sup>From - To</label>
 									<input id="emp_from" name="emp_from" type="text" class="text" />
 							
 							</div>
@@ -304,24 +304,24 @@ $emailback = $_POST['email'];
                            <p><strong>1. PERSONAL INFORMATION</strong></p>
 										
 								<div class="col-lg-6 col-md-6 col-sm-6">
-									<label for="first-name"><sup>* </sup>First Name.</label><?php if (!$_POST['first-name']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+									<label for="first-name"><sup>* </sup>First Name</label><?php if (!$_POST['first-name']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="first-name" name="first-name" type="text" class="text" value="<?php echo $_POST['first-name'] ; ?>" />
-									<label for="middle-name">Middle Name.</label>
+									<label for="middle-name">Middle Name</label>
 									<input id="middle-name" name="middle-name" type="text" class="text" value="<?php echo $_POST['middle-name'] ; ?>" />
-							    <label for="surname"><sup>* </sup>Surname.</label><?php if (!$_POST['surname']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+							    <label for="surname"><sup>* </sup>Surname</label><?php if (!$_POST['surname']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="surname" name="surname" type="text" class="text" value="<?php echo $_POST['surname'] ; ?>" />
-                                    <label for="email"><sup>* </sup>Email Address.</label><?php if (!$_POST['email']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="email"><sup>* </sup>Email Address</label><?php if (!$_POST['email']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="email" name="email" type="text" class="text" value="<?php echo $_POST['email'] ; ?>" />
                                  
                                        
 								</div>
 								
 								<div class="col-lg-6 col-md-6 col-sm-6">
-									<label for="address"><sup>* </sup>Street Address.</label><?php if (!$_POST['address']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+									<label for="address"><sup>* </sup>Street Address</label><?php if (!$_POST['address']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="address" name="address" type="text" class="text" value="<?php echo $_POST['address'] ; ?>" />
-                                    <label for="city"><sup>* </sup>City, Postcode.</label><?php if (!$_POST['city']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="city"><sup>* </sup>City, Postcode</label><?php if (!$_POST['city']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="city" name="city" type="text" class="text" value="<?php echo $_POST['city'] ; ?>" />
-                                    <label for="phone"><sup>* </sup>Phone Number / Mobile.</label><?php if (!$_POST['phone']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="phone"><sup>* </sup>Phone Number / Mobile</label><?php if (!$_POST['phone']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="phone" name="phone" type="text" class="text" value="<?php echo $_POST['phone'] ; ?>" />
                                     
 								</div>
@@ -358,11 +358,11 @@ $emailback = $_POST['email'];
 							<!--</div> columns-2 -->
 							<div class="formsection">
                              <p><strong>2. Position / Availability</strong></p>
-                             <label for="job"><sup>* </sup>Position Applied For.</label><?php if (!$_POST['job']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                             <label for="job"><sup>* </sup>Position Applied For</label><?php if (!$_POST['job']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="job" name="job" type="text" class="text" value="<?php echo $_POST['job'] ; ?>" />
-                                    <label for="jobref">Job Reference (CIS only).</label>
+                                    <label for="jobref">Job Reference (CIS only)</label>
                                       <input id="jobref" name="jobref" type="text" class="text" value="<?php echo $_POST['jobref'] ; ?>" readonly="readonly" />
-                                    <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun). </label><?php if (!$_POST['days']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="days"><sup>* </sup>Days/Hours Available (Mon-Sun) </label><?php if (!$_POST['days']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<textarea id="days" name="days" cols="50" rows="3"><?php echo $_POST['days'] ; ?></textarea>
                                     <p>Hours Available:</p>
                                      <label for="days_nights"><sup>* </sup>Days &amp; Nights:</label>
@@ -399,21 +399,21 @@ $emailback = $_POST['email'];
                             <div class="formsection">
                              <p><strong>3. Employment History</strong></p>
                              Present Or Last Position:
-                               <label for="employer"><sup>* </sup>Employer.</label><?php if (!$_POST['employer']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                               <label for="employer"><sup>* </sup>Employer</label><?php if (!$_POST['employer']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="employer" name="employer" type="text" class="text" value="<?php echo $_POST['employer'] ; ?>" />
                              <label for="emp_address">Address.</label><?php if (!$_POST['emp_address']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 							<textarea id="emp_address" name="emp_address" cols="50" rows="5"><?php echo $_POST['emp_address']; ?></textarea>
-                              <label for="supervisor"><sup>* </sup>Your Supervisor.</label><?php if (!$_POST['supervisor']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                              <label for="supervisor"><sup>* </sup>Your Supervisor</label><?php if (!$_POST['supervisor']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="supervisor" name="supervisor" type="text" class="text" value="<?php echo $_POST['supervisor'] ; ?>" />
-                                     <label for="emp_phone"><sup>* </sup>Phone.</label><?php if (!$_POST['emp_phone']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                     <label for="emp_phone"><sup>* </sup>Phone</label><?php if (!$_POST['emp_phone']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="emp_phone" name="emp_phone" type="text" class="text" value="<?php echo $_POST['emp_phone'] ; ?>" />
-                                     <label for="emp_fax"><sup>* </sup>Fax.</label><?php if (!$_POST['emp_fax']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                     <label for="emp_fax"><sup>* </sup>Fax</label><?php if (!$_POST['emp_fax']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="emp_fax" name="emp_fax" type="text" class="text" value="<?php echo $_POST['emp_fax'] ; ?>" />
-                                     <label for="emp_email"><sup>* </sup>Email.</label><?php if (!$_POST['emp_email']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                     <label for="emp_email"><sup>* </sup>Email</label><?php if (!$_POST['emp_email']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="emp_email" name="emp_email" type="text" class="text" value="<?php echo $_POST['emp_email'] ; ?>" />
-                                    <label for="emp_title"><sup>* </sup>Position Title.</label><?php if (!$_POST['emp_title']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="emp_title"><sup>* </sup>Position Title</label><?php if (!$_POST['emp_title']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="emp_title" name="emp_title" type="text" class="text" value="<?php echo $_POST['emp_title'] ; ?>" />
-                                    <label for="emp_from"><sup>* </sup>From - To.</label><?php if (!$_POST['emp_from']) {echo "<em class='error'>(please complete)</em>" ; } ?>
+                                    <label for="emp_from"><sup>* </sup>From - To</label><?php if (!$_POST['emp_from']) {echo "<em class='error'>(please complete)</em>" ; } ?>
 									<input id="emp_from" name="emp_from" type="text" class="text" value="<?php echo $_POST['emp_from'] ; ?>" />
 							
 							</div>
