@@ -645,4 +645,17 @@ function roots_cpt_active_menu($menu) {
 }
 add_filter('nav_menu_css_class', 'roots_cpt_active_menu', 400);
 
+function my_login_back() { ?>
+    <style type="text/css">
+        body.login {
+            background: url("http://cis-security.co.uk/cis-login.jpg") no-repeat center center fixed !important; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+                    }
+                    .login #nav, .login #backtoblog, .login #nav a, .login #backtoblog a  {text-shadow: none; color: #fff !important};
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_back' );
 ?>

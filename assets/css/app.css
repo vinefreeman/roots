@@ -20,6 +20,11 @@ p a.btn-default, p a.btn-primary{text-decoration: none}
 a:hover, a:focus{color: #afc7d7;}
 h1 span.badge{ vertical-align: top; background-color: #F9E526; color: #00344d; padding: 2px 5px;}
 .show-grid{ margin-bottom: 15px;}/*adds margin to every row as they are a bit stacked*/
+body.login{ background: url("../img/cis-login.jpg") no-repeat center center fixed !important; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
 /* =============================================================================
    Header
    ========================================================================== */
